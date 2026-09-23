@@ -7,13 +7,13 @@ import { launchSpec, selectClients } from "../src/install.mjs"
 import { createRegistry, materialize, VERSION } from "../src/registry.mjs"
 import { createServer } from "../src/server.mjs"
 
-const HELP = `ameer-ui-mcp ${VERSION} — shadcn/ui registry (radix-nova, RTL) for AI clients
+const HELP = `ocean-uiux-mcp ${VERSION} — shadcn/ui registry (radix-nova, RTL) for AI clients
 
 Usage:
-  ameer-ui-mcp                      start the MCP server on stdio (what clients run)
-  ameer-ui-mcp install [options]    register the server in AI clients
-  ameer-ui-mcp uninstall [options]  remove it from AI clients
-  ameer-ui-mcp doctor               check node, registry, shadcn runner and clients
+  ocean-uiux-mcp                      start the MCP server on stdio (what clients run)
+  ocean-uiux-mcp install [options]    register the server in AI clients
+  ocean-uiux-mcp uninstall [options]  remove it from AI clients
+  ocean-uiux-mcp doctor               check node, registry, shadcn runner and clients
 
 Options (install / uninstall):
   --client <ids>   all (default: every client found) or a list:
@@ -24,9 +24,9 @@ Options (install / uninstall):
   -v, --version    print the version
 
 Environment:
-  AMEER_UI_REGISTRY_URL   use a hosted registry (https://host/r) instead of the bundled one
-  AMEER_UI_SHADCN         shadcn command, e.g. "npx -y shadcn@latest" (default: pnpm dlx if available)
-  AMEER_UI_CACHE_DIR      where the bundled registry is unpacked (default: ~/.cache/ameer-ui-mcp)`
+  OCEAN_UIUX_REGISTRY_URL   use a hosted registry (https://host/r) instead of the bundled one
+  OCEAN_UIUX_SHADCN         shadcn command, e.g. "npx -y shadcn@latest" (default: pnpm dlx if available)
+  OCEAN_UIUX_CACHE_DIR      where the bundled registry is unpacked (default: ~/.cache/ocean-uiux-mcp)`
 
 const { values, positionals } = parseArgs({
   allowPositionals: true,
@@ -76,7 +76,7 @@ function manage(action) {
 }
 
 async function doctor() {
-  log(`ameer-ui-mcp ${VERSION} · node ${process.version}`)
+  log(`ocean-uiux-mcp ${VERSION} · node ${process.version}`)
   if (Number(process.versions.node.split(".")[0]) < 20) log("✗ node >= 20 required")
   const registry = createRegistry()
   try {
@@ -104,6 +104,6 @@ try {
     process.exitCode = 2
   }
 } catch (e) {
-  log(`ameer-ui-mcp: ${e.message}`)
+  log(`ocean-uiux-mcp: ${e.message}`)
   process.exitCode = 1
 }

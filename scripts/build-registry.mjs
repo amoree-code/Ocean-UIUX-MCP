@@ -1,4 +1,4 @@
-// Builds the @ameer registry into public/r/ from the components in this repo.
+// Builds the @ocean registry into public/r/ from the components in this repo.
 //
 // Metadata (npm deps, css, cssVars, docs, registry deps) comes from each item's upstream
 // registry and is cached in registry/upstream/ so builds are reproducible offline.
@@ -9,7 +9,7 @@
 //   node scripts/build-registry.mjs            # build from cache (fetches only what's missing)
 //   node scripts/build-registry.mjs --refresh  # refetch upstream metadata
 //   REGISTRY_BASE=https://host/r node scripts/build-registry.mjs   # when hosted
-//   REGISTRY_OUT=dir REGISTRY_BASE={{AMEER_UI_REGISTRY}} …          # npm bundle (see packages/mcp)
+//   REGISTRY_OUT=dir REGISTRY_BASE={{OCEAN_UIUX_REGISTRY}} …          # npm bundle (see packages/mcp)
 import fs from "node:fs"
 import path from "node:path"
 
@@ -126,8 +126,8 @@ for (const item of built.values()) fs.writeFileSync(path.join(outDir, `${item.na
 
 const index = {
   $schema: "https://ui.shadcn.com/schema/registry.json",
-  name: "ameer",
-  homepage: "https://github.com/amoree-code/MCP-Shadcn",
+  name: "ocean",
+  homepage: "https://github.com/amoree-code/Ocean-UIUX-MCP",
   items: [...built.values()]
     .sort((a, b) => a.name.localeCompare(b.name))
     .map(({ files, $schema, ...rest }) => ({ ...rest, files: files.map(({ content, ...f }) => f) })),

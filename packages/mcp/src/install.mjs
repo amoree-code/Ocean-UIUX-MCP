@@ -4,8 +4,8 @@ import fs from "node:fs"
 import os from "node:os"
 import path from "node:path"
 
-export const SERVER_NAME = "ameer-ui"
-const PKG = "ameer-ui-mcp"
+export const SERVER_NAME = "ocean-uiux"
+const PKG = "ocean-uiux-mcp"
 const CLI_PATH = path.resolve(import.meta.dirname, "../bin/cli.mjs")
 
 const home = () => os.homedir()
@@ -107,7 +107,7 @@ function jsonClient({ id, label, file, key, entry = (s) => s, detect }) {
 const tomlString = (s) => JSON.stringify(s) // TOML basic strings share JSON escaping for our inputs
 
 function stripTomlServer(src) {
-  // Drop [mcp_servers.ameer-ui] and its sub-tables, up to the next unrelated table header.
+  // Drop [mcp_servers.ocean-uiux] and its sub-tables, up to the next unrelated table header.
   const lines = src.split("\n")
   const out = []
   let skipping = false

@@ -1,4 +1,4 @@
-# ameer-ui-mcp
+# ocean-uiux-mcp
 
 An MCP server for a curated [shadcn/ui](https://ui.shadcn.com) registry. Name a component in any
 AI client (Claude Code, Codex, Cursor, VS Code, Windsurf, Claude Desktop) and it gets searched, explained
@@ -17,23 +17,23 @@ and installed into your project with the shadcn CLI.
 ## Install
 
 ```bash
-npx -y ameer-ui-mcp install
+npx -y ocean-uiux-mcp install
 ```
 
 This registers the server in every AI client it finds on the machine and backs up each config file
 first. Restart open clients afterwards.
 
 ```bash
-npx -y ameer-ui-mcp install --client claude,cursor      # only some clients
-npx -y ameer-ui-mcp install --runner pnpm               # clients launch it with pnpm dlx
-npx -y ameer-ui-mcp uninstall
-npx -y ameer-ui-mcp doctor                              # what's registered where
+npx -y ocean-uiux-mcp install --client claude,cursor      # only some clients
+npx -y ocean-uiux-mcp install --runner pnpm               # clients launch it with pnpm dlx
+npx -y ocean-uiux-mcp uninstall
+npx -y ocean-uiux-mcp doctor                              # what's registered where
 ```
 
 Manual config, for any MCP client:
 
 ```json
-{ "mcpServers": { "ameer-ui": { "command": "npx", "args": ["-y", "ameer-ui-mcp@latest"] } } }
+{ "mcpServers": { "ocean-uiux-mcp": { "command": "npx", "args": ["-y", "ocean-uiux-mcp@latest"] } } }
 ```
 
 > Claude Desktop rewrites its config file while it runs. Quit it before `install`, or paste the
@@ -75,22 +75,22 @@ layouts, as shadcn's own RTL guide recommends.
 
 | Variable | Default | Purpose |
 |---|---|---|
-| `AMEER_UI_REGISTRY_URL` | (bundled) | use a hosted build of the registry, e.g. `https://host/r` |
-| `AMEER_UI_SHADCN` | `pnpm dlx shadcn@latest` if pnpm exists, else `npx -y shadcn@latest` | command used to run the shadcn CLI |
-| `AMEER_UI_CACHE_DIR` | `~/.cache/ameer-ui-mcp` | where the bundled registry is unpacked |
+| `OCEAN_UIUX_REGISTRY_URL` | (bundled) | use a hosted build of the registry, e.g. `https://host/r` |
+| `OCEAN_UIUX_SHADCN` | `pnpm dlx shadcn@latest` if pnpm exists, else `npx -y shadcn@latest` | command used to run the shadcn CLI |
+| `OCEAN_UIUX_CACHE_DIR` | `~/.cache/ocean-uiux-mcp` | where the bundled registry is unpacked |
 
 Requires Node.js 20 or newer. Components target React 19, Tailwind CSS v4 and the unified
 `radix-ui` package.
 
 ## Develop
 
-This package lives in [MCP-Shadcn](https://github.com/amoree-code/MCP-Shadcn), next to the gallery
+This package lives in [MCP-Shadcn](https://github.com/amoree-code/Ocean-UIUX-MCP), next to the gallery
 that previews every component and style.
 
 ```bash
-pnpm --filter ameer-ui-mcp bundle      # rebuild registry + examples from the repo
-pnpm --filter ameer-ui-mcp test        # unit + protocol + installer tests
-pnpm --filter ameer-ui-mcp test:e2e    # real shadcn CLI: new app, install, tsc (minutes)
+pnpm --filter ocean-uiux-mcp bundle      # rebuild registry + examples from the repo
+pnpm --filter ocean-uiux-mcp test        # unit + protocol + installer tests
+pnpm --filter ocean-uiux-mcp test:e2e    # real shadcn CLI: new app, install, tsc (minutes)
 ```
 
 ## License

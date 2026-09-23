@@ -1,26 +1,26 @@
 // Registry access for the MCP server.
 //
-// Local mode (default): the registry ships inside this package with a {{AMEER_UI_REGISTRY}}
+// Local mode (default): the registry ships inside this package with a {{OCEAN_UIUX_REGISTRY}}
 // placeholder in every registry dependency. On first use it is materialised into a per-version
 // cache dir with the placeholder replaced by that dir, so the shadcn CLI gets absolute paths
 // that exist on this machine.
 //
-// Remote mode: AMEER_UI_REGISTRY_URL=https://host/r points at a hosted build of the same
+// Remote mode: OCEAN_UIUX_REGISTRY_URL=https://host/r points at a hosted build of the same
 // registry (built with REGISTRY_BASE=that URL); items are passed to the CLI as URLs.
 import fs from "node:fs"
 import os from "node:os"
 import path from "node:path"
 
-export const PLACEHOLDER = "{{AMEER_UI_REGISTRY}}"
+export const PLACEHOLDER = "{{OCEAN_UIUX_REGISTRY}}"
 const PKG_DIR = path.resolve(import.meta.dirname, "..")
 const BUNDLE_DIR = path.join(PKG_DIR, "registry")
 const PREVIEWS_DIR = path.join(PKG_DIR, "previews")
 const VERSION = JSON.parse(fs.readFileSync(path.join(PKG_DIR, "package.json"), "utf8")).version
 
 function cacheRoot() {
-  if (process.env.AMEER_UI_CACHE_DIR) return process.env.AMEER_UI_CACHE_DIR
-  if (process.platform === "win32") return path.join(process.env.LOCALAPPDATA || os.homedir(), "ameer-ui-mcp")
-  return path.join(process.env.XDG_CACHE_HOME || path.join(os.homedir(), ".cache"), "ameer-ui-mcp")
+  if (process.env.OCEAN_UIUX_CACHE_DIR) return process.env.OCEAN_UIUX_CACHE_DIR
+  if (process.platform === "win32") return path.join(process.env.LOCALAPPDATA || os.homedir(), "ocean-uiux-mcp")
+  return path.join(process.env.XDG_CACHE_HOME || path.join(os.homedir(), ".cache"), "ocean-uiux-mcp")
 }
 
 /** Absolute dir holding ready-to-install item JSON for this package version. */
@@ -48,7 +48,7 @@ export function materialize() {
 }
 
 export function createRegistry() {
-  const remote = process.env.AMEER_UI_REGISTRY_URL?.replace(/\/$/, "")
+  const remote = process.env.OCEAN_UIUX_REGISTRY_URL?.replace(/\/$/, "")
   let index = null
   let localDir = null
 
@@ -56,7 +56,7 @@ export function createRegistry() {
     if (index) return index
     if (remote) {
       const res = await fetch(`${remote}/registry.json`)
-      if (!res.ok) throw new Error(`AMEER_UI_REGISTRY_URL: ${remote}/registry.json → HTTP ${res.status}`)
+      if (!res.ok) throw new Error(`OCEAN_UIUX_REGISTRY_URL: ${remote}/registry.json → HTTP ${res.status}`)
       index = (await res.json()).items
     } else {
       localDir = materialize()

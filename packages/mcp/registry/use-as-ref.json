@@ -5,7 +5,7 @@
   "title": "use-as-ref",
   "description": "",
   "registryDependencies": [
-    "{{AMEER_UI_REGISTRY}}/use-isomorphic-layout-effect.json"
+    "{{OCEAN_UIUX_REGISTRY}}/use-isomorphic-layout-effect.json"
   ],
   "files": [
     {

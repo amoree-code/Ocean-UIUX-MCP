@@ -1,5 +1,5 @@
 {
-  "name": "ameer-ui",
+  "name": "ocean-uiux",
   "version": "0.0.1",
   "type": "module",
   "private": true,
@@ -14,8 +14,8 @@
     "sync:styles": "bash scripts/sync-styles.sh",
     "registry:build": "node scripts/build-registry.mjs",
     "mcp": "node packages/mcp/bin/cli.mjs",
-    "mcp:bundle": "pnpm --filter ameer-ui-mcp bundle",
-    "mcp:test": "pnpm --filter ameer-ui-mcp test"
+    "mcp:bundle": "pnpm --filter ocean-uiux-mcp bundle",
+    "mcp:test": "pnpm --filter ocean-uiux-mcp test"
   },
   "dependencies": {
     "@base-ui/react": "^1.8.0",

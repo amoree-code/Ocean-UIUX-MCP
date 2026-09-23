@@ -9,8 +9,8 @@
     "radix-ui"
   ],
   "registryDependencies": [
-    "{{AMEER_UI_REGISTRY}}/use-isomorphic-layout-effect.json",
-    "{{AMEER_UI_REGISTRY}}/use-lazy-ref.json"
+    "{{OCEAN_UIUX_REGISTRY}}/use-isomorphic-layout-effect.json",
+    "{{OCEAN_UIUX_REGISTRY}}/use-lazy-ref.json"
   ],
   "categories": [
     "Data Display"

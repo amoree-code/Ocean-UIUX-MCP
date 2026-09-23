@@ -1,4 +1,4 @@
-# Ameer UI
+# Ocean UI/UX
 
 A personal shadcn/ui registry with a demo gallery, exposed to every AI client through MCP.
 
@@ -7,16 +7,16 @@ A personal shadcn/ui registry with a demo gallery, exposed to every AI client th
 - **Gallery**: live previews by category, all 8 official styles side by side, RTL/LTR, dark mode,
   accent and radius controls.
 - **Registry**: self-contained. Every dependency resolves inside it, so it needs no hosting.
-- **MCP server**: `packages/mcp` (npm `ameer-ui-mcp`). Name a component in any AI client and it gets installed.
+- **MCP server**: `packages/mcp` (npm `ocean-uiux-mcp`). Name a component in any AI client and it gets installed.
 
 ## Use it from any AI client
 
-The MCP server is the npm package [`ameer-ui-mcp`](packages/mcp/README.md). It bundles the registry, so it
+The MCP server is the npm package [`ocean-uiux-mcp`](packages/mcp/README.md). It bundles the registry, so it
 works on any machine with no hosting:
 
 ```bash
-npx -y ameer-ui-mcp install      # registers in Claude Code, Codex, Cursor, VS Code, Windsurf, Claude Desktop
-npx -y ameer-ui-mcp doctor
+npx -y ocean-uiux-mcp install      # registers in Claude Code, Codex, Cursor, VS Code, Windsurf, Claude Desktop
+npx -y ocean-uiux-mcp doctor
 ```
 
 Until it is published, register this checkout instead:
@@ -34,7 +34,7 @@ Tools: `search_components`, `get_component`, `add_components`, `init_project`.
 pnpm dev --port 3100          # gallery
 pnpm registry:build           # local registry in public/r (gitignored, absolute paths)
 pnpm mcp:bundle               # rebuild the npm package's bundled registry + examples (commit it)
-pnpm mcp:test                 # package tests; `pnpm --filter ameer-ui-mcp test:e2e` for the slow e2e
+pnpm mcp:test                 # package tests; `pnpm --filter ocean-uiux-mcp test:e2e` for the slow e2e
 pnpm gen:styles               # regenerate style loaders after editing components/previews
 pnpm sync:styles              # re-vendor all 8 official styles from shadcn (slow)
 ```
@@ -58,5 +58,5 @@ Base UI versions. Diff, copy only the new files, add a catalog entry and a previ
 The package needs no hosting. For a team that wants one shared, updatable registry without
 republishing, deploy the gallery (e.g. Vercel). Build the registry into `public/r` with
 `REGISTRY_BASE=https://<host>/r`, then point clients at it with
-`AMEER_UI_REGISTRY_URL=https://<host>/r`. The shadcn CLI also supports private GitHub
+`OCEAN_UIUX_REGISTRY_URL=https://<host>/r`. The shadcn CLI also supports private GitHub
 registries through `gh` auth.

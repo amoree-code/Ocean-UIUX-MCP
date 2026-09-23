@@ -18,8 +18,8 @@
     "@types/lodash.throttle"
   ],
   "registryDependencies": [
-    "{{AMEER_UI_REGISTRY}}/card.json",
-    "{{AMEER_UI_REGISTRY}}/context-menu.json"
+    "{{OCEAN_UIUX_REGISTRY}}/card.json",
+    "{{OCEAN_UIUX_REGISTRY}}/context-menu.json"
   ],
   "categories": [
     "Data Display"

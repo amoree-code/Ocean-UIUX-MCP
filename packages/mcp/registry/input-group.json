@@ -8,9 +8,9 @@
     "cn"
   ],
   "registryDependencies": [
-    "{{AMEER_UI_REGISTRY}}/button.json",
-    "{{AMEER_UI_REGISTRY}}/input.json",
-    "{{AMEER_UI_REGISTRY}}/textarea.json"
+    "{{OCEAN_UIUX_REGISTRY}}/button.json",
+    "{{OCEAN_UIUX_REGISTRY}}/input.json",
+    "{{OCEAN_UIUX_REGISTRY}}/textarea.json"
   ],
   "categories": [
     "Forms & Inputs"

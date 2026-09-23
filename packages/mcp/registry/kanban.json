@@ -12,8 +12,8 @@
     "tunnel-rat"
   ],
   "registryDependencies": [
-    "{{AMEER_UI_REGISTRY}}/card.json",
-    "{{AMEER_UI_REGISTRY}}/scroll-area.json"
+    "{{OCEAN_UIUX_REGISTRY}}/card.json",
+    "{{OCEAN_UIUX_REGISTRY}}/scroll-area.json"
   ],
   "categories": [
     "Data Display"

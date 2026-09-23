@@ -21,8 +21,8 @@ const fontArabic = IBM_Plex_Sans_Arabic({
 })
 
 export const metadata: Metadata = {
-  title: "Ameer UI — shadcn gallery",
-  description: "Pick the shadcn components and variants for the Ameer UI registry.",
+  title: "Ocean UI/UX — shadcn gallery",
+  description: "Pick the shadcn components and variants for the Ocean UI/UX registry.",
 }
 
 export default function RootLayout({
