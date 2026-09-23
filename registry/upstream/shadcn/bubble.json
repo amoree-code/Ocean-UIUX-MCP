@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "bubble",
+  "dependencies": [
+    "cn"
+  ],
+  "files": [
+    {
+      "path": "registry/radix-nova/ui/bubble.tsx",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

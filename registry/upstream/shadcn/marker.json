@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "marker",
+  "dependencies": [
+    "cn"
+  ],
+  "files": [
+    {
+      "path": "registry/radix-nova/ui/marker.tsx",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

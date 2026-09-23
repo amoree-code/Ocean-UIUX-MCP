@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "mini-calendar",
+  "type": "registry:ui",
+  "title": "mini-calendar",
+  "description": "A composable mini calendar component for picking dates close to today.",
+  "author": "Hayden Bleasel <hello@haydenbleasel.com>",
+  "dependencies": [
+    "@radix-ui/react-use-controllable-state",
+    "date-fns",
+    "lucide-react",
+    "radix-ui"
+  ],
+  "devDependencies": [],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "type": "registry:ui",
+      "path": "index.tsx",
+      "target": "components/kibo-ui/mini-calendar/index.tsx"
+    }
+  ],
+  "css": {}
+}

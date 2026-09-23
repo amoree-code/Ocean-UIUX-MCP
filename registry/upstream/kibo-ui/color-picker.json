@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "color-picker",
+  "type": "registry:ui",
+  "title": "color-picker",
+  "description": "Allows users to select a color. Modeled after the color picker in Figma.",
+  "author": "Hayden Bleasel <hello@haydenbleasel.com>",
+  "dependencies": [
+    "color",
+    "lucide-react",
+    "radix-ui"
+  ],
+  "devDependencies": [
+    "@types/color"
+  ],
+  "registryDependencies": [
+    "button",
+    "input",
+    "select"
+  ],
+  "files": [
+    {
+      "type": "registry:ui",
+      "path": "index.tsx",
+      "target": "components/kibo-ui/color-picker/index.tsx"
+    }
+  ],
+  "css": {}
+}

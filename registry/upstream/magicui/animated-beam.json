@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animated-beam",
+  "type": "registry:ui",
+  "title": "Animated Beam",
+  "description": "An animated beam of light which travels along a path. Useful for showcasing the integration features of a website.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/magicui/animated-beam.tsx",
+      "type": "registry:ui"
+    }
+  ]
+}

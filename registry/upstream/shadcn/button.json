@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button",
+  "dependencies": [
+    "cn"
+  ],
+  "files": [
+    {
+      "path": "registry/radix-nova/ui/button.tsx",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "links": {
+      "docs": "https://ui.shadcn.com/docs/components/radix/button",
+      "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/button-example.tsx"
+    }
+  },
+  "type": "registry:ui"
+}

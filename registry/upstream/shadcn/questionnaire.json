@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "questionnaire",
+  "dependencies": [
+    "cn",
+    "@shadcn/react"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "registry/radix-nova/ui/questionnaire.tsx",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "links": {
+      "docs": "https://ui.shadcn.com/docs/components/radix/questionnaire",
+      "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/questionnaire-example.tsx"
+    }
+  },
+  "type": "registry:ui"
+}

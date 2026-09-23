@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "combobox",
+  "dependencies": [
+    "cn",
+    "@base-ui/react"
+  ],
+  "registryDependencies": [
+    "button",
+    "input-group"
+  ],
+  "files": [
+    {
+      "path": "registry/radix-nova/ui/combobox.tsx",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "links": {
+      "docs": "https://ui.shadcn.com/docs/components/radix/combobox",
+      "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/combobox-example.tsx",
+      "api": "https://base-ui.com/react/components/combobox"
+    }
+  },
+  "type": "registry:ui"
+}

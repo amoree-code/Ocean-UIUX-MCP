@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "announcement",
+  "type": "registry:ui",
+  "title": "announcement",
+  "description": "A compound badge designed to display an announcement.",
+  "author": "Hayden Bleasel <hello@haydenbleasel.com>",
+  "dependencies": [],
+  "devDependencies": [],
+  "registryDependencies": [
+    "badge"
+  ],
+  "files": [
+    {
+      "type": "registry:ui",
+      "path": "index.tsx",
+      "target": "components/kibo-ui/announcement/index.tsx"
+    }
+  ],
+  "css": {}
+}

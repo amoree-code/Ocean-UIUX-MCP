@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "kanban",
+  "type": "registry:ui",
+  "title": "kanban",
+  "description": "A kanban board is a visual tool that helps you manage and visualize your work. It is a board with columns, and each column represents a status, e.g. \"Backlog\", \"In Progress\", \"Done\".",
+  "author": "Hayden Bleasel <hello@haydenbleasel.com>",
+  "dependencies": [
+    "@dnd-kit/core",
+    "@dnd-kit/sortable",
+    "@dnd-kit/utilities",
+    "tunnel-rat"
+  ],
+  "devDependencies": [],
+  "registryDependencies": [
+    "card",
+    "scroll-area"
+  ],
+  "files": [
+    {
+      "type": "registry:ui",
+      "path": "index.tsx",
+      "target": "components/kibo-ui/kanban/index.tsx"
+    }
+  ],
+  "css": {}
+}

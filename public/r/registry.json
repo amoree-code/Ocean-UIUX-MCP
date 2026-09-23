@@ -1,0 +1,2493 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "ameer",
+  "homepage": "http://localhost:3100",
+  "items": [
+    {
+      "name": "accordion",
+      "type": "registry:ui",
+      "title": "Accordion",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/accordion.json",
+        "examples": [
+          "accordion"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/accordion",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/accordion-example.tsx",
+          "api": "https://www.radix-ui.com/primitives/docs/components/accordion.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/accordion.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "title": "Alert",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Feedback"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/alert.json",
+        "examples": [
+          "alert"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/alert",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/alert-example.tsx"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/alert.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog",
+      "type": "registry:ui",
+      "title": "Alert Dialog",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/button.json"
+      ],
+      "categories": [
+        "Overlays"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/alert-dialog.json",
+        "examples": [
+          "alert-dialog"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/alert-dialog",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/alert-dialog-example.tsx",
+          "api": "https://www.radix-ui.com/primitives/docs/components/alert-dialog.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/alert-dialog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "animated-beam",
+      "type": "registry:ui",
+      "title": "Animated Beam",
+      "description": "An animated beam of light which travels along a path. Useful for showcasing the integration features of a website.",
+      "dependencies": [
+        "motion"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "@magicui",
+        "upstream": "https://magicui.design/r/animated-beam",
+        "examples": [
+          "animated-beam"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/ui/animated-beam.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "announcement",
+      "type": "registry:ui",
+      "title": "Announcement",
+      "description": "A compound badge designed to display an announcement.",
+      "author": "Hayden Bleasel <hello@haydenbleasel.com>",
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/badge.json"
+      ],
+      "categories": [
+        "Feedback"
+      ],
+      "meta": {
+        "source": "@kibo-ui",
+        "upstream": "https://www.kibo-ui.com/r/announcement.json",
+        "examples": [
+          "announcement"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/kibo-ui/announcement/index.tsx",
+          "type": "registry:ui",
+          "target": "components/kibo-ui/announcement/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "aspect-ratio",
+      "type": "registry:ui",
+      "title": "Aspect Ratio",
+      "description": "",
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/aspect-ratio.json",
+        "examples": [
+          "aspect-ratio"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/aspect-ratio",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/aspect-ratio-example.tsx",
+          "api": "https://www.radix-ui.com/primitives/docs/components/aspect-ratio.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/aspect-ratio.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "attachment",
+      "type": "registry:ui",
+      "title": "Attachment",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/button.json"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/attachment.json",
+        "examples": [
+          "attachment"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/ui/attachment.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "title": "Avatar",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/avatar.json",
+        "examples": [
+          "avatar"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/avatar",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/avatar-example.tsx",
+          "api": "https://www.radix-ui.com/primitives/docs/components/avatar.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/avatar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/badge.json",
+        "examples": [
+          "badge"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/badge",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/badge-example.tsx"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/badge.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "banner",
+      "type": "registry:ui",
+      "title": "Banner",
+      "description": "A banner is a full-width component that can be used to show a message and action to the user.",
+      "author": "Hayden Bleasel <hello@haydenbleasel.com>",
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/button.json"
+      ],
+      "categories": [
+        "Feedback"
+      ],
+      "meta": {
+        "source": "@kibo-ui",
+        "upstream": "https://www.kibo-ui.com/r/banner.json",
+        "examples": [
+          "banner"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/kibo-ui/banner/index.tsx",
+          "type": "registry:ui",
+          "target": "components/kibo-ui/banner/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "bento-grid",
+      "type": "registry:ui",
+      "title": "Bento Grid",
+      "description": "Bento grid is a layout used to showcase the features of a product in a simple and elegant way.",
+      "dependencies": [
+        "@radix-ui/react-icons"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/button.json"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "@magicui",
+        "upstream": "https://magicui.design/r/bento-grid",
+        "examples": [
+          "bento-grid"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/ui/bento-grid.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb",
+      "type": "registry:ui",
+      "title": "Breadcrumb",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Navigation"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/breadcrumb.json",
+        "examples": [
+          "breadcrumb"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/breadcrumb",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/breadcrumb-example.tsx"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/breadcrumb.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "bubble",
+      "type": "registry:ui",
+      "title": "Bubble",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/bubble.json",
+        "examples": [
+          "bubble"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/ui/bubble.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/button.json",
+        "examples": [
+          "button"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/button",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/button-example.tsx"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/button.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "button-group",
+      "type": "registry:ui",
+      "title": "Button Group",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/separator.json"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/button-group.json",
+        "examples": [
+          "button-group"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/button-group",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/button-group-example.tsx"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/button-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "calendar",
+      "type": "registry:ui",
+      "title": "Calendar",
+      "description": "",
+      "dependencies": [
+        "cn",
+        "react-day-picker@latest",
+        "date-fns"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/button.json"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/calendar.json",
+        "examples": [
+          "calendar"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/calendar",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/calendar-example.tsx",
+          "api": "https://react-day-picker.js.org"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/calendar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Card",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/card.json",
+        "examples": [
+          "card"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/card",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/card-example.tsx"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "carousel",
+      "type": "registry:ui",
+      "title": "Carousel",
+      "description": "",
+      "dependencies": [
+        "cn",
+        "embla-carousel-react"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/button.json"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/carousel.json",
+        "examples": [
+          "carousel"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/carousel",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/carousel-example.tsx",
+          "api": "https://www.embla-carousel.com/get-started/react"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/carousel.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "chart",
+      "type": "registry:ui",
+      "title": "Chart",
+      "description": "",
+      "dependencies": [
+        "cn",
+        "recharts@3.8.0"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/chart.json",
+        "examples": [
+          "chart"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/chart",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/chart-example.tsx"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/chart.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "title": "Checkbox",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/checkbox.json",
+        "examples": [
+          "checkbox"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/checkbox",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/checkbox-example.tsx",
+          "api": "https://www.radix-ui.com/docs/primitives/components/checkbox.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/checkbox.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "collapsible",
+      "type": "registry:ui",
+      "title": "Collapsible",
+      "description": "",
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/collapsible.json",
+        "examples": [
+          "collapsible"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/collapsible",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/collapsible-example.tsx",
+          "api": "https://www.radix-ui.com/docs/primitives/components/collapsible.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/collapsible.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "color-picker",
+      "type": "registry:ui",
+      "title": "Color Picker",
+      "description": "Allows users to select a color. Modeled after the color picker in Figma.",
+      "author": "Hayden Bleasel <hello@haydenbleasel.com>",
+      "dependencies": [
+        "color",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "devDependencies": [
+        "@types/color"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/button.json",
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/input.json",
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/select.json"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "@kibo-ui",
+        "upstream": "https://www.kibo-ui.com/r/color-picker.json",
+        "examples": [
+          "color-picker"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/kibo-ui/color-picker/index.tsx",
+          "type": "registry:ui",
+          "target": "components/kibo-ui/color-picker/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "combobox",
+      "type": "registry:ui",
+      "title": "Combobox",
+      "description": "",
+      "dependencies": [
+        "cn",
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/button.json",
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/input-group.json"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/combobox.json",
+        "examples": [
+          "combobox"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/combobox",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/combobox-example.tsx",
+          "api": "https://base-ui.com/react/components/combobox"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/combobox.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "command",
+      "type": "registry:ui",
+      "title": "Command",
+      "description": "",
+      "dependencies": [
+        "cn",
+        "cmdk"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/dialog.json",
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/input-group.json"
+      ],
+      "categories": [
+        "Overlays"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/command.json",
+        "examples": [
+          "command"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/command",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/command-example.tsx",
+          "api": "https://github.com/dip/cmdk"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/command.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "context-menu",
+      "type": "registry:ui",
+      "title": "Context Menu",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Overlays"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/context-menu.json",
+        "examples": [
+          "context-menu"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/context-menu",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/context-menu-example.tsx",
+          "api": "https://www.radix-ui.com/docs/primitives/components/context-menu.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/context-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "title": "Dialog",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/button.json"
+      ],
+      "categories": [
+        "Overlays"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/dialog.json",
+        "examples": [
+          "dialog"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/dialog",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/dialog-example.tsx",
+          "api": "https://www.radix-ui.com/docs/primitives/components/dialog.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/dialog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "direction",
+      "type": "registry:ui",
+      "title": "Direction",
+      "description": "",
+      "categories": [
+        "Utilities"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/direction.json",
+        "examples": [],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/direction",
+          "api": "https://www.radix-ui.com/primitives/docs/utilities/direction-provider.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/direction.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "drawer",
+      "type": "registry:ui",
+      "title": "Drawer",
+      "description": "",
+      "dependencies": [
+        "cn",
+        "vaul"
+      ],
+      "categories": [
+        "Overlays"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/drawer.json",
+        "examples": [
+          "drawer"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/drawer",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/drawer-example.tsx",
+          "api": "https://vaul.emilkowal.ski/getting-started"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/drawer.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "title": "Dropdown Menu",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Overlays"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/dropdown-menu.json",
+        "examples": [
+          "dropdown-menu"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/dropdown-menu",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/dropdown-menu-example.tsx",
+          "api": "https://www.radix-ui.com/docs/primitives/components/dropdown-menu.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/dropdown-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dropzone",
+      "type": "registry:ui",
+      "title": "Dropzone",
+      "description": "Allows users to drag-and-drop files into a container to upload or process them.",
+      "author": "Hayden Bleasel <hello@haydenbleasel.com>",
+      "dependencies": [
+        "lucide-react",
+        "react-dropzone"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/button.json"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "@kibo-ui",
+        "upstream": "https://www.kibo-ui.com/r/dropzone.json",
+        "examples": [
+          "dropzone"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/kibo-ui/dropzone/index.tsx",
+          "type": "registry:ui",
+          "target": "components/kibo-ui/dropzone/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "empty",
+      "type": "registry:ui",
+      "title": "Empty",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/empty.json",
+        "examples": [
+          "empty"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/empty",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/empty-example.tsx"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/empty.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "field",
+      "type": "registry:ui",
+      "title": "Field",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/label.json",
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/separator.json"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/field.json",
+        "examples": [
+          "field"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/field",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/field-example.tsx"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/field.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "file-upload",
+      "type": "registry:ui",
+      "title": "File Upload",
+      "description": "",
+      "dependencies": [
+        "cn",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/use-as-ref.json",
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/use-lazy-ref.json"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "@diceui",
+        "upstream": "https://diceui.com/r/radix-nova/file-upload.json",
+        "examples": [
+          "file-upload"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/ui/file-upload.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "gantt",
+      "type": "registry:ui",
+      "title": "Gantt",
+      "description": "The Gantt chart is a powerful tool for visualizing project schedules and tracking the progress of tasks. It provides a clear, hierarchical view of tasks, allowing you to easily identify manage project timelines.",
+      "author": "Hayden Bleasel <hello@haydenbleasel.com>",
+      "dependencies": [
+        "@dnd-kit/core",
+        "@dnd-kit/modifiers",
+        "@uidotdev/usehooks",
+        "date-fns",
+        "jotai",
+        "lodash.throttle",
+        "lucide-react"
+      ],
+      "devDependencies": [
+        "@types/lodash.throttle"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/card.json",
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/context-menu.json"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "@kibo-ui",
+        "upstream": "https://www.kibo-ui.com/r/gantt.json",
+        "examples": [
+          "gantt"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/kibo-ui/gantt/index.tsx",
+          "type": "registry:ui",
+          "target": "components/kibo-ui/gantt/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "hover-card",
+      "type": "registry:ui",
+      "title": "Hover Card",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Overlays"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/hover-card.json",
+        "examples": [
+          "hover-card"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/hover-card",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/hover-card-example.tsx",
+          "api": "https://www.radix-ui.com/docs/primitives/components/hover-card.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/hover-card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/input.json",
+        "examples": [
+          "input"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/input",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/input-example.tsx"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/input.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input-group",
+      "type": "registry:ui",
+      "title": "Input Group",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/button.json",
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/input.json",
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/textarea.json"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/input-group.json",
+        "examples": [
+          "input-group"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/input-group",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/input-group-example.tsx"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/input-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input-otp",
+      "type": "registry:ui",
+      "title": "Input Otp",
+      "description": "",
+      "dependencies": [
+        "cn",
+        "input-otp"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/input-otp.json",
+        "examples": [
+          "input-otp"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/input-otp",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/input-otp-example.tsx",
+          "api": "https://input-otp.rodz.dev"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/input-otp.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "item",
+      "type": "registry:ui",
+      "title": "Item",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/separator.json"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/item.json",
+        "examples": [
+          "item"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/item",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/item-example.tsx"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/item.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "kanban",
+      "type": "registry:ui",
+      "title": "Kanban",
+      "description": "A kanban board is a visual tool that helps you manage and visualize your work. It is a board with columns, and each column represents a status, e.g. \"Backlog\", \"In Progress\", \"Done\".",
+      "author": "Hayden Bleasel <hello@haydenbleasel.com>",
+      "dependencies": [
+        "@dnd-kit/core",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities",
+        "tunnel-rat"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/card.json",
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/scroll-area.json"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "@kibo-ui",
+        "upstream": "https://www.kibo-ui.com/r/kanban.json",
+        "examples": [
+          "kanban"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/kibo-ui/kanban/index.tsx",
+          "type": "registry:ui",
+          "target": "components/kibo-ui/kanban/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "kbd",
+      "type": "registry:ui",
+      "title": "Kbd",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/kbd.json",
+        "examples": [
+          "kbd"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/kbd",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/kbd-example.tsx"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/kbd.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "title": "Label",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/label.json",
+        "examples": [
+          "label"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/label",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/label-example.tsx",
+          "api": "https://www.radix-ui.com/docs/primitives/components/label.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/label.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "marker",
+      "type": "registry:ui",
+      "title": "Marker",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/marker.json",
+        "examples": [
+          "marker"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/ui/marker.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "marquee",
+      "type": "registry:ui",
+      "title": "Marquee",
+      "description": "An infinite scrolling component that can be used to display text, images, or videos.",
+      "cssVars": {
+        "theme": {
+          "animate-marquee": "marquee var(--duration) infinite linear",
+          "animate-marquee-vertical": "marquee-vertical var(--duration) linear infinite"
+        }
+      },
+      "css": {
+        "@keyframes marquee": {
+          "from": {
+            "transform": "translateX(0)"
+          },
+          "to": {
+            "transform": "translateX(calc(-100% - var(--gap)))"
+          }
+        },
+        "@keyframes marquee-vertical": {
+          "from": {
+            "transform": "translateY(0)"
+          },
+          "to": {
+            "transform": "translateY(calc(-100% - var(--gap)))"
+          }
+        }
+      },
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "@magicui",
+        "upstream": "https://magicui.design/r/marquee",
+        "examples": [
+          "marquee"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/ui/marquee.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "menubar",
+      "type": "registry:ui",
+      "title": "Menubar",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Overlays"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/menubar.json",
+        "examples": [
+          "menubar"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/menubar",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/menubar-example.tsx",
+          "api": "https://www.radix-ui.com/docs/primitives/components/menubar.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/menubar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "message",
+      "type": "registry:ui",
+      "title": "Message",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/message.json",
+        "examples": []
+      },
+      "files": [
+        {
+          "path": "components/ui/message.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "message-scroller",
+      "type": "registry:ui",
+      "title": "Message Scroller",
+      "description": "",
+      "dependencies": [
+        "cn",
+        "@shadcn/react"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/button.json"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/message-scroller.json",
+        "examples": []
+      },
+      "files": [
+        {
+          "path": "components/ui/message-scroller.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "mini-calendar",
+      "type": "registry:ui",
+      "title": "Mini Calendar",
+      "description": "A composable mini calendar component for picking dates close to today.",
+      "author": "Hayden Bleasel <hello@haydenbleasel.com>",
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "date-fns",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/button.json"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "@kibo-ui",
+        "upstream": "https://www.kibo-ui.com/r/mini-calendar.json",
+        "examples": [
+          "mini-calendar"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/kibo-ui/mini-calendar/index.tsx",
+          "type": "registry:ui",
+          "target": "components/kibo-ui/mini-calendar/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "native-select",
+      "type": "registry:ui",
+      "title": "Native Select",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/native-select.json",
+        "examples": [
+          "native-select"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/native-select",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/native-select-example.tsx"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/native-select.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "navigation-menu",
+      "type": "registry:ui",
+      "title": "Navigation Menu",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Navigation"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/navigation-menu.json",
+        "examples": [
+          "navigation-menu"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/navigation-menu",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/navigation-menu-example.tsx",
+          "api": "https://www.radix-ui.com/docs/primitives/components/navigation-menu.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/navigation-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "number-ticker",
+      "type": "registry:ui",
+      "title": "Number Ticker",
+      "description": "Animate numbers to count up or down to a target number",
+      "dependencies": [
+        "motion"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "@magicui",
+        "upstream": "https://magicui.design/r/number-ticker",
+        "examples": [
+          "number-ticker"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/ui/number-ticker.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "pagination",
+      "type": "registry:ui",
+      "title": "Pagination",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/button.json"
+      ],
+      "categories": [
+        "Navigation"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/pagination.json",
+        "examples": [
+          "pagination"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/pagination",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/pagination-example.tsx"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/pagination.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "title": "Popover",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Overlays"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/popover.json",
+        "examples": [
+          "popover"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/popover",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/popover-example.tsx",
+          "api": "https://www.radix-ui.com/docs/primitives/components/popover.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/popover.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "progress",
+      "type": "registry:ui",
+      "title": "Progress",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Feedback"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/progress.json",
+        "examples": [
+          "progress"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/progress",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/progress-example.tsx",
+          "api": "https://www.radix-ui.com/docs/primitives/components/progress.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/progress.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "questionnaire",
+      "type": "registry:ui",
+      "title": "Questionnaire",
+      "description": "",
+      "dependencies": [
+        "cn",
+        "@shadcn/react"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/button.json"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/questionnaire.json",
+        "examples": [
+          "questionnaire"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/questionnaire",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/questionnaire-example.tsx"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/questionnaire.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "title": "Radio Group",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/radio-group.json",
+        "examples": [
+          "radio-group"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/radio-group",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/radio-group-example.tsx",
+          "api": "https://www.radix-ui.com/docs/primitives/components/radio-group.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/radio-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "rating",
+      "type": "registry:ui",
+      "title": "Rating",
+      "description": "A star rating component with keyboard navigation and hover effects.",
+      "author": "Hayden Bleasel <hello@haydenbleasel.com>",
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "lucide-react"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "@kibo-ui",
+        "upstream": "https://www.kibo-ui.com/r/rating.json",
+        "examples": [
+          "rating"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/kibo-ui/rating/index.tsx",
+          "type": "registry:ui",
+          "target": "components/kibo-ui/rating/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "resizable",
+      "type": "registry:ui",
+      "title": "Resizable",
+      "description": "",
+      "dependencies": [
+        "cn",
+        "react-resizable-panels"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/resizable.json",
+        "examples": [
+          "resizable"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/resizable",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/resizable-example.tsx",
+          "api": "https://github.com/bvaughn/react-resizable-panels"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/resizable.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "scroll-area",
+      "type": "registry:ui",
+      "title": "Scroll Area",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/scroll-area.json",
+        "examples": [
+          "scroll-area"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/scroll-area",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/scroll-area-example.tsx",
+          "api": "https://www.radix-ui.com/docs/primitives/components/scroll-area.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/scroll-area.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "title": "Select",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/select.json",
+        "examples": [
+          "select"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/select",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/select-example.tsx",
+          "api": "https://www.radix-ui.com/docs/primitives/components/select.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/select.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "title": "Separator",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/separator.json",
+        "examples": [
+          "separator"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/separator",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/separator-example.tsx",
+          "api": "https://www.radix-ui.com/docs/primitives/components/separator.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/separator.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sheet",
+      "type": "registry:ui",
+      "title": "Sheet",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/button.json"
+      ],
+      "categories": [
+        "Overlays"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/sheet.json",
+        "examples": [
+          "sheet"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/sheet",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/sheet-example.tsx",
+          "api": "https://www.radix-ui.com/docs/primitives/components/dialog.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/sheet.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sidebar",
+      "type": "registry:ui",
+      "title": "Sidebar",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/button.json",
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/separator.json",
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/sheet.json",
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/tooltip.json",
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/input.json",
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/use-mobile.json",
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/skeleton.json"
+      ],
+      "categories": [
+        "Navigation"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/sidebar.json",
+        "examples": [
+          "sidebar",
+          "sidebar-icon",
+          "sidebar-inset",
+          "sidebar-floating"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/sidebar",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/sidebar-example.tsx"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/sidebar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "title": "Skeleton",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Feedback"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/skeleton.json",
+        "examples": [
+          "skeleton"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/skeleton",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/skeleton-example.tsx"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/skeleton.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "slider",
+      "type": "registry:ui",
+      "title": "Slider",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/slider.json",
+        "examples": [
+          "slider"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/slider",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/slider-example.tsx",
+          "api": "https://www.radix-ui.com/docs/primitives/components/slider.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/slider.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sonner",
+      "type": "registry:ui",
+      "title": "Sonner",
+      "description": "",
+      "dependencies": [
+        "sonner",
+        "next-themes"
+      ],
+      "categories": [
+        "Overlays"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/sonner.json",
+        "examples": [
+          "sonner"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/sonner",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/sonner-example.tsx",
+          "api": "https://sonner.emilkowal.ski"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/sonner.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sortable",
+      "type": "registry:ui",
+      "title": "Sortable List",
+      "description": "",
+      "dependencies": [
+        "cn",
+        "@dnd-kit/core",
+        "@dnd-kit/modifiers",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities",
+        "radix-ui"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "@diceui",
+        "upstream": "https://diceui.com/r/radix-nova/sortable.json",
+        "examples": [
+          "sortable"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/ui/sortable.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "lib/compose-refs.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "spinner",
+      "type": "registry:ui",
+      "title": "Spinner",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Feedback"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/spinner.json",
+        "examples": [
+          "spinner"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/spinner",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/spinner-example.tsx"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/spinner.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "stepper",
+      "type": "registry:ui",
+      "title": "Stepper",
+      "description": "",
+      "dependencies": [
+        "cn",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/button.json",
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/use-as-ref.json",
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/use-isomorphic-layout-effect.json",
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/use-lazy-ref.json"
+      ],
+      "categories": [
+        "Navigation"
+      ],
+      "meta": {
+        "source": "@diceui",
+        "upstream": "https://diceui.com/r/radix-nova/stepper.json",
+        "examples": [
+          "stepper"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/ui/stepper.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "lib/compose-refs.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "title": "Switch",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/switch.json",
+        "examples": [
+          "switch"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/switch",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/switch-example.tsx",
+          "api": "https://www.radix-ui.com/docs/primitives/components/switch.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/switch.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "title": "Table",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/table.json",
+        "examples": [
+          "table"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/table",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/table-example.tsx"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/table.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "title": "Tabs",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Navigation"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/tabs.json",
+        "examples": [
+          "tabs"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/tabs",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/tabs-example.tsx",
+          "api": "https://www.radix-ui.com/docs/primitives/components/tabs.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/tabs.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tags-input",
+      "type": "registry:ui",
+      "title": "Tags Input",
+      "description": "",
+      "dependencies": [
+        "cn",
+        "@diceui/tags-input"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "@diceui",
+        "upstream": "https://diceui.com/r/radix-nova/tags-input.json",
+        "examples": [
+          "tags-input"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/ui/tags-input.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "title": "Textarea",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/textarea.json",
+        "examples": [
+          "textarea"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/textarea",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/textarea-example.tsx"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/textarea.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "timeline",
+      "type": "registry:ui",
+      "title": "Timeline",
+      "description": "",
+      "dependencies": [
+        "cn",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/use-isomorphic-layout-effect.json",
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/use-lazy-ref.json"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "@diceui",
+        "upstream": "https://diceui.com/r/radix-nova/timeline.json",
+        "examples": [
+          "timeline"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/ui/timeline.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "lib/compose-refs.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "toggle",
+      "type": "registry:ui",
+      "title": "Toggle",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/toggle.json",
+        "examples": [
+          "toggle"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/toggle",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/toggle-example.tsx",
+          "api": "https://www.radix-ui.com/docs/primitives/components/toggle.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/toggle.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "toggle-group",
+      "type": "registry:ui",
+      "title": "Toggle Group",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/toggle.json"
+      ],
+      "categories": [
+        "Forms & Inputs"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/toggle-group.json",
+        "examples": [
+          "toggle-group"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/toggle-group",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/toggle-group-example.tsx",
+          "api": "https://www.radix-ui.com/docs/primitives/components/toggle-group.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/toggle-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "title": "Tooltip",
+      "description": "",
+      "dependencies": [
+        "cn"
+      ],
+      "docs": "The `tooltip` component has been added. Remember to wrap your app with the `TooltipProvider` component.\n\n```tsx title=\"app/layout.tsx\"\nimport { TooltipProvider } from \"@/components/ui/tooltip\"\n\nexport default function RootLayout({ children }: { children: React.ReactNode }) {\n  return (\n    <html lang=\"en\">\n      <body>\n        <TooltipProvider>{children}</TooltipProvider>\n      </body>\n    </html>\n  )\n}\n```\n",
+      "categories": [
+        "Overlays"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/tooltip.json",
+        "examples": [
+          "tooltip"
+        ],
+        "links": {
+          "docs": "https://ui.shadcn.com/docs/components/radix/tooltip",
+          "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/tooltip-example.tsx",
+          "api": "https://www.radix-ui.com/docs/primitives/components/tooltip.md"
+        }
+      },
+      "files": [
+        {
+          "path": "components/ui/tooltip.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tree",
+      "type": "registry:ui",
+      "title": "Tree View",
+      "description": "A composable tree component with animated expand/collapse and customizable nodes.",
+      "author": "Hayden Bleasel <hello@haydenbleasel.com>",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "@kibo-ui",
+        "upstream": "https://www.kibo-ui.com/r/tree.json",
+        "examples": [
+          "tree"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/kibo-ui/tree/index.tsx",
+          "type": "registry:ui",
+          "target": "components/kibo-ui/tree/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "use-as-ref",
+      "type": "registry:hook",
+      "title": "use-as-ref",
+      "description": "",
+      "registryDependencies": [
+        "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/use-isomorphic-layout-effect.json"
+      ],
+      "meta": {
+        "source": "@diceui",
+        "upstream": "https://diceui.com/r/radix-nova/use-as-ref.json"
+      },
+      "files": [
+        {
+          "path": "hooks/use-as-ref.ts",
+          "type": "registry:hook"
+        }
+      ]
+    },
+    {
+      "name": "use-isomorphic-layout-effect",
+      "type": "registry:hook",
+      "title": "use-isomorphic-layout-effect",
+      "description": "",
+      "meta": {
+        "source": "@diceui",
+        "upstream": "https://diceui.com/r/radix-nova/use-isomorphic-layout-effect.json"
+      },
+      "files": [
+        {
+          "path": "hooks/use-isomorphic-layout-effect.ts",
+          "type": "registry:hook"
+        }
+      ]
+    },
+    {
+      "name": "use-lazy-ref",
+      "type": "registry:hook",
+      "title": "use-lazy-ref",
+      "description": "",
+      "meta": {
+        "source": "@diceui",
+        "upstream": "https://diceui.com/r/radix-nova/use-lazy-ref.json"
+      },
+      "files": [
+        {
+          "path": "hooks/use-lazy-ref.ts",
+          "type": "registry:hook"
+        }
+      ]
+    },
+    {
+      "name": "use-mobile",
+      "type": "registry:hook",
+      "title": "use-mobile",
+      "description": "",
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/use-mobile.json"
+      },
+      "files": [
+        {
+          "path": "hooks/use-mobile.ts",
+          "type": "registry:hook"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dropzone",
+  "type": "registry:ui",
+  "title": "dropzone",
+  "description": "Allows users to drag-and-drop files into a container to upload or process them.",
+  "author": "Hayden Bleasel <hello@haydenbleasel.com>",
+  "dependencies": [
+    "lucide-react",
+    "react-dropzone"
+  ],
+  "devDependencies": [],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "type": "registry:ui",
+      "path": "index.tsx",
+      "target": "components/kibo-ui/dropzone/index.tsx"
+    }
+  ],
+  "css": {}
+}

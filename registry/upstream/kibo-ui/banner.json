@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "banner",
+  "type": "registry:ui",
+  "title": "banner",
+  "description": "A banner is a full-width component that can be used to show a message and action to the user.",
+  "author": "Hayden Bleasel <hello@haydenbleasel.com>",
+  "dependencies": [
+    "@radix-ui/react-use-controllable-state",
+    "lucide-react"
+  ],
+  "devDependencies": [],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "type": "registry:ui",
+      "path": "index.tsx",
+      "target": "components/kibo-ui/banner/index.tsx"
+    }
+  ],
+  "css": {}
+}

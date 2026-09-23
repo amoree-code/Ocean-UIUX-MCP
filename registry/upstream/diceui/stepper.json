@@ -1,0 +1,26 @@
+{
+  "name": "stepper",
+  "type": "registry:ui",
+  "dependencies": [
+    "cn",
+    "radix-ui"
+  ],
+  "registryDependencies": [
+    "button",
+    "@diceui/use-as-ref",
+    "@diceui/use-isomorphic-layout-effect",
+    "@diceui/use-lazy-ref"
+  ],
+  "files": [
+    {
+      "path": "ui/stepper.tsx",
+      "type": "registry:ui",
+      "target": ""
+    },
+    {
+      "path": "lib/compose-refs.ts",
+      "type": "registry:lib",
+      "target": ""
+    }
+  ]
+}

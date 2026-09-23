@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-isomorphic-layout-effect",
+  "type": "registry:hook",
+  "title": "use-isomorphic-layout-effect",
+  "description": "",
+  "files": [
+    {
+      "path": "hooks/use-isomorphic-layout-effect.ts",
+      "type": "registry:hook",
+      "content": "import * as React from \"react\";\n\nconst useIsomorphicLayoutEffect =\n  typeof window !== \"undefined\" ? React.useLayoutEffect : React.useEffect;\n\nexport { useIsomorphicLayoutEffect };\n"
+    }
+  ],
+  "meta": {
+    "source": "@diceui",
+    "upstream": "https://diceui.com/r/radix-nova/use-isomorphic-layout-effect.json"
+  }
+}

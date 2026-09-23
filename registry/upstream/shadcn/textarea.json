@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "textarea",
+  "dependencies": [
+    "cn"
+  ],
+  "files": [
+    {
+      "path": "registry/radix-nova/ui/textarea.tsx",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "links": {
+      "docs": "https://ui.shadcn.com/docs/components/radix/textarea",
+      "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/textarea-example.tsx"
+    }
+  },
+  "type": "registry:ui"
+}

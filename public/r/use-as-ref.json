@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-as-ref",
+  "type": "registry:hook",
+  "title": "use-as-ref",
+  "description": "",
+  "registryDependencies": [
+    "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/use-isomorphic-layout-effect.json"
+  ],
+  "files": [
+    {
+      "path": "hooks/use-as-ref.ts",
+      "type": "registry:hook",
+      "content": "import * as React from \"react\";\n\nimport { useIsomorphicLayoutEffect } from \"@/hooks/use-isomorphic-layout-effect\";\n\nfunction useAsRef<T>(props: T) {\n  const ref = React.useRef<T>(props);\n\n  useIsomorphicLayoutEffect(() => {\n    ref.current = props;\n  });\n\n  return ref;\n}\n\nexport { useAsRef };\n"
+    }
+  ],
+  "meta": {
+    "source": "@diceui",
+    "upstream": "https://diceui.com/r/radix-nova/use-as-ref.json"
+  }
+}
