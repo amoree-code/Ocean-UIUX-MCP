@@ -6,42 +6,35 @@ A personal shadcn/ui registry with a demo gallery, exposed to every AI client th
   components (`@kibo-ui`, `@diceui`, `@magicui`).
 - **Gallery**: live previews by category, all 8 official styles side by side, RTL/LTR, dark mode,
   accent and radius controls.
-- **Registry**: `public/r/*.json`, self-contained. Every dependency resolves inside this registry.
-- **MCP server**: `mcp/server.mjs`. Name a component in any AI client and it gets installed.
+- **Registry**: self-contained. Every dependency resolves inside it, so it needs no hosting.
+- **MCP server**: `packages/mcp` (npm `ameer-ui-mcp`). Name a component in any AI client and it gets installed.
 
 ## Use it from any AI client
 
-Registered (user scope) in Claude Code, Codex and Claude Desktop. In any project, ask for a
-component by name. For example, "add a kanban board and a tags input", or "set up shadcn here".
-
-| Tool | Does |
-|---|---|
-| `search_components` | find by name, purpose or category |
-| `get_component` | deps, files, a working usage example, optional source |
-| `add_components` | installs into the project (`shadcn add` with local registry paths) |
-| `init_project` | shadcn init with Radix, nova and `--rtl`; or creates a new Next.js app |
-
-Register it in another client:
-
-```json
-{ "mcpServers": { "ameer-ui": {
-  "command": "/opt/homebrew/bin/node",
-  "args": ["/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/mcp/server.mjs"],
-  "env": { "PATH": "/opt/homebrew/bin:/usr/bin:/bin" }
-} } }
-```
-
-Without MCP, the CLI works directly:
+The MCP server is the npm package [`ameer-ui-mcp`](packages/mcp/README.md). It bundles the registry, so it
+works on any machine with no hosting:
 
 ```bash
-pnpm dlx shadcn@latest add /Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/kanban.json
+npx -y ameer-ui-mcp install      # registers in Claude Code, Codex, Cursor, VS Code, Windsurf, Claude Desktop
+npx -y ameer-ui-mcp doctor
 ```
+
+Until it is published, register this checkout instead:
+
+```bash
+node packages/mcp/bin/cli.mjs install --runner local
+```
+
+Then ask for a component by name in any project, for example "add a kanban board and a tags input".
+Tools: `search_components`, `get_component`, `add_components`, `init_project`.
 
 ## Develop
 
 ```bash
 pnpm dev --port 3100          # gallery
-pnpm registry:build           # rebuild public/r from components/ (after any component change)
+pnpm registry:build           # local registry in public/r (gitignored, absolute paths)
+pnpm mcp:bundle               # rebuild the npm package's bundled registry + examples (commit it)
+pnpm mcp:test                 # package tests; `pnpm --filter ameer-ui-mcp test:e2e` for the slow e2e
 pnpm gen:styles               # regenerate style loaders after editing components/previews
 pnpm sync:styles              # re-vendor all 8 official styles from shadcn (slow)
 ```
@@ -60,8 +53,10 @@ Install it in a scratch copy first, never directly: `@coss` overwrote our Radix 
 Base UI versions. Diff, copy only the new files, add a catalog entry and a preview, then run
 `pnpm registry:build`.
 
-## Hosting later
+## Hosting later (optional)
 
-The registry is local, so it works offline on this machine. To share it with other machines or a team,
-push this repo privately and rebuild with `REGISTRY_BASE=<raw URL>/public/r`. The shadcn CLI supports
-private GitHub registries via `gh` auth.
+The package needs no hosting. For a team that wants one shared, updatable registry without
+republishing, deploy the gallery (e.g. Vercel). Build the registry into `public/r` with
+`REGISTRY_BASE=https://<host>/r`, then point clients at it with
+`AMEER_UI_REGISTRY_URL=https://<host>/r`. The shadcn CLI also supports private GitHub
+registries through `gh` auth.

@@ -9,11 +9,12 @@
 //   node scripts/build-registry.mjs            # build from cache (fetches only what's missing)
 //   node scripts/build-registry.mjs --refresh  # refetch upstream metadata
 //   REGISTRY_BASE=https://host/r node scripts/build-registry.mjs   # when hosted
+//   REGISTRY_OUT=dir REGISTRY_BASE={{AMEER_UI_REGISTRY}} …          # npm bundle (see packages/mcp)
 import fs from "node:fs"
 import path from "node:path"
 
 const root = path.resolve(import.meta.dirname, "..")
-const outDir = path.join(root, "public/r")
+const outDir = path.resolve(root, process.env.REGISTRY_OUT ?? "public/r")
 const cacheDir = path.join(root, "registry/upstream")
 const base = (process.env.REGISTRY_BASE ?? outDir).replace(/\/$/, "")
 const refresh = process.argv.includes("--refresh")
@@ -126,7 +127,7 @@ for (const item of built.values()) fs.writeFileSync(path.join(outDir, `${item.na
 const index = {
   $schema: "https://ui.shadcn.com/schema/registry.json",
   name: "ameer",
-  homepage: "http://localhost:3100",
+  homepage: "https://github.com/amoree-code/MCP-Shadcn",
   items: [...built.values()]
     .sort((a, b) => a.name.localeCompare(b.name))
     .map(({ files, $schema, ...rest }) => ({ ...rest, files: files.map(({ content, ...f }) => f) })),
