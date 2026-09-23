@@ -1,0 +1,31 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "skeleton",
+  "type": "registry:ui",
+  "title": "Skeleton",
+  "description": "Loading placeholder shapes. shimmer loading هيكل تحميل",
+  "dependencies": [
+    "cn"
+  ],
+  "categories": [
+    "Feedback"
+  ],
+  "files": [
+    {
+      "path": "components/ui/skeleton.tsx",
+      "type": "registry:ui",
+      "content": "import { cn } from \"cn\"\n\nfunction Skeleton({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"skeleton\"\n      className={cn(\"animate-pulse rounded-md bg-muted\", className)}\n      {...props}\n    />\n  )\n}\n\nexport { Skeleton }\n"
+    }
+  ],
+  "meta": {
+    "source": "shadcn",
+    "upstream": "https://ui.shadcn.com/r/styles/radix-nova/skeleton.json",
+    "examples": [
+      "skeleton"
+    ],
+    "links": {
+      "docs": "https://ui.shadcn.com/docs/components/radix/skeleton",
+      "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/skeleton-example.tsx"
+    }
+  }
+}

@@ -1,0 +1,100 @@
+export type CatalogEntry = {
+  slug: string
+  title: string
+  category: string
+  /** registry item this demo exercises; null for multi-component overviews */
+  ui: string | null
+  /** registry the ui item comes from; official items are vendored per style */
+  source: "shadcn" | "@kibo-ui" | "@diceui" | "@magicui"
+}
+
+export const catalog: CatalogEntry[] = [
+  { slug: "demo", title: "Kitchen Sink", category: "Overview", ui: null, source: "shadcn" },
+  { slug: "component-example", title: "Components Overview", category: "Overview", ui: null, source: "shadcn" },
+  { slug: "button", title: "Button", category: "Forms & Inputs", ui: "button", source: "shadcn" },
+  { slug: "button-group", title: "Button Group", category: "Forms & Inputs", ui: "button-group", source: "shadcn" },
+  { slug: "checkbox", title: "Checkbox", category: "Forms & Inputs", ui: "checkbox", source: "shadcn" },
+  { slug: "combobox", title: "Combobox", category: "Forms & Inputs", ui: "combobox", source: "shadcn" },
+  { slug: "field", title: "Field", category: "Forms & Inputs", ui: "field", source: "shadcn" },
+  { slug: "input", title: "Input", category: "Forms & Inputs", ui: "input", source: "shadcn" },
+  { slug: "input-group", title: "Input Group", category: "Forms & Inputs", ui: "input-group", source: "shadcn" },
+  { slug: "input-otp", title: "Input Otp", category: "Forms & Inputs", ui: "input-otp", source: "shadcn" },
+  { slug: "label", title: "Label", category: "Forms & Inputs", ui: "label", source: "shadcn" },
+  { slug: "native-select", title: "Native Select", category: "Forms & Inputs", ui: "native-select", source: "shadcn" },
+  { slug: "radio-group", title: "Radio Group", category: "Forms & Inputs", ui: "radio-group", source: "shadcn" },
+  { slug: "select", title: "Select", category: "Forms & Inputs", ui: "select", source: "shadcn" },
+  { slug: "slider", title: "Slider", category: "Forms & Inputs", ui: "slider", source: "shadcn" },
+  { slug: "switch", title: "Switch", category: "Forms & Inputs", ui: "switch", source: "shadcn" },
+  { slug: "textarea", title: "Textarea", category: "Forms & Inputs", ui: "textarea", source: "shadcn" },
+  { slug: "toggle", title: "Toggle", category: "Forms & Inputs", ui: "toggle", source: "shadcn" },
+  { slug: "toggle-group", title: "Toggle Group", category: "Forms & Inputs", ui: "toggle-group", source: "shadcn" },
+  { slug: "calendar", title: "Calendar", category: "Forms & Inputs", ui: "calendar", source: "shadcn" },
+  { slug: "questionnaire", title: "Questionnaire", category: "Forms & Inputs", ui: "questionnaire", source: "shadcn" },
+  { slug: "attachment", title: "Attachment", category: "Forms & Inputs", ui: "attachment", source: "shadcn" },
+  { slug: "alert-dialog", title: "Alert Dialog", category: "Overlays", ui: "alert-dialog", source: "shadcn" },
+  { slug: "context-menu", title: "Context Menu", category: "Overlays", ui: "context-menu", source: "shadcn" },
+  { slug: "dialog", title: "Dialog", category: "Overlays", ui: "dialog", source: "shadcn" },
+  { slug: "drawer", title: "Drawer", category: "Overlays", ui: "drawer", source: "shadcn" },
+  { slug: "dropdown-menu", title: "Dropdown Menu", category: "Overlays", ui: "dropdown-menu", source: "shadcn" },
+  { slug: "hover-card", title: "Hover Card", category: "Overlays", ui: "hover-card", source: "shadcn" },
+  { slug: "menubar", title: "Menubar", category: "Overlays", ui: "menubar", source: "shadcn" },
+  { slug: "popover", title: "Popover", category: "Overlays", ui: "popover", source: "shadcn" },
+  { slug: "sheet", title: "Sheet", category: "Overlays", ui: "sheet", source: "shadcn" },
+  { slug: "tooltip", title: "Tooltip", category: "Overlays", ui: "tooltip", source: "shadcn" },
+  { slug: "command", title: "Command", category: "Overlays", ui: "command", source: "shadcn" },
+  { slug: "sonner", title: "Sonner", category: "Overlays", ui: "sonner", source: "shadcn" },
+  { slug: "breadcrumb", title: "Breadcrumb", category: "Navigation", ui: "breadcrumb", source: "shadcn" },
+  { slug: "navigation-menu", title: "Navigation Menu", category: "Navigation", ui: "navigation-menu", source: "shadcn" },
+  { slug: "pagination", title: "Pagination", category: "Navigation", ui: "pagination", source: "shadcn" },
+  { slug: "tabs", title: "Tabs", category: "Navigation", ui: "tabs", source: "shadcn" },
+  { slug: "sidebar", title: "Sidebar", category: "Navigation", ui: "sidebar", source: "shadcn" },
+  { slug: "sidebar-icon", title: "Sidebar Icon", category: "Navigation", ui: "sidebar", source: "shadcn" },
+  { slug: "sidebar-inset", title: "Sidebar Inset", category: "Navigation", ui: "sidebar", source: "shadcn" },
+  { slug: "sidebar-floating", title: "Sidebar Floating", category: "Navigation", ui: "sidebar", source: "shadcn" },
+  { slug: "accordion", title: "Accordion", category: "Data Display", ui: "accordion", source: "shadcn" },
+  { slug: "avatar", title: "Avatar", category: "Data Display", ui: "avatar", source: "shadcn" },
+  { slug: "badge", title: "Badge", category: "Data Display", ui: "badge", source: "shadcn" },
+  { slug: "card", title: "Card", category: "Data Display", ui: "card", source: "shadcn" },
+  { slug: "carousel", title: "Carousel", category: "Data Display", ui: "carousel", source: "shadcn" },
+  { slug: "chart", title: "Chart", category: "Data Display", ui: "chart", source: "shadcn" },
+  { slug: "collapsible", title: "Collapsible", category: "Data Display", ui: "collapsible", source: "shadcn" },
+  { slug: "empty", title: "Empty", category: "Data Display", ui: "empty", source: "shadcn" },
+  { slug: "item", title: "Item", category: "Data Display", ui: "item", source: "shadcn" },
+  { slug: "kbd", title: "Kbd", category: "Data Display", ui: "kbd", source: "shadcn" },
+  { slug: "table", title: "Table", category: "Data Display", ui: "table", source: "shadcn" },
+  { slug: "marker", title: "Marker", category: "Data Display", ui: "marker", source: "shadcn" },
+  { slug: "bubble", title: "Bubble", category: "Data Display", ui: "bubble", source: "shadcn" },
+  { slug: "aspect-ratio", title: "Aspect Ratio", category: "Data Display", ui: "aspect-ratio", source: "shadcn" },
+  { slug: "scroll-area", title: "Scroll Area", category: "Data Display", ui: "scroll-area", source: "shadcn" },
+  { slug: "resizable", title: "Resizable", category: "Data Display", ui: "resizable", source: "shadcn" },
+  { slug: "separator", title: "Separator", category: "Data Display", ui: "separator", source: "shadcn" },
+  { slug: "alert", title: "Alert", category: "Feedback", ui: "alert", source: "shadcn" },
+  { slug: "progress", title: "Progress", category: "Feedback", ui: "progress", source: "shadcn" },
+  { slug: "skeleton", title: "Skeleton", category: "Feedback", ui: "skeleton", source: "shadcn" },
+  { slug: "spinner", title: "Spinner", category: "Feedback", ui: "spinner", source: "shadcn" },
+  // community registries — installed with the shadcn CLI, Radix-compatible, RTL-converted
+  { slug: "tags-input", title: "Tags Input", category: "Forms & Inputs", ui: "tags-input", source: "@diceui" },
+  { slug: "file-upload", title: "File Upload", category: "Forms & Inputs", ui: "file-upload", source: "@diceui" },
+  { slug: "dropzone", title: "Dropzone", category: "Forms & Inputs", ui: "dropzone", source: "@kibo-ui" },
+  { slug: "color-picker", title: "Color Picker", category: "Forms & Inputs", ui: "color-picker", source: "@kibo-ui" },
+  { slug: "rating", title: "Rating", category: "Forms & Inputs", ui: "rating", source: "@kibo-ui" },
+  { slug: "mini-calendar", title: "Mini Calendar", category: "Forms & Inputs", ui: "mini-calendar", source: "@kibo-ui" },
+  { slug: "stepper", title: "Stepper", category: "Navigation", ui: "stepper", source: "@diceui" },
+  { slug: "tree", title: "Tree View", category: "Data Display", ui: "tree", source: "@kibo-ui" },
+  { slug: "kanban", title: "Kanban", category: "Data Display", ui: "kanban", source: "@kibo-ui" },
+  { slug: "gantt", title: "Gantt", category: "Data Display", ui: "gantt", source: "@kibo-ui" },
+  { slug: "timeline", title: "Timeline", category: "Data Display", ui: "timeline", source: "@diceui" },
+  { slug: "sortable", title: "Sortable List", category: "Data Display", ui: "sortable", source: "@diceui" },
+  { slug: "bento-grid", title: "Bento Grid", category: "Data Display", ui: "bento-grid", source: "@magicui" },
+  { slug: "number-ticker", title: "Number Ticker", category: "Data Display", ui: "number-ticker", source: "@magicui" },
+  { slug: "marquee", title: "Marquee", category: "Data Display", ui: "marquee", source: "@magicui" },
+  { slug: "animated-beam", title: "Animated Beam", category: "Data Display", ui: "animated-beam", source: "@magicui" },
+  { slug: "banner", title: "Banner", category: "Feedback", ui: "banner", source: "@kibo-ui" },
+  { slug: "announcement", title: "Announcement", category: "Feedback", ui: "announcement", source: "@kibo-ui" },
+]
+
+export const categories = [...new Set(catalog.map((e) => e.category))]
+
+export function findEntry(slug: string) {
+  return catalog.find((e) => e.slug === slug)
+}

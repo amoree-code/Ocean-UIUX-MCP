@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "drawer",
+  "dependencies": [
+    "cn",
+    "vaul"
+  ],
+  "files": [
+    {
+      "path": "registry/radix-nova/ui/drawer.tsx",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "links": {
+      "docs": "https://ui.shadcn.com/docs/components/radix/drawer",
+      "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/drawer-example.tsx",
+      "api": "https://vaul.emilkowal.ski/getting-started"
+    }
+  },
+  "type": "registry:ui"
+}

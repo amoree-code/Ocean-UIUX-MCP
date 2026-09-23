@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "slider",
+  "dependencies": [
+    "cn"
+  ],
+  "files": [
+    {
+      "path": "registry/radix-nova/ui/slider.tsx",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "links": {
+      "docs": "https://ui.shadcn.com/docs/components/radix/slider",
+      "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/slider-example.tsx",
+      "api": "https://www.radix-ui.com/docs/primitives/components/slider.md"
+    }
+  },
+  "type": "registry:ui"
+}

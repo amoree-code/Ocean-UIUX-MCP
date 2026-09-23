@@ -1,0 +1,24 @@
+{
+  "name": "sortable",
+  "type": "registry:ui",
+  "dependencies": [
+    "cn",
+    "@dnd-kit/core",
+    "@dnd-kit/modifiers",
+    "@dnd-kit/sortable",
+    "@dnd-kit/utilities",
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "ui/sortable.tsx",
+      "type": "registry:ui",
+      "target": ""
+    },
+    {
+      "path": "lib/compose-refs.ts",
+      "type": "registry:lib",
+      "target": ""
+    }
+  ]
+}

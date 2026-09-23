@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "attachment",
+  "dependencies": [
+    "cn"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "registry/radix-nova/ui/attachment.tsx",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

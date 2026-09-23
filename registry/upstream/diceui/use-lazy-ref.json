@@ -1,0 +1,11 @@
+{
+  "name": "use-lazy-ref",
+  "type": "registry:hook",
+  "files": [
+    {
+      "path": "hooks/use-lazy-ref.ts",
+      "type": "registry:hook",
+      "target": ""
+    }
+  ]
+}

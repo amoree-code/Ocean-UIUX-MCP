@@ -1,0 +1,15 @@
+{
+  "name": "tags-input",
+  "type": "registry:ui",
+  "dependencies": [
+    "cn",
+    "@diceui/tags-input"
+  ],
+  "files": [
+    {
+      "path": "ui/tags-input.tsx",
+      "type": "registry:ui",
+      "target": ""
+    }
+  ]
+}

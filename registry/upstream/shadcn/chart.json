@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "chart",
+  "dependencies": [
+    "cn",
+    "recharts@3.8.0"
+  ],
+  "files": [
+    {
+      "path": "registry/radix-nova/ui/chart.tsx",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "links": {
+      "docs": "https://ui.shadcn.com/docs/components/radix/chart",
+      "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/chart-example.tsx"
+    }
+  },
+  "type": "registry:ui"
+}

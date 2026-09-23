@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "calendar",
+  "dependencies": [
+    "cn",
+    "react-day-picker@latest",
+    "date-fns"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "registry/radix-nova/ui/calendar.tsx",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "links": {
+      "docs": "https://ui.shadcn.com/docs/components/radix/calendar",
+      "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/calendar-example.tsx",
+      "api": "https://react-day-picker.js.org"
+    }
+  },
+  "type": "registry:ui"
+}
