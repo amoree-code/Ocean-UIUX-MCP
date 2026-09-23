@@ -3,7 +3,7 @@
   "name": "sidebar",
   "type": "registry:ui",
   "title": "Sidebar",
-  "description": "",
+  "description": "App sidebar layout: collapsible, icon mode, inset, floating; dashboard navigation. nav layout شريط جانبي لوحة تحكم",
   "dependencies": [
     "cn"
   ],

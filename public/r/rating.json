@@ -3,7 +3,7 @@
   "name": "rating",
   "type": "registry:ui",
   "title": "Rating",
-  "description": "A star rating component with keyboard navigation and hover effects.",
+  "description": "Star rating input/display. stars review تقييم",
   "author": "Hayden Bleasel <hello@haydenbleasel.com>",
   "dependencies": [
     "@radix-ui/react-use-controllable-state",

@@ -3,7 +3,7 @@
   "name": "dialog",
   "type": "registry:ui",
   "title": "Dialog",
-  "description": "",
+  "description": "Modal window for forms and details. modal popup نافذة منبثقة",
   "dependencies": [
     "cn"
   ],

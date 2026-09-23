@@ -3,7 +3,7 @@
   "name": "card",
   "type": "registry:ui",
   "title": "Card",
-  "description": "",
+  "description": "Container with header, content and footer; dashboard panels, KPI cards. panel stat بطاقة",
   "dependencies": [
     "cn"
   ],

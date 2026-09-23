@@ -3,7 +3,7 @@
   "name": "color-picker",
   "type": "registry:ui",
   "title": "Color Picker",
-  "description": "Allows users to select a color. Modeled after the color picker in Figma.",
+  "description": "Color picker with hue/alpha sliders, eyedropper and format output. colour لون",
   "author": "Hayden Bleasel <hello@haydenbleasel.com>",
   "dependencies": [
     "color",

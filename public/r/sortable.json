@@ -3,7 +3,7 @@
   "name": "sortable",
   "type": "registry:ui",
   "title": "Sortable List",
-  "description": "",
+  "description": "Drag-and-drop sortable list to reorder items. drag drop reorder dnd سحب وإفلات ترتيب",
   "dependencies": [
     "cn",
     "@dnd-kit/core",

@@ -3,7 +3,7 @@
   "name": "checkbox",
   "type": "registry:ui",
   "title": "Checkbox",
-  "description": "",
+  "description": "Checkbox for boolean and multi-select choices. tick مربع اختيار",
   "dependencies": [
     "cn"
   ],

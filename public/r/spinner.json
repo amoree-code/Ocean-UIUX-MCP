@@ -3,7 +3,7 @@
   "name": "spinner",
   "type": "registry:ui",
   "title": "Spinner",
-  "description": "",
+  "description": "Loading spinner. loader تحميل",
   "dependencies": [
     "cn"
   ],

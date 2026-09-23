@@ -3,7 +3,7 @@
   "name": "slider",
   "type": "registry:ui",
   "title": "Slider",
-  "description": "",
+  "description": "Range slider for numeric values and ranges. range منزلق",
   "dependencies": [
     "cn"
   ],

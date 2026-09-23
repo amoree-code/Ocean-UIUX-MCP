@@ -3,7 +3,7 @@
   "name": "separator",
   "type": "registry:ui",
   "title": "Separator",
-  "description": "",
+  "description": "Horizontal or vertical divider line. divider فاصل",
   "dependencies": [
     "cn"
   ],

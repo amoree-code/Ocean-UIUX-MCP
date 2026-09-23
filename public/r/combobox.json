@@ -3,7 +3,7 @@
   "name": "combobox",
   "type": "registry:ui",
   "title": "Combobox",
-  "description": "",
+  "description": "Searchable select / autocomplete, single or multiple values. autocomplete multi-select typeahead بحث اختيار",
   "dependencies": [
     "cn",
     "@base-ui/react"

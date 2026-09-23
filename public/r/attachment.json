@@ -3,7 +3,7 @@
   "name": "attachment",
   "type": "registry:ui",
   "title": "Attachment",
-  "description": "",
+  "description": "File attachment chip/list for messages and forms. file attach مرفق",
   "dependencies": [
     "cn"
   ],

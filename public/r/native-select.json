@@ -3,7 +3,7 @@
   "name": "native-select",
   "type": "registry:ui",
   "title": "Native Select",
-  "description": "",
+  "description": "Styled native HTML select; best on mobile and in long forms. dropdown اختيار",
   "dependencies": [
     "cn"
   ],

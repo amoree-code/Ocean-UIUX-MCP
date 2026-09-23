@@ -3,7 +3,7 @@
   "name": "field",
   "type": "registry:ui",
   "title": "Field",
-  "description": "",
+  "description": "Form field layout: label, control, description, error; field groups. form layout validation حقل نموذج",
   "dependencies": [
     "cn"
   ],

@@ -3,7 +3,7 @@
   "name": "accordion",
   "type": "registry:ui",
   "title": "Accordion",
-  "description": "",
+  "description": "Vertically stacked collapsible sections; FAQ, settings groups. expand collapse قائمة قابلة للطي",
   "dependencies": [
     "cn"
   ],

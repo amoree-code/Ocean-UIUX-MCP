@@ -3,7 +3,7 @@
   "name": "dropdown-menu",
   "type": "registry:ui",
   "title": "Dropdown Menu",
-  "description": "",
+  "description": "Menu opened from a button: actions, checkboxes, radio items, submenus. actions menu قائمة منسدلة",
   "dependencies": [
     "cn"
   ],

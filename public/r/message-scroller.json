@@ -3,7 +3,7 @@
   "name": "message-scroller",
   "type": "registry:ui",
   "title": "Message Scroller",
-  "description": "",
+  "description": "Auto-scrolling chat message list for AI conversations. chat scroll محادثة",
   "dependencies": [
     "cn",
     "@shadcn/react"

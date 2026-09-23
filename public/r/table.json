@@ -3,7 +3,7 @@
   "name": "table",
   "type": "registry:ui",
   "title": "Table",
-  "description": "",
+  "description": "Data table primitives; build data tables with TanStack Table and server-side pagination. data grid جدول بيانات",
   "dependencies": [
     "cn"
   ],

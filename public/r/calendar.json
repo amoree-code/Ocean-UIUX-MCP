@@ -3,7 +3,7 @@
   "name": "calendar",
   "type": "registry:ui",
   "title": "Calendar",
-  "description": "",
+  "description": "Month calendar for picking dates and date ranges; base of date pickers. date picker تاريخ تقويم",
   "dependencies": [
     "cn",
     "react-day-picker@latest",

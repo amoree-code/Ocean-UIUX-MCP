@@ -3,7 +3,7 @@
   "name": "menubar",
   "type": "registry:ui",
   "title": "Menubar",
-  "description": "",
+  "description": "Desktop-style application menu bar. app menu شريط قوائم",
   "dependencies": [
     "cn"
   ],

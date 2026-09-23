@@ -3,7 +3,7 @@
   "name": "toggle-group",
   "type": "registry:ui",
   "title": "Toggle Group",
-  "description": "",
+  "description": "Group of toggle buttons; single or multiple selection; view switchers. segmented مجموعة تبديل",
   "dependencies": [
     "cn"
   ],

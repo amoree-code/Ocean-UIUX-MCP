@@ -3,7 +3,7 @@
   "name": "stepper",
   "type": "registry:ui",
   "title": "Stepper",
-  "description": "",
+  "description": "Multi-step wizard progress indicator; onboarding, checkout. wizard steps خطوات",
   "dependencies": [
     "cn",
     "radix-ui"

@@ -3,7 +3,7 @@
   "name": "mini-calendar",
   "type": "registry:ui",
   "title": "Mini Calendar",
-  "description": "A composable mini calendar component for picking dates close to today.",
+  "description": "Compact horizontal day picker (few days at a time). date strip تقويم مصغر",
   "author": "Hayden Bleasel <hello@haydenbleasel.com>",
   "dependencies": [
     "@radix-ui/react-use-controllable-state",

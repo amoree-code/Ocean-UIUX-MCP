@@ -3,7 +3,7 @@
   "name": "avatar",
   "type": "registry:ui",
   "title": "Avatar",
-  "description": "",
+  "description": "User image with initials fallback; avatar groups. profile picture صورة المستخدم",
   "dependencies": [
     "cn"
   ],

@@ -3,7 +3,7 @@
   "name": "breadcrumb",
   "type": "registry:ui",
   "title": "Breadcrumb",
-  "description": "",
+  "description": "Hierarchical path navigation showing the current page location. مسار التنقل",
   "dependencies": [
     "cn"
   ],

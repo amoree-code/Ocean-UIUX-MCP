@@ -3,7 +3,7 @@
   "name": "alert-dialog",
   "type": "registry:ui",
   "title": "Alert Dialog",
-  "description": "",
+  "description": "Modal confirmation that interrupts the user; delete/destructive confirm. confirm popup تأكيد حذف",
   "dependencies": [
     "cn"
   ],

@@ -3,7 +3,7 @@
   "name": "command",
   "type": "registry:ui",
   "title": "Command",
-  "description": "",
+  "description": "Command palette / searchable menu (cmdk); ⌘K search. spotlight search لوحة أوامر بحث",
   "dependencies": [
     "cn",
     "cmdk"

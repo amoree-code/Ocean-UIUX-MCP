@@ -3,7 +3,7 @@
   "name": "textarea",
   "type": "registry:ui",
   "title": "Textarea",
-  "description": "",
+  "description": "Multi-line text input. multiline نص طويل",
   "dependencies": [
     "cn"
   ],

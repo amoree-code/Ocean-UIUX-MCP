@@ -3,7 +3,7 @@
   "name": "button-group",
   "type": "registry:ui",
   "title": "Button Group",
-  "description": "",
+  "description": "Groups related buttons into one segmented control. segmented toolbar مجموعة أزرار",
   "dependencies": [
     "cn"
   ],

@@ -3,7 +3,7 @@
   "name": "resizable",
   "type": "registry:ui",
   "title": "Resizable",
-  "description": "",
+  "description": "Resizable split panels. split pane لوحات قابلة لتغيير الحجم",
   "dependencies": [
     "cn",
     "react-resizable-panels"

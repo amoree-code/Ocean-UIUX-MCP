@@ -3,7 +3,7 @@
   "name": "dropzone",
   "type": "registry:ui",
   "title": "Dropzone",
-  "description": "Allows users to drag-and-drop files into a container to upload or process them.",
+  "description": "Drag-and-drop area to upload files. drag drop upload رفع ملفات",
   "author": "Hayden Bleasel <hello@haydenbleasel.com>",
   "dependencies": [
     "lucide-react",

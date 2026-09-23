@@ -3,7 +3,7 @@
   "name": "collapsible",
   "type": "registry:ui",
   "title": "Collapsible",
-  "description": "",
+  "description": "Show/hide a single region of content. expand toggle إظهار إخفاء",
   "categories": [
     "Data Display"
   ],

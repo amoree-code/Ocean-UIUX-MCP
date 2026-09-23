@@ -3,7 +3,7 @@
   "name": "questionnaire",
   "type": "registry:ui",
   "title": "Questionnaire",
-  "description": "",
+  "description": "Multi-question survey / form flow. survey quiz wizard استبيان",
   "dependencies": [
     "cn",
     "@shadcn/react"

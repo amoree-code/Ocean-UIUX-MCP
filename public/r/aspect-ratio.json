@@ -3,7 +3,7 @@
   "name": "aspect-ratio",
   "type": "registry:ui",
   "title": "Aspect Ratio",
-  "description": "",
+  "description": "Keeps media at a fixed width/height ratio; images, video, maps. نسبة العرض",
   "categories": [
     "Data Display"
   ],

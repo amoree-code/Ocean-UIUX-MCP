@@ -3,7 +3,7 @@
   "name": "sonner",
   "type": "registry:ui",
   "title": "Sonner",
-  "description": "",
+  "description": "Toast notifications (sonner). toast notification snackbar إشعار",
   "dependencies": [
     "sonner",
     "next-themes"

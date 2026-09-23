@@ -3,7 +3,7 @@
   "name": "marquee",
   "type": "registry:ui",
   "title": "Marquee",
-  "description": "An infinite scrolling component that can be used to display text, images, or videos.",
+  "description": "Infinite scrolling row of items; logos, testimonials. scroll ticker شريط متحرك",
   "cssVars": {
     "theme": {
       "animate-marquee": "marquee var(--duration) infinite linear",

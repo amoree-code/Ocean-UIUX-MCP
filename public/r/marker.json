@@ -3,7 +3,7 @@
   "name": "marker",
   "type": "registry:ui",
   "title": "Marker",
-  "description": "",
+  "description": "Highlight / marker text annotation. highlight تمييز",
   "dependencies": [
     "cn"
   ],

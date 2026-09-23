@@ -3,7 +3,7 @@
   "name": "timeline",
   "type": "registry:ui",
   "title": "Timeline",
-  "description": "",
+  "description": "Vertical/horizontal timeline of events or steps; activity feed, history. activity log history خط زمني",
   "dependencies": [
     "cn",
     "radix-ui"

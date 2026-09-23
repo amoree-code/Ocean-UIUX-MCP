@@ -3,7 +3,7 @@
   "name": "tooltip",
   "type": "registry:ui",
   "title": "Tooltip",
-  "description": "",
+  "description": "Short hint shown on hover/focus. hint تلميح",
   "dependencies": [
     "cn"
   ],

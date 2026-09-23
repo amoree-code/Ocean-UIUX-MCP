@@ -3,7 +3,7 @@
   "name": "radio-group",
   "type": "registry:ui",
   "title": "Radio Group",
-  "description": "",
+  "description": "Single choice from a set of options. option اختيار واحد",
   "dependencies": [
     "cn"
   ],

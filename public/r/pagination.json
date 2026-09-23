@@ -3,7 +3,7 @@
   "name": "pagination",
   "type": "registry:ui",
   "title": "Pagination",
-  "description": "",
+  "description": "Page navigation for tables and lists; pairs with server-side pagination. pages paging ترقيم الصفحات",
   "dependencies": [
     "cn"
   ],

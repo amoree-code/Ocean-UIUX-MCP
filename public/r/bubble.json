@@ -3,7 +3,7 @@
   "name": "bubble",
   "type": "registry:ui",
   "title": "Bubble",
-  "description": "",
+  "description": "Chat message bubble for conversational UIs. chat رسالة محادثة",
   "dependencies": [
     "cn"
   ],

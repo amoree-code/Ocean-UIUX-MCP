@@ -3,7 +3,7 @@
   "name": "carousel",
   "type": "registry:ui",
   "title": "Carousel",
-  "description": "",
+  "description": "Swipeable slider of items or images. slider gallery عرض شرائح",
   "dependencies": [
     "cn",
     "embla-carousel-react"

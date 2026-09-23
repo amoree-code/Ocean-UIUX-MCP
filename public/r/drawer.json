@@ -3,7 +3,7 @@
   "name": "drawer",
   "type": "registry:ui",
   "title": "Drawer",
-  "description": "",
+  "description": "Bottom sheet that slides up, mobile-friendly (vaul). bottom sheet درج",
   "dependencies": [
     "cn",
     "vaul"

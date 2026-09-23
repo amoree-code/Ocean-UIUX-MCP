@@ -3,7 +3,7 @@
   "name": "file-upload",
   "type": "registry:ui",
   "title": "File Upload",
-  "description": "",
+  "description": "File upload with drag-and-drop area, file list and progress. drag drop dropzone رفع ملفات",
   "dependencies": [
     "cn",
     "radix-ui"

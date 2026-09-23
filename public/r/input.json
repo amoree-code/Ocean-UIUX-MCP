@@ -3,7 +3,7 @@
   "name": "input",
   "type": "registry:ui",
   "title": "Input",
-  "description": "",
+  "description": "Text input field. textbox form حقل إدخال",
   "dependencies": [
     "cn"
   ],

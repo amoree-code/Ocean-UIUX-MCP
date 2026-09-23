@@ -3,7 +3,7 @@
   "name": "message",
   "type": "registry:ui",
   "title": "Message",
-  "description": "",
+  "description": "Chat message layout for AI assistants (avatar, content, actions). ai chat رسالة",
   "dependencies": [
     "cn"
   ],

@@ -3,7 +3,7 @@
   "name": "scroll-area",
   "type": "registry:ui",
   "title": "Scroll Area",
-  "description": "",
+  "description": "Custom styled scroll container. scrollbar تمرير",
   "dependencies": [
     "cn"
   ],

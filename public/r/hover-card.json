@@ -3,7 +3,7 @@
   "name": "hover-card",
   "type": "registry:ui",
   "title": "Hover Card",
-  "description": "",
+  "description": "Rich preview card shown on hover. preview بطاقة عند التمرير",
   "dependencies": [
     "cn"
   ],

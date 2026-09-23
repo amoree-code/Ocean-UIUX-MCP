@@ -3,7 +3,7 @@
   "name": "kbd",
   "type": "registry:ui",
   "title": "Kbd",
-  "description": "",
+  "description": "Keyboard key / shortcut display. shortcut hotkey اختصار",
   "dependencies": [
     "cn"
   ],

@@ -3,7 +3,7 @@
   "name": "navigation-menu",
   "type": "registry:ui",
   "title": "Navigation Menu",
-  "description": "",
+  "description": "Top site navigation with dropdown panels. nav header قائمة تنقل",
   "dependencies": [
     "cn"
   ],

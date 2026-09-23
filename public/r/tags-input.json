@@ -3,7 +3,7 @@
   "name": "tags-input",
   "type": "registry:ui",
   "title": "Tags Input",
-  "description": "",
+  "description": "Input that turns entries into removable tags/chips; multi-value. chips multi tags وسوم",
   "dependencies": [
     "cn",
     "@diceui/tags-input"

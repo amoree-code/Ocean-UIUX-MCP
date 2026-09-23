@@ -3,7 +3,7 @@
   "name": "direction",
   "type": "registry:ui",
   "title": "Direction",
-  "description": "",
+  "description": "DirectionProvider for RTL/LTR (Arabic, Kurdish). Required for RTL apps. rtl ltr اتجاه عربي",
   "categories": [
     "Utilities"
   ],

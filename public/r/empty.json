@@ -3,7 +3,7 @@
   "name": "empty",
   "type": "registry:ui",
   "title": "Empty",
-  "description": "",
+  "description": "Empty state with icon, message and call to action; no data / no results. placeholder لا توجد بيانات",
   "dependencies": [
     "cn"
   ],

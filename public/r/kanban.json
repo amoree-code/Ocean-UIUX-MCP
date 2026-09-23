@@ -3,7 +3,7 @@
   "name": "kanban",
   "type": "registry:ui",
   "title": "Kanban",
-  "description": "A kanban board is a visual tool that helps you manage and visualize your work. It is a board with columns, and each column represents a status, e.g. \"Backlog\", \"In Progress\", \"Done\".",
+  "description": "Kanban board with drag-and-drop cards between columns; task boards. drag drop board tasks سحب وإفلات مهام",
   "author": "Hayden Bleasel <hello@haydenbleasel.com>",
   "dependencies": [
     "@dnd-kit/core",

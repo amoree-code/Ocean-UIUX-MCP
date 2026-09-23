@@ -3,7 +3,7 @@
   "name": "tabs",
   "type": "registry:ui",
   "title": "Tabs",
-  "description": "",
+  "description": "Tabbed views to switch between panels. tab تبويبات",
   "dependencies": [
     "cn"
   ],

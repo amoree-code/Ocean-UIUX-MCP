@@ -3,7 +3,7 @@
   "name": "button",
   "type": "registry:ui",
   "title": "Button",
-  "description": "",
+  "description": "Buttons in default, secondary, outline, ghost, destructive, link variants and sizes. action زر",
   "dependencies": [
     "cn"
   ],

@@ -3,7 +3,7 @@
   "name": "alert",
   "type": "registry:ui",
   "title": "Alert",
-  "description": "",
+  "description": "Inline callout for info, success, warning or error messages. notice message تنبيه",
   "dependencies": [
     "cn"
   ],

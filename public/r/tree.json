@@ -3,7 +3,7 @@
   "name": "tree",
   "type": "registry:ui",
   "title": "Tree View",
-  "description": "A composable tree component with animated expand/collapse and customizable nodes.",
+  "description": "Tree view with expandable nested nodes; file trees, hierarchies. hierarchy nested شجرة",
   "author": "Hayden Bleasel <hello@haydenbleasel.com>",
   "dependencies": [
     "motion",

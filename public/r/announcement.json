@@ -3,7 +3,7 @@
   "name": "announcement",
   "type": "registry:ui",
   "title": "Announcement",
-  "description": "A compound badge designed to display an announcement.",
+  "description": "Small badge-style announcement / what's-new pill. badge new إعلان",
   "author": "Hayden Bleasel <hello@haydenbleasel.com>",
   "registryDependencies": [
     "/Users/amer.abdulkareem/Documents/ameer/MCP-Shadcn/public/r/badge.json"

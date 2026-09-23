@@ -17,6 +17,8 @@ const outDir = path.join(root, "public/r")
 const cacheDir = path.join(root, "registry/upstream")
 const base = (process.env.REGISTRY_BASE ?? outDir).replace(/\/$/, "")
 const refresh = process.argv.includes("--refresh")
+// Our own purpose + keywords (English and Arabic) so MCP search finds items by intent.
+const descriptions = JSON.parse(fs.readFileSync(path.join(root, "registry/descriptions.json"), "utf8"))
 
 const upstream = {
   shadcn: (n) => `https://ui.shadcn.com/r/styles/radix-nova/${n}.json`,
@@ -96,7 +98,7 @@ async function build(source, name) {
       name,
       type: up.type,
       title: extra.title ?? up.title ?? name,
-      description: up.description ?? extra.description ?? "",
+      description: descriptions[name] ?? up.description ?? "",
       ...(up.author ? { author: up.author } : {}),
       ...(up.dependencies?.length ? { dependencies: up.dependencies } : {}),
       ...(up.devDependencies?.length ? { devDependencies: up.devDependencies } : {}),

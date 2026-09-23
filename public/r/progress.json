@@ -3,7 +3,7 @@
   "name": "progress",
   "type": "registry:ui",
   "title": "Progress",
-  "description": "",
+  "description": "Progress bar for loading or completion. loading شريط تقدم",
   "dependencies": [
     "cn"
   ],

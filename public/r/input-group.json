@@ -3,7 +3,7 @@
   "name": "input-group",
   "type": "registry:ui",
   "title": "Input Group",
-  "description": "",
+  "description": "Input with icons, buttons, prefixes/suffixes; search boxes. addon prefix search حقل مع أيقونة",
   "dependencies": [
     "cn"
   ],

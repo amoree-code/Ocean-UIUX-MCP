@@ -3,7 +3,7 @@
   "name": "chart",
   "type": "registry:ui",
   "title": "Chart",
-  "description": "",
+  "description": "Charts (bar, line, area, pie) built on Recharts with theme colors and tooltips. graph analytics dashboard رسم بياني مخطط",
   "dependencies": [
     "cn",
     "recharts@3.8.0"

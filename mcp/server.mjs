@@ -107,7 +107,8 @@ server.registerTool(
   },
   async ({ query, category }) => {
     const items = loadIndex().filter((i) => i.categories?.length) // hide internal dependency items
-    const terms = (query ?? "").toLowerCase().split(/\s+/).filter(Boolean)
+    const stop = new Set(["a", "an", "and", "or", "the", "for", "with", "of", "to", "in", "component", "components"])
+    const terms = (query ?? "").toLowerCase().split(/\s+/).filter((t) => t && !stop.has(t))
     const hits = items
       .filter((i) => !category || i.categories.some((c) => c.toLowerCase() === category.toLowerCase()))
       .map((i) => ({ i, s: terms.length ? score(i, terms) : 1 }))

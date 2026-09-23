@@ -3,7 +3,7 @@
   "name": "item",
   "type": "registry:ui",
   "title": "Item",
-  "description": "",
+  "description": "Flexible list row with media, title, description and actions. list row عنصر قائمة",
   "dependencies": [
     "cn"
   ],

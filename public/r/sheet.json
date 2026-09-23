@@ -3,7 +3,7 @@
   "name": "sheet",
   "type": "registry:ui",
   "title": "Sheet",
-  "description": "",
+  "description": "Side panel sliding from an edge; filters, details, mobile nav. side panel drawer لوحة جانبية",
   "dependencies": [
     "cn"
   ],

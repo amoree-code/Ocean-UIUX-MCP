@@ -3,7 +3,7 @@
   "name": "badge",
   "type": "registry:ui",
   "title": "Badge",
-  "description": "",
+  "description": "Small status or count label; tags, statuses. pill chip label شارة حالة",
   "dependencies": [
     "cn"
   ],
