@@ -1,15 +1,29 @@
-import { Geist, Geist_Mono } from "next/font/google"
+import type { Metadata } from "next"
+import { Geist, Geist_Mono, IBM_Plex_Sans_Arabic } from "next/font/google"
 
 import "./globals.css"
+import { GalleryProvider } from "@/components/gallery/gallery-provider"
 import { ThemeProvider } from "@/components/theme-provider"
-import { cn } from "@/lib/utils";
+import { Toaster } from "@/components/ui/sonner"
+import { cn } from "@/lib/utils"
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'})
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" })
 
 const fontMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
 })
+
+const fontArabic = IBM_Plex_Sans_Arabic({
+  subsets: ["arabic"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-arabic",
+})
+
+export const metadata: Metadata = {
+  title: "Ameer UI — shadcn gallery",
+  description: "Pick the shadcn components and variants for the Ameer UI registry.",
+}
 
 export default function RootLayout({
   children,
@@ -19,11 +33,23 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      dir="ltr"
       suppressHydrationWarning
-      className={cn("antialiased", fontMono.variable, "font-sans", geist.variable)}
+      className={cn(
+        "antialiased",
+        fontMono.variable,
+        fontArabic.variable,
+        "font-sans",
+        geist.variable
+      )}
     >
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <GalleryProvider>
+            {children}
+            <Toaster />
+          </GalleryProvider>
+        </ThemeProvider>
       </body>
     </html>
   )
