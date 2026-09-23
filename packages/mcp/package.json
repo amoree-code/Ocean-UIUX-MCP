@@ -5,7 +5,7 @@
   "keywords": ["mcp", "model-context-protocol", "shadcn", "shadcn-ui", "registry", "rtl", "arabic", "react", "nextjs", "radix"],
   "license": "MIT",
   "author": "AMEER ABDULKAREEM JABBAR LAMI",
-  "repository": { "type": "git", "url": "git+https://github.com/amoree-code/MCP-Shadcn.git", "directory": "packages/mcp" },
+  "repository": { "type": "git", "url": "git+https://github.com/amoree-code/Ocean-UIUX-MCP.git", "directory": "packages/mcp" },
   "type": "module",
   "bin": { "ocean-uiux-mcp": "bin/cli.mjs" },
   "exports": { "./server": "./src/server.mjs", "./registry": "./src/registry.mjs" },

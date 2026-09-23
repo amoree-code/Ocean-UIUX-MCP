@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "ocean",
-  "homepage": "https://github.com/amoree-code/MCP-Shadcn",
+  "homepage": "https://github.com/amoree-code/Ocean-UIUX-MCP",
   "items": [
     {
       "name": "accordion",

@@ -127,7 +127,7 @@ for (const item of built.values()) fs.writeFileSync(path.join(outDir, `${item.na
 const index = {
   $schema: "https://ui.shadcn.com/schema/registry.json",
   name: "ocean",
-  homepage: "https://github.com/amoree-code/MCP-Shadcn",
+  homepage: "https://github.com/amoree-code/Ocean-UIUX-MCP",
   items: [...built.values()]
     .sort((a, b) => a.name.localeCompare(b.name))
     .map(({ files, $schema, ...rest }) => ({ ...rest, files: files.map(({ content, ...f }) => f) })),

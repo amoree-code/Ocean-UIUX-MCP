@@ -84,7 +84,7 @@ Requires Node.js 20 or newer. Components target React 19, Tailwind CSS v4 and th
 
 ## Develop
 
-This package lives in [MCP-Shadcn](https://github.com/amoree-code/MCP-Shadcn), next to the gallery
+This package lives in [MCP-Shadcn](https://github.com/amoree-code/Ocean-UIUX-MCP), next to the gallery
 that previews every component and style.
 
 ```bash
