@@ -86,3 +86,17 @@ Directory of ~300 community registries: https://ui.shadcn.com/docs/directory
 
 ui.shadcn.com/docs/{cli,registry,registry/registry-item-json,components-json,mcp,rtl,theming,changelog} ·
 github.com/shadcn-ui/registry-template · tweakcn.com · registry.directory
+
+## Community components added (verified: installed + typecheck + RTL grep, 2026-09-23)
+
+| Namespace | Items |
+|---|---|
+| `@kibo-ui` | tree, kanban, gantt, dropzone, color-picker, rating, banner, announcement, mini-calendar |
+| `@diceui` | stepper, timeline, tags-input, sortable, file-upload |
+| `@magicui` | number-ticker, marquee, animated-beam, bento-grid |
+
+Rejected:
+- `@coss/*` is built on Base UI. Installing it **overwrote** our Radix `button`, `input`, `popover`, `calendar`, `label`, `scroll-area`, `spinner` and `combobox`, which is what caused the fake "asChild missing" errors. Always install community items into a scratch copy first and diff before copying anything back.
+- Broken upstream: `@kibo-ui/table` (targets TanStack v8, the repo resolves v9), `@kibo-ui/image-crop` (monorepo import path), `@kibo-ui/code-block` (renamed react-icons export), `@diceui/phone-input` (store-hook signature).
+- `@shadcnblocks` pro blocks need a paid key. `@diceui/marquee` collides with `@magicui/marquee`.
+- Upstream type bug: kibo `MiniCalendar` `defaultValue` can't be set.

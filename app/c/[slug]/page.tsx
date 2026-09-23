@@ -1,12 +1,12 @@
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react"
+import { ChevronLeftIcon, ChevronRightIcon, Columns3Icon } from "lucide-react"
 
+import { ExampleView } from "@/components/gallery/example-view"
 import { GalleryHeader } from "@/components/gallery/gallery-header"
 import { PickBar } from "@/components/gallery/pick-bar"
 import { Button } from "@/components/ui/button"
 import { catalog, findEntry } from "@/lib/catalog"
-import { exampleLoaders } from "@/lib/examples"
 
 export function generateStaticParams() {
   return catalog.map((e) => ({ slug: e.slug }))
@@ -21,7 +21,6 @@ export default async function ComponentPage({
   const entry = findEntry(slug)
   if (!entry) notFound()
 
-  const { default: Example } = await exampleLoaders[slug]()
   const index = catalog.indexOf(entry)
   const prev = catalog[index - 1]
   const next = catalog[index + 1]
@@ -34,6 +33,7 @@ export default async function ComponentPage({
         {entry.ui && (
           <code className="hidden rounded bg-muted px-1.5 py-0.5 font-mono text-xs md:inline">
             pnpm dlx shadcn add @ameer/{entry.ui}
+            {entry.source !== "shadcn" && ` · from ${entry.source}`}
           </code>
         )}
       </GalleryHeader>
@@ -54,11 +54,19 @@ export default async function ComponentPage({
             </Link>
           </Button>
         )}
-        <div className="ms-auto">
+        <div className="ms-auto flex flex-wrap items-center gap-2">
+          {entry.ui && entry.source === "shadcn" && (
+            <Button asChild variant="outline" size="sm">
+              <Link href={`/compare/${slug}`}>
+                <Columns3Icon />
+                Compare styles
+              </Link>
+            </Button>
+          )}
           <PickBar slug={slug} />
         </div>
       </div>
-      <Example />
+      <ExampleView slug={slug} community={entry.source !== "shadcn"} />
     </>
   )
 }

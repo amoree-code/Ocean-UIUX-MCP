@@ -4,6 +4,7 @@ import * as React from "react"
 
 import { DirectionProvider } from "@/components/ui/direction"
 import { TooltipProvider } from "@/components/ui/tooltip"
+import { styles, type Style } from "@/lib/style-loaders"
 
 export const accents = ["neutral", "blue", "green", "violet", "orange", "rose"] as const
 export const radii = ["0", "0.3", "0.5", "0.625", "0.75", "1"] as const
@@ -12,9 +13,9 @@ export type Accent = (typeof accents)[number]
 export type Radius = (typeof radii)[number]
 export type Dir = "ltr" | "rtl"
 
-type Settings = { dir: Dir; accent: Accent; radius: Radius }
+type Settings = { dir: Dir; accent: Accent; radius: Radius; style: Style }
 
-const defaults: Settings = { dir: "ltr", accent: "neutral", radius: "0.625" }
+const defaults: Settings = { dir: "ltr", accent: "neutral", radius: "0.625", style: "nova" }
 const STORAGE_KEY = "gallery-settings"
 
 const GalleryContext = React.createContext<{
@@ -32,7 +33,9 @@ export function useGallery() {
 function readStored(): Settings {
   try {
     const raw = localStorage.getItem(STORAGE_KEY)
-    return raw ? { ...defaults, ...JSON.parse(raw) } : defaults
+    const stored = raw ? { ...defaults, ...JSON.parse(raw) } : defaults
+    // a style removed since the last visit falls back to the default
+    return styles.includes(stored.style) ? stored : { ...stored, style: defaults.style }
   } catch {
     return defaults
   }

@@ -19,6 +19,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
+import { styles, type Style } from "@/lib/style-loaders"
 
 const swatch: Record<Accent, string> = {
   neutral: "oklch(0.205 0 0)",
@@ -45,6 +46,19 @@ export function GalleryControls() {
         <ToggleGroupItem value="ltr">EN · LTR</ToggleGroupItem>
         <ToggleGroupItem value="rtl">عربي · RTL</ToggleGroupItem>
       </ToggleGroup>
+
+      <Select value={settings.style} onValueChange={(v) => update({ style: v as Style })}>
+        <SelectTrigger size="sm" className="w-28" aria-label="Style">
+          <SelectValue />
+        </SelectTrigger>
+        <SelectContent>
+          {styles.map((s) => (
+            <SelectItem key={s} value={s}>
+              style {s}
+            </SelectItem>
+          ))}
+        </SelectContent>
+      </Select>
 
       <Select value={settings.accent} onValueChange={(v) => update({ accent: v as Accent })}>
         <SelectTrigger size="sm" className="w-32" aria-label="Accent color">
