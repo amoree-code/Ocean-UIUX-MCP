@@ -8,8 +8,8 @@
     "cn"
   ],
   "registryDependencies": [
-    "{{AMEER_UI_REGISTRY}}/label.json",
-    "{{AMEER_UI_REGISTRY}}/separator.json"
+    "{{OCEAN_UIUX_REGISTRY}}/label.json",
+    "{{OCEAN_UIUX_REGISTRY}}/separator.json"
   ],
   "categories": [
     "Forms & Inputs"

@@ -6,7 +6,7 @@
   "description": "Small badge-style announcement / what's-new pill. badge new إعلان",
   "author": "Hayden Bleasel <hello@haydenbleasel.com>",
   "registryDependencies": [
-    "{{AMEER_UI_REGISTRY}}/badge.json"
+    "{{OCEAN_UIUX_REGISTRY}}/badge.json"
   ],
   "categories": [
     "Feedback"

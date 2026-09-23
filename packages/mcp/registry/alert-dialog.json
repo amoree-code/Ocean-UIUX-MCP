@@ -8,7 +8,7 @@
     "cn"
   ],
   "registryDependencies": [
-    "{{AMEER_UI_REGISTRY}}/button.json"
+    "{{OCEAN_UIUX_REGISTRY}}/button.json"
   ],
   "categories": [
     "Overlays"

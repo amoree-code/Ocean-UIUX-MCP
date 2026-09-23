@@ -8,7 +8,7 @@
     "cn"
   ],
   "registryDependencies": [
-    "{{AMEER_UI_REGISTRY}}/toggle.json"
+    "{{OCEAN_UIUX_REGISTRY}}/toggle.json"
   ],
   "categories": [
     "Forms & Inputs"

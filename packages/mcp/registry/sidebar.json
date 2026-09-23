@@ -8,13 +8,13 @@
     "cn"
   ],
   "registryDependencies": [
-    "{{AMEER_UI_REGISTRY}}/button.json",
-    "{{AMEER_UI_REGISTRY}}/separator.json",
-    "{{AMEER_UI_REGISTRY}}/sheet.json",
-    "{{AMEER_UI_REGISTRY}}/tooltip.json",
-    "{{AMEER_UI_REGISTRY}}/input.json",
-    "{{AMEER_UI_REGISTRY}}/use-mobile.json",
-    "{{AMEER_UI_REGISTRY}}/skeleton.json"
+    "{{OCEAN_UIUX_REGISTRY}}/button.json",
+    "{{OCEAN_UIUX_REGISTRY}}/separator.json",
+    "{{OCEAN_UIUX_REGISTRY}}/sheet.json",
+    "{{OCEAN_UIUX_REGISTRY}}/tooltip.json",
+    "{{OCEAN_UIUX_REGISTRY}}/input.json",
+    "{{OCEAN_UIUX_REGISTRY}}/use-mobile.json",
+    "{{OCEAN_UIUX_REGISTRY}}/skeleton.json"
   ],
   "categories": [
     "Navigation"

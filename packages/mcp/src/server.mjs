@@ -1,4 +1,4 @@
-// MCP server: exposes the Ameer UI shadcn registry to any MCP client.
+// MCP server: exposes the Ocean UI/UX shadcn registry to any MCP client.
 import { spawn } from "node:child_process"
 import fs from "node:fs"
 import path from "node:path"
@@ -11,7 +11,7 @@ import { VERSION } from "./registry.mjs"
 const STOP_WORDS = new Set(["a", "an", "and", "or", "the", "for", "with", "of", "to", "in", "component", "components"])
 
 export const INSTRUCTIONS = [
-  "Ameer UI is a shadcn/ui registry: official shadcn components (radix-nova style, RTL-ready",
+  "Ocean UI/UX is a shadcn/ui registry: official shadcn components (radix-nova style, RTL-ready",
   "logical classes) plus vetted community components (@kibo-ui, @diceui, @magicui).",
   "Whenever the user names a UI component or asks for UI (button, data table, date picker, kanban,",
   "stepper, sidebar, chart…) in a React/Next.js project, use these tools instead of writing the",
@@ -22,7 +22,7 @@ export const INSTRUCTIONS = [
 ].join(" ")
 
 function normalise(name) {
-  return name.trim().toLowerCase().replace(/^@ameer\//, "").replace(/\s+/g, "-")
+  return name.trim().toLowerCase().replace(/^@ocean\//, "").replace(/\s+/g, "-")
 }
 
 export function findItem(items, name) {
@@ -58,7 +58,7 @@ function summary(i) {
 }
 
 async function detectShadcnRunner() {
-  if (process.env.AMEER_UI_SHADCN) return process.env.AMEER_UI_SHADCN.split(" ")
+  if (process.env.OCEAN_UIUX_SHADCN) return process.env.OCEAN_UIUX_SHADCN.split(" ")
   const ok = (cmd) =>
     new Promise((resolve) => {
       const p = spawn(cmd, ["--version"], { stdio: "ignore", shell: process.platform === "win32" })
@@ -106,14 +106,14 @@ export function createServer(registry, { runner } = {}) {
   let shadcn = runner ? Promise.resolve(runner) : null
   const shadcnCmd = () => (shadcn ??= detectShadcnRunner())
 
-  const server = new McpServer({ name: "ameer-ui", version: VERSION }, { instructions: INSTRUCTIONS })
+  const server = new McpServer({ name: "ocean-uiux-mcp", version: VERSION }, { instructions: INSTRUCTIONS })
 
   server.registerTool(
     "search_components",
     {
       title: "Search components",
       description:
-        "Find components in the Ameer UI registry by name or purpose (English or Arabic keywords). Empty query lists everything.",
+        "Find components in the Ocean UI/UX registry by name or purpose (English or Arabic keywords). Empty query lists everything.",
       inputSchema: {
         query: z.string().optional().describe("e.g. 'date', 'table', 'drag', 'upload', 'جدول'"),
         category: z
@@ -168,7 +168,7 @@ export function createServer(registry, { runner } = {}) {
     {
       title: "Add components to a project",
       description:
-        "Install Ameer UI components (plus their dependencies and npm packages) into a project via the shadcn CLI. Needs components.json — call init_project first if missing.",
+        "Install Ocean UI/UX components (plus their dependencies and npm packages) into a project via the shadcn CLI. Needs components.json — call init_project first if missing.",
       inputSchema: {
         names: z.array(z.string()).min(1).describe("registry names, e.g. ['button', 'kanban']"),
         cwd: z.string().describe("absolute path to the project root"),

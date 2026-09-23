@@ -11,7 +11,7 @@ const previewsDir = path.join(pkg, "previews")
 execFileSync(process.execPath, [path.join(repo, "scripts/build-registry.mjs")], {
   cwd: repo,
   stdio: "inherit",
-  env: { ...process.env, REGISTRY_OUT: registryDir, REGISTRY_BASE: "{{AMEER_UI_REGISTRY}}" },
+  env: { ...process.env, REGISTRY_OUT: registryDir, REGISTRY_BASE: "{{OCEAN_UIUX_REGISTRY}}" },
 })
 
 const items = JSON.parse(fs.readFileSync(path.join(registryDir, "registry.json"), "utf8")).items

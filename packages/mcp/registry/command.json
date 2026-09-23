@@ -9,8 +9,8 @@
     "cmdk"
   ],
   "registryDependencies": [
-    "{{AMEER_UI_REGISTRY}}/dialog.json",
-    "{{AMEER_UI_REGISTRY}}/input-group.json"
+    "{{OCEAN_UIUX_REGISTRY}}/dialog.json",
+    "{{OCEAN_UIUX_REGISTRY}}/input-group.json"
   ],
   "categories": [
     "Overlays"

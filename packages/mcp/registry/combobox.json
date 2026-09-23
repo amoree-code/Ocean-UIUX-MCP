@@ -9,8 +9,8 @@
     "@base-ui/react"
   ],
   "registryDependencies": [
-    "{{AMEER_UI_REGISTRY}}/button.json",
-    "{{AMEER_UI_REGISTRY}}/input-group.json"
+    "{{OCEAN_UIUX_REGISTRY}}/button.json",
+    "{{OCEAN_UIUX_REGISTRY}}/input-group.json"
   ],
   "categories": [
     "Forms & Inputs"

@@ -8,8 +8,8 @@ import { Client } from "@modelcontextprotocol/sdk/client/index.js"
 import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js"
 
 const cache = fs.mkdtempSync(path.join(os.tmpdir(), "ameer-ui-cache-"))
-process.env.AMEER_UI_CACHE_DIR = cache
-delete process.env.AMEER_UI_REGISTRY_URL
+process.env.OCEAN_UIUX_CACHE_DIR = cache
+delete process.env.OCEAN_UIUX_REGISTRY_URL
 
 const { createRegistry } = await import("../src/registry.mjs")
 const { createServer } = await import("../src/server.mjs")

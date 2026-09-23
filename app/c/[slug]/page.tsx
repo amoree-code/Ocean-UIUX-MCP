@@ -32,7 +32,7 @@ export default async function ComponentPage({
         <span className="font-medium">{entry.title}</span>
         {entry.ui && (
           <code className="hidden rounded bg-muted px-1.5 py-0.5 font-mono text-xs md:inline">
-            pnpm dlx shadcn add @ameer/{entry.ui}
+            pnpm dlx shadcn add @ocean/{entry.ui}
             {entry.source !== "shadcn" && ` · from ${entry.source}`}
           </code>
         )}

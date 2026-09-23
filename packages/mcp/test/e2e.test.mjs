@@ -19,7 +19,7 @@ test("init_project + add_components over stdio produce a project that typechecks
     new StdioClientTransport({
       command: process.execPath,
       args: [CLI],
-      env: { ...process.env, AMEER_UI_CACHE_DIR: path.join(parent, ".cache") },
+      env: { ...process.env, OCEAN_UIUX_CACHE_DIR: path.join(parent, ".cache") },
     })
   )
   const call = async (name, args) => {

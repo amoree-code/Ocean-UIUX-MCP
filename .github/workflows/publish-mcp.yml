@@ -18,7 +18,7 @@ jobs:
           registry-url: https://registry.npmjs.org
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm --filter ameer-ui-mcp bundle
-      - run: pnpm --filter ameer-ui-mcp test
+      - run: pnpm --filter ocean-uiux-mcp bundle
+      - run: pnpm --filter ocean-uiux-mcp test
       - run: npm publish --access public
         working-directory: packages/mcp

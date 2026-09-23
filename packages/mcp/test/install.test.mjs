@@ -38,31 +38,31 @@ test("install writes every file-based client, keeps existing config, is idempote
   const toml = fs.readFileSync(path.join(home, ".codex/config.toml"), "utf8")
   assert.match(toml, /model = "x"/)
   assert.match(toml, /\[mcp_servers\.other\]/)
-  assert.match(toml, /\[mcp_servers\.ameer-ui\]\ncommand = ".+node.*"\nargs = \[".+cli\.mjs"\]/)
+  assert.match(toml, /\[mcp_servers\.ocean-uiux\]\ncommand = ".+node.*"\nargs = \[".+cli\.mjs"\]/)
   assert.ok(fs.existsSync(path.join(home, ".codex/config.toml.bak")))
 
   const cursor = JSON.parse(fs.readFileSync(path.join(home, ".cursor/mcp.json"), "utf8"))
   assert.ok(cursor.mcpServers.other, "existing server kept")
-  assert.equal(cursor.mcpServers["ameer-ui"].args[0], CLI)
+  assert.equal(cursor.mcpServers["ocean-uiux"].args[0], CLI)
 
   const vscode = JSON.parse(fs.readFileSync(vscodeFile(home), "utf8"))
-  assert.equal(vscode.servers["ameer-ui"].type, "stdio")
+  assert.equal(vscode.servers["ocean-uiux"].type, "stdio")
   assert.ok(fs.existsSync(path.join(home, ".codeium/windsurf/mcp_config.json")))
 
   const again = cli(home, "install", "--client", CLIENTS, "--runner", "local")
   assert.match(again.out, /already registered/)
-  assert.equal((fs.readFileSync(path.join(home, ".codex/config.toml"), "utf8").match(/mcp_servers\.ameer-ui\]/g) ?? []).length, 1)
+  assert.equal((fs.readFileSync(path.join(home, ".codex/config.toml"), "utf8").match(/mcp_servers\.ocean-uiux\]/g) ?? []).length, 1)
 
   const forced = cli(home, "install", "--client", "codex", "--runner", "local", "--force")
   assert.equal(forced.code, 0, forced.out)
-  assert.equal((fs.readFileSync(path.join(home, ".codex/config.toml"), "utf8").match(/mcp_servers\.ameer-ui\]/g) ?? []).length, 1)
+  assert.equal((fs.readFileSync(path.join(home, ".codex/config.toml"), "utf8").match(/mcp_servers\.ocean-uiux\]/g) ?? []).length, 1)
 
   const removed = cli(home, "uninstall", "--client", CLIENTS)
   assert.equal(removed.code, 0, removed.out)
   const tomlAfter = fs.readFileSync(path.join(home, ".codex/config.toml"), "utf8")
-  assert.doesNotMatch(tomlAfter, /ameer-ui/)
+  assert.doesNotMatch(tomlAfter, /ocean-uiux/)
   assert.match(tomlAfter, /\[mcp_servers\.other\]/)
-  assert.equal(JSON.parse(fs.readFileSync(path.join(home, ".cursor/mcp.json"), "utf8")).mcpServers["ameer-ui"], undefined)
+  assert.equal(JSON.parse(fs.readFileSync(path.join(home, ".cursor/mcp.json"), "utf8")).mcpServers["ocean-uiux"], undefined)
   fs.rmSync(home, { recursive: true, force: true })
 })
 
