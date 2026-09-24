@@ -85,5 +85,6 @@
   "primitives-texts-highlight": "Animates a highlight/marker sweep behind text on scroll into view. marker sweep emphasis تمييز نص",
   "animated-tooltip": "Avatar stack that reveals a name/role card that follows the cursor on hover; team lists, reviewer avatars. team hover card فريق تلميح",
   "flip-words": "Cycles through a list of words with a blur/scale exit and letter-by-letter entrance; rotating headlines. cycling words rotator نص متبدل",
-  "wobble-card": "Card that tilts toward the cursor with a parallax inner layer; feature panels, stat tiles. tilt parallax hover بطاقة تفاعلية"
+  "wobble-card": "Card that tilts toward the cursor with a parallax inner layer; feature panels, stat tiles. tilt parallax hover بطاقة تفاعلية",
+  "dashboard-01": "Full admin dashboard: collapsible sidebar, interactive area chart, draggable data table, section stat cards. admin panel data table sidebar لوحة تحكم كاملة"
 }

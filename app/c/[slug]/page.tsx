@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { notFound } from "next/navigation"
+import { notFound, redirect } from "next/navigation"
 import { ChevronLeftIcon, ChevronRightIcon, Columns3Icon } from "lucide-react"
 
 import { ExampleView } from "@/components/gallery/example-view"
@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button"
 import { catalog, findEntry } from "@/lib/catalog"
 
 export function generateStaticParams() {
-  return catalog.map((e) => ({ slug: e.slug }))
+  return catalog.filter((e) => !e.route).map((e) => ({ slug: e.slug }))
 }
 
 export default async function ComponentPage({
@@ -20,6 +20,7 @@ export default async function ComponentPage({
   const { slug } = await params
   const entry = findEntry(slug)
   if (!entry) notFound()
+  if (entry.route) redirect(entry.route)
 
   const index = catalog.indexOf(entry)
   const prev = catalog[index - 1]

@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { CheckIcon, Columns3Icon, PlugZapIcon, SearchIcon, TerminalIcon } from "lucide-react"
+import { CheckIcon, Columns3Icon, LayoutDashboardIcon, PlugZapIcon, SearchIcon, TerminalIcon } from "lucide-react"
 
 import { CopyCommandBlock, CopyCommandButton } from "@/components/gallery/copy-command"
 import { useGallery } from "@/components/gallery/gallery-provider"
@@ -140,7 +140,13 @@ export function CatalogGrid() {
                     )}
                   >
                     <WhenVisible className="flex h-56 items-center justify-center overflow-hidden border-b bg-muted/40 p-4 dark:bg-background">
-                      {entry.ui ? (
+                      {entry.route ? (
+                        <Button asChild variant="outline">
+                          <Link href={entry.route}>
+                            <LayoutDashboardIcon /> Open live page
+                          </Link>
+                        </Button>
+                      ) : entry.ui ? (
                         <StyledModule
                           kind="preview"
                           style={settings.style}
@@ -154,7 +160,7 @@ export function CatalogGrid() {
                       )}
                     </WhenVisible>
                     <div className="flex items-center gap-2 p-3">
-                      <Link href={`/c/${entry.slug}`} className="font-medium hover:underline">
+                      <Link href={entry.route ?? `/c/${entry.slug}`} className="font-medium hover:underline">
                         {entry.title}
                       </Link>
                       {entry.source !== "shadcn" && (
@@ -170,7 +176,7 @@ export function CatalogGrid() {
                             icon={<TerminalIcon />}
                           />
                         )}
-                        {entry.ui && entry.source === "shadcn" && (
+                        {entry.ui && entry.source === "shadcn" && !entry.route && (
                           <Button asChild size="icon-xs" variant="ghost" aria-label={`Compare ${entry.title} across styles`}>
                             <Link href={`/compare/${entry.slug}`}>
                               <Columns3Icon />

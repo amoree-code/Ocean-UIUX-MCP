@@ -6,6 +6,12 @@ export type CatalogEntry = {
   ui: string | null
   /** registry the ui item comes from; official items are vendored per style */
   source: "shadcn" | "@kibo-ui" | "@diceui" | "@magicui" | "@cult-ui" | "@animate-ui" | "@aceternity"
+  /**
+   * Set for full-page blocks (a whole dashboard/login page, not a small reusable component):
+   * the real route that renders it live, so the gallery links out instead of trying to
+   * squeeze a full page into a 224px preview card.
+   */
+  route?: string
 }
 
 export const catalog: CatalogEntry[] = [
@@ -99,6 +105,7 @@ export const catalog: CatalogEntry[] = [
   { slug: "animated-tooltip", title: "Animated Tooltip", category: "Overlays", ui: "animated-tooltip", source: "@aceternity" },
   { slug: "flip-words", title: "Flip Words", category: "Data Display", ui: "flip-words", source: "@aceternity" },
   { slug: "wobble-card", title: "Wobble Card", category: "Data Display", ui: "wobble-card", source: "@aceternity" },
+  { slug: "dashboard-01", title: "Dashboard", category: "Blocks", ui: "dashboard-01", source: "shadcn", route: "/dashboard" },
 ]
 
 export const categories = [...new Set(catalog.map((e) => e.category))]

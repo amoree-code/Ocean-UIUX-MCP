@@ -785,6 +785,100 @@
       ]
     },
     {
+      "name": "dashboard-01",
+      "type": "registry:block",
+      "title": "Dashboard",
+      "description": "Full admin dashboard: collapsible sidebar, interactive area chart, draggable data table, section stat cards. admin panel data table sidebar لوحة تحكم كاملة",
+      "dependencies": [
+        "@dnd-kit/core",
+        "@dnd-kit/modifiers",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities",
+        "@tanstack/react-table",
+        "zod"
+      ],
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/sidebar.json",
+        "{{OCEAN_UIUX_REGISTRY}}/breadcrumb.json",
+        "{{OCEAN_UIUX_REGISTRY}}/separator.json",
+        "{{OCEAN_UIUX_REGISTRY}}/label.json",
+        "{{OCEAN_UIUX_REGISTRY}}/chart.json",
+        "{{OCEAN_UIUX_REGISTRY}}/card.json",
+        "{{OCEAN_UIUX_REGISTRY}}/select.json",
+        "{{OCEAN_UIUX_REGISTRY}}/tabs.json",
+        "{{OCEAN_UIUX_REGISTRY}}/table.json",
+        "{{OCEAN_UIUX_REGISTRY}}/toggle-group.json",
+        "{{OCEAN_UIUX_REGISTRY}}/badge.json",
+        "{{OCEAN_UIUX_REGISTRY}}/button.json",
+        "{{OCEAN_UIUX_REGISTRY}}/checkbox.json",
+        "{{OCEAN_UIUX_REGISTRY}}/dropdown-menu.json",
+        "{{OCEAN_UIUX_REGISTRY}}/drawer.json",
+        "{{OCEAN_UIUX_REGISTRY}}/input.json",
+        "{{OCEAN_UIUX_REGISTRY}}/avatar.json",
+        "{{OCEAN_UIUX_REGISTRY}}/sheet.json",
+        "{{OCEAN_UIUX_REGISTRY}}/sonner.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/dashboard-01.json",
+        "examples": [
+          "dashboard-01"
+        ],
+        "iframeHeight": "1000px"
+      },
+      "files": [
+        {
+          "path": "app/dashboard/page.tsx",
+          "type": "registry:page",
+          "target": "app/dashboard/page.tsx"
+        },
+        {
+          "path": "app/dashboard/data.json",
+          "type": "registry:file",
+          "target": "app/dashboard/data.json"
+        },
+        {
+          "path": "components/blocks/dashboard-01/app-sidebar.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/dashboard-01/chart-area-interactive.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/dashboard-01/data-table.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/dashboard-01/nav-documents.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/dashboard-01/nav-main.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/dashboard-01/nav-secondary.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/dashboard-01/nav-user.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/dashboard-01/section-cards.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/dashboard-01/site-header.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "dialog",
       "type": "registry:ui",
       "title": "Dialog",

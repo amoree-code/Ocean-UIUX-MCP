@@ -53,11 +53,14 @@ async function fetchUpstream(source, name) {
 }
 
 // Where the upstream file lives in this repo.
-function localPath(file) {
+function localPath(file, itemName) {
   if (file.target) return file.target
   const name = path.basename(file.path)
   if (file.type === "registry:lib") return `lib/${name}`
   if (file.type === "registry:hook") return `hooks/${name}`
+  // A block's own sub-components aren't reusable primitives, so they don't belong in
+  // components/ui/ alongside them — keep them namespaced under the block's own folder.
+  if (file.type === "registry:component" || file.type === "registry:page") return `components/blocks/${itemName}/${name}`
   return `components/ui/${name}`
 }
 
@@ -92,7 +95,7 @@ async function build(source, name) {
   const job = (async () => {
     const up = await fetchUpstream(source, name)
     const files = (up.files ?? []).map((f) => {
-      const p = localPath(f)
+      const p = localPath(f, name)
       const abs = path.join(root, p)
       if (!fs.existsSync(abs)) throw new Error(`${source}/${name}: expected local file ${p}`)
       return { path: p, type: f.type, ...(f.target ? { target: f.target } : {}), content: fs.readFileSync(abs, "utf8") }
