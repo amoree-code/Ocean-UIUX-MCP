@@ -815,6 +815,31 @@
       ]
     },
     {
+      "name": "dock",
+      "type": "registry:ui",
+      "title": "Dock",
+      "description": "macOS-style dock that magnifies icons near the cursor; app launchers, floating toolbars. launcher magnify hover لوحة تطبيقات",
+      "dependencies": [
+        "motion"
+      ],
+      "categories": [
+        "Navigation"
+      ],
+      "meta": {
+        "source": "@cult-ui",
+        "upstream": "https://www.cult-ui.com/r/dock.json",
+        "examples": [
+          "dock"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/ui/dock.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "drawer",
       "type": "registry:ui",
       "title": "Drawer",
@@ -936,6 +961,32 @@
       ]
     },
     {
+      "name": "expandable",
+      "type": "registry:ui",
+      "title": "Expandable Card",
+      "description": "Card that grows in place to reveal more content on click or hover, height-animated. expand collapse card بطاقة قابلة للتوسيع",
+      "dependencies": [
+        "motion",
+        "react-use-measure"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "@cult-ui",
+        "upstream": "https://www.cult-ui.com/r/expandable.json",
+        "examples": [
+          "expandable"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/ui/expandable.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "field",
       "type": "registry:ui",
       "title": "Field",
@@ -1035,6 +1086,26 @@
           "path": "components/kibo-ui/gantt/index.tsx",
           "type": "registry:ui",
           "target": "components/kibo-ui/gantt/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "hooks-use-is-in-view",
+      "type": "registry:hook",
+      "title": "useIsInView",
+      "description": "A hook that allows you to check if an element is in view.",
+      "dependencies": [
+        "motion"
+      ],
+      "meta": {
+        "source": "@animate-ui",
+        "upstream": "https://animate-ui.com/r/hooks-use-is-in-view.json"
+      },
+      "files": [
+        {
+          "path": "hooks/use-is-in-view.tsx",
+          "type": "registry:hook",
+          "target": "hooks/use-is-in-view.tsx"
         }
       ]
     },
@@ -1284,6 +1355,23 @@
         {
           "path": "components/ui/label.tsx",
           "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "lib-get-strict-context",
+      "type": "registry:lib",
+      "title": "getStrictContext",
+      "description": "A hook that allows you to create a strict context.",
+      "meta": {
+        "source": "@animate-ui",
+        "upstream": "https://animate-ui.com/r/lib-get-strict-context.json"
+      },
+      "files": [
+        {
+          "path": "lib/get-strict-context.tsx",
+          "type": "registry:lib",
+          "target": "lib/get-strict-context.tsx"
         }
       ]
     },
@@ -1614,6 +1702,65 @@
         {
           "path": "components/ui/popover.tsx",
           "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "primitives-texts-highlight",
+      "type": "registry:ui",
+      "title": "Highlight Text",
+      "description": "Animates a highlight/marker sweep behind text on scroll into view. marker sweep emphasis تمييز نص",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/hooks-use-is-in-view.json"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "@animate-ui",
+        "upstream": "https://animate-ui.com/r/primitives-texts-highlight.json",
+        "examples": [
+          "highlight-text"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/animate-ui/primitives/texts/highlight.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/primitives/texts/highlight.tsx"
+        }
+      ]
+    },
+    {
+      "name": "primitives-texts-typing",
+      "type": "registry:ui",
+      "title": "Typing Text",
+      "description": "Text that types itself out character by character, optionally looping. typewriter effect animation كتابة متحركة",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/hooks-use-is-in-view.json",
+        "{{OCEAN_UIUX_REGISTRY}}/lib-get-strict-context.json"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "@animate-ui",
+        "upstream": "https://animate-ui.com/r/primitives-texts-typing.json",
+        "examples": [
+          "typing-text"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/animate-ui/primitives/texts/typing.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/primitives/texts/typing.tsx"
         }
       ]
     },
@@ -2297,6 +2444,28 @@
         {
           "path": "lib/compose-refs.ts",
           "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "timer",
+      "type": "registry:ui",
+      "title": "Timer",
+      "description": "Stopwatch/elapsed-time display with start, stop and reset; loading states, session timers. stopwatch countdown elapsed مؤقت عداد",
+      "categories": [
+        "Feedback"
+      ],
+      "meta": {
+        "source": "@cult-ui",
+        "upstream": "https://www.cult-ui.com/r/timer.json",
+        "examples": [
+          "timer"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/ui/timer.tsx",
+          "type": "registry:ui"
         }
       ]
     },

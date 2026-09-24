@@ -5,7 +5,7 @@ export type CatalogEntry = {
   /** registry item this demo exercises; null for multi-component overviews */
   ui: string | null
   /** registry the ui item comes from; official items are vendored per style */
-  source: "shadcn" | "@kibo-ui" | "@diceui" | "@magicui"
+  source: "shadcn" | "@kibo-ui" | "@diceui" | "@magicui" | "@cult-ui" | "@animate-ui"
 }
 
 export const catalog: CatalogEntry[] = [
@@ -91,6 +91,11 @@ export const catalog: CatalogEntry[] = [
   { slug: "animated-beam", title: "Animated Beam", category: "Data Display", ui: "animated-beam", source: "@magicui" },
   { slug: "banner", title: "Banner", category: "Feedback", ui: "banner", source: "@kibo-ui" },
   { slug: "announcement", title: "Announcement", category: "Feedback", ui: "announcement", source: "@kibo-ui" },
+  { slug: "dock", title: "Dock", category: "Navigation", ui: "dock", source: "@cult-ui" },
+  { slug: "expandable", title: "Expandable Card", category: "Data Display", ui: "expandable", source: "@cult-ui" },
+  { slug: "timer", title: "Timer", category: "Feedback", ui: "timer", source: "@cult-ui" },
+  { slug: "typing-text", title: "Typing Text", category: "Data Display", ui: "primitives-texts-typing", source: "@animate-ui" },
+  { slug: "highlight-text", title: "Highlight Text", category: "Data Display", ui: "primitives-texts-highlight", source: "@animate-ui" },
 ]
 
 export const categories = [...new Set(catalog.map((e) => e.category))]
