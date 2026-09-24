@@ -41,7 +41,7 @@ test("exposes the four tools and usage instructions", async () => {
 
 test("empty search lists every component but hides dependency-only items", async () => {
   const all = (await call("search_components", {})).json()
-  assert.equal(all.length, 84)
+  assert.equal(all.length, 87)
   assert.ok(!all.some((i) => i.name === "use-as-ref"))
 })
 
