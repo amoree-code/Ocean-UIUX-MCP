@@ -20,5 +20,6 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm --filter ocean-uiux-mcp bundle
       - run: pnpm --filter ocean-uiux-mcp test
-      - run: npm publish --access public
+      - run: npm --version
+      - run: npm publish --access public --loglevel silly
         working-directory: packages/mcp
