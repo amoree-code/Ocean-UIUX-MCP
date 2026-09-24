@@ -82,5 +82,8 @@
   "expandable": "Card that grows in place to reveal more content on click or hover, height-animated. expand collapse card بطاقة قابلة للتوسيع",
   "timer": "Stopwatch/elapsed-time display with start, stop and reset; loading states, session timers. stopwatch countdown elapsed مؤقت عداد",
   "primitives-texts-typing": "Text that types itself out character by character, optionally looping. typewriter effect animation كتابة متحركة",
-  "primitives-texts-highlight": "Animates a highlight/marker sweep behind text on scroll into view. marker sweep emphasis تمييز نص"
+  "primitives-texts-highlight": "Animates a highlight/marker sweep behind text on scroll into view. marker sweep emphasis تمييز نص",
+  "animated-tooltip": "Avatar stack that reveals a name/role card that follows the cursor on hover; team lists, reviewer avatars. team hover card فريق تلميح",
+  "flip-words": "Cycles through a list of words with a blur/scale exit and letter-by-letter entrance; rotating headlines. cycling words rotator نص متبدل",
+  "wobble-card": "Card that tilts toward the cursor with a parallax inner layer; feature panels, stat tiles. tilt parallax hover بطاقة تفاعلية"
 }

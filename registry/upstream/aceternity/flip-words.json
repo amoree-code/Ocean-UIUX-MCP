@@ -1,0 +1,16 @@
+{
+  "name": "flip-words",
+  "type": "registry:ui",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "components/ui/flip-words.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/flip-words.tsx"
+    }
+  ],
+  "author": "Manu Arora <hi@manuarora.in>",
+  "title": "Flip Words"
+}

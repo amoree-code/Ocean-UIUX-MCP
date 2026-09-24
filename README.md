@@ -2,8 +2,8 @@
 
 A personal shadcn/ui registry with a demo gallery, exposed to every AI client through MCP.
 
-- **84 components**: 61 official shadcn (radix-nova, RTL logical classes) and 23 vetted community
-  components (`@kibo-ui`, `@diceui`, `@magicui`, `@cult-ui`, `@animate-ui`).
+- **87 components**: 61 official shadcn (radix-nova, RTL logical classes) and 26 vetted community
+  components (`@kibo-ui`, `@diceui`, `@magicui`, `@cult-ui`, `@animate-ui`, `@aceternity`).
 - **Gallery**: live previews by category, all 8 official styles side by side, RTL/LTR, dark mode,
   accent and radius controls.
 - **Registry**: self-contained. Every dependency resolves inside it, so it needs no hosting.

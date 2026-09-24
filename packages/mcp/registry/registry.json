@@ -121,6 +121,33 @@
       ]
     },
     {
+      "name": "animated-tooltip",
+      "type": "registry:ui",
+      "title": "Animated Tooltip",
+      "description": "Avatar stack that reveals a name/role card that follows the cursor on hover; team lists, reviewer avatars. team hover card فريق تلميح",
+      "author": "Manu Arora <hi@manuarora.in>",
+      "dependencies": [
+        "motion"
+      ],
+      "categories": [
+        "Overlays"
+      ],
+      "meta": {
+        "source": "@aceternity",
+        "upstream": "https://ui.aceternity.com/registry/animated-tooltip.json",
+        "examples": [
+          "animated-tooltip"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/ui/animated-tooltip.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/animated-tooltip.tsx"
+        }
+      ]
+    },
+    {
       "name": "announcement",
       "type": "registry:ui",
       "title": "Announcement",
@@ -1046,6 +1073,33 @@
         {
           "path": "components/ui/file-upload.tsx",
           "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "flip-words",
+      "type": "registry:ui",
+      "title": "Flip Words",
+      "description": "Cycles through a list of words with a blur/scale exit and letter-by-letter entrance; rotating headlines. cycling words rotator نص متبدل",
+      "author": "Manu Arora <hi@manuarora.in>",
+      "dependencies": [
+        "motion"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "@aceternity",
+        "upstream": "https://ui.aceternity.com/registry/flip-words.json",
+        "examples": [
+          "flip-words"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/ui/flip-words.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/flip-words.tsx"
         }
       ]
     },
@@ -2655,6 +2709,33 @@
         {
           "path": "hooks/use-mobile.ts",
           "type": "registry:hook"
+        }
+      ]
+    },
+    {
+      "name": "wobble-card",
+      "type": "registry:ui",
+      "title": "Wobble Card",
+      "description": "Card that tilts toward the cursor with a parallax inner layer; feature panels, stat tiles. tilt parallax hover بطاقة تفاعلية",
+      "author": "Manu Arora <hi@manuarora.in>",
+      "dependencies": [
+        "motion"
+      ],
+      "categories": [
+        "Data Display"
+      ],
+      "meta": {
+        "source": "@aceternity",
+        "upstream": "https://ui.aceternity.com/registry/wobble-card.json",
+        "examples": [
+          "wobble-card"
+        ]
+      },
+      "files": [
+        {
+          "path": "components/ui/wobble-card.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/wobble-card.tsx"
         }
       ]
     }
