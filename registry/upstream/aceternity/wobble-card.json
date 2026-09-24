@@ -1,0 +1,16 @@
+{
+  "name": "wobble-card",
+  "type": "registry:ui",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "components/ui/wobble-card.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/wobble-card.tsx"
+    }
+  ],
+  "author": "Manu Arora <hi@manuarora.in>",
+  "title": "Wobble Card"
+}

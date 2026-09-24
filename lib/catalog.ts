@@ -5,7 +5,7 @@ export type CatalogEntry = {
   /** registry item this demo exercises; null for multi-component overviews */
   ui: string | null
   /** registry the ui item comes from; official items are vendored per style */
-  source: "shadcn" | "@kibo-ui" | "@diceui" | "@magicui" | "@cult-ui" | "@animate-ui"
+  source: "shadcn" | "@kibo-ui" | "@diceui" | "@magicui" | "@cult-ui" | "@animate-ui" | "@aceternity"
 }
 
 export const catalog: CatalogEntry[] = [
@@ -96,6 +96,9 @@ export const catalog: CatalogEntry[] = [
   { slug: "timer", title: "Timer", category: "Feedback", ui: "timer", source: "@cult-ui" },
   { slug: "typing-text", title: "Typing Text", category: "Data Display", ui: "primitives-texts-typing", source: "@animate-ui" },
   { slug: "highlight-text", title: "Highlight Text", category: "Data Display", ui: "primitives-texts-highlight", source: "@animate-ui" },
+  { slug: "animated-tooltip", title: "Animated Tooltip", category: "Overlays", ui: "animated-tooltip", source: "@aceternity" },
+  { slug: "flip-words", title: "Flip Words", category: "Data Display", ui: "flip-words", source: "@aceternity" },
+  { slug: "wobble-card", title: "Wobble Card", category: "Data Display", ui: "wobble-card", source: "@aceternity" },
 ]
 
 export const categories = [...new Set(catalog.map((e) => e.category))]
