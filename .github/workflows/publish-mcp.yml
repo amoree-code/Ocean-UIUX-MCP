@@ -20,6 +20,10 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm --filter ocean-uiux-mcp bundle
       - run: pnpm --filter ocean-uiux-mcp test
-      - run: npm --version
-      - run: npm publish --access public --loglevel silly
+      - run: npm publish --access public
         working-directory: packages/mcp
+        env:
+          # Fallback while npm's OIDC token-exchange endpoint 404s on a correctly
+          # configured trusted publisher (tracked upstream: npm/cli#8976, #9088).
+          # Remove NPM_TOKEN once that's fixed to go back to pure OIDC.
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
