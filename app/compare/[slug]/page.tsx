@@ -7,13 +7,13 @@ import { StyleCompare } from "@/components/gallery/style-compare"
 import { catalog, findEntry } from "@/lib/catalog"
 
 export function generateStaticParams() {
-  return catalog.filter((e) => e.ui && e.source === "shadcn").map((e) => ({ slug: e.slug }))
+  return catalog.filter((e) => e.ui && e.source === "shadcn" && !e.route).map((e) => ({ slug: e.slug }))
 }
 
 export default async function ComparePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   const entry = findEntry(slug)
-  if (!entry?.ui || entry.source !== "shadcn") notFound()
+  if (!entry?.ui || entry.source !== "shadcn" || entry.route) notFound()
 
   return (
     <>
