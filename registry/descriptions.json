@@ -77,5 +77,10 @@
   "bento-grid": "Bento grid layout of feature cards; landing pages. grid features شبكة",
   "number-ticker": "Animated counting number; KPIs and stats. counter animate عداد",
   "marquee": "Infinite scrolling row of items; logos, testimonials. scroll ticker شريط متحرك",
-  "animated-beam": "Animated light beam connecting elements; integration diagrams. connect flow خط متحرك"
+  "animated-beam": "Animated light beam connecting elements; integration diagrams. connect flow خط متحرك",
+  "dock": "macOS-style dock that magnifies icons near the cursor; app launchers, floating toolbars. launcher magnify hover لوحة تطبيقات",
+  "expandable": "Card that grows in place to reveal more content on click or hover, height-animated. expand collapse card بطاقة قابلة للتوسيع",
+  "timer": "Stopwatch/elapsed-time display with start, stop and reset; loading states, session timers. stopwatch countdown elapsed مؤقت عداد",
+  "primitives-texts-typing": "Text that types itself out character by character, optionally looping. typewriter effect animation كتابة متحركة",
+  "primitives-texts-highlight": "Animates a highlight/marker sweep behind text on scroll into view. marker sweep emphasis تمييز نص"
 }

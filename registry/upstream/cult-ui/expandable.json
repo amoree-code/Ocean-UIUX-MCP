@@ -1,0 +1,15 @@
+{
+  "name": "expandable",
+  "type": "registry:ui",
+  "description": "Expandable component system with smooth animations and customizable presets",
+  "dependencies": [
+    "motion",
+    "react-use-measure"
+  ],
+  "files": [
+    {
+      "path": "registry/default/ui/expandable.tsx",
+      "type": "registry:ui"
+    }
+  ]
+}

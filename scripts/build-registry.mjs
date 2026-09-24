@@ -29,6 +29,8 @@ const upstream = {
   "@kibo-ui": (n) => `https://www.kibo-ui.com/r/${n}.json`,
   "@diceui": (n) => `https://diceui.com/r/radix-nova/${n}.json`,
   "@magicui": (n) => `https://magicui.design/r/${n}`,
+  "@cult-ui": (n) => `https://www.cult-ui.com/r/${n}.json`,
+  "@animate-ui": (n) => `https://animate-ui.com/r/${n}.json`,
 }
 
 // Parse lib/catalog.ts without a TS toolchain: every entry is a single-line object literal.

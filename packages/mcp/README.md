@@ -4,9 +4,10 @@ An MCP server for a curated [shadcn/ui](https://ui.shadcn.com) registry. Name a 
 AI client (Claude Code, Codex, Cursor, VS Code, Windsurf, Claude Desktop) and it gets searched, explained
 and installed into your project with the shadcn CLI.
 
-- **79 components.** 61 official shadcn components in the `radix-nova` style, plus 18 vetted community
-  components (Kibo UI, Dice UI, Magic UI): kanban, gantt, tree, stepper, timeline, tags-input,
-  file-upload, dropzone, color-picker, rating, sortable, number-ticker, marquee and more.
+- **84 components.** 61 official shadcn components in the `radix-nova` style, plus 23 vetted community
+  components (Kibo UI, Dice UI, Magic UI, Cult UI, Animate UI): kanban, gantt, tree, stepper, timeline,
+  tags-input, file-upload, dropzone, color-picker, rating, sortable, number-ticker, marquee, dock,
+  expandable card, timer, typing text, highlight text and more.
 - **RTL-ready.** Components use logical classes (`ms-`, `pe-`, `start-`), so they flip for Arabic
   and Kurdish. `init_project` turns RTL on.
 - **Self-contained.** The registry ships inside the package, with every dependency resolved in it.

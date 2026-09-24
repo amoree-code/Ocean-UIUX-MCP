@@ -1,0 +1,14 @@
+{
+  "name": "dock",
+  "type": "registry:ui",
+  "description": "macOS-style dock component with hover effects and smooth animations",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/ui/dock.tsx",
+      "type": "registry:ui"
+    }
+  ]
+}
