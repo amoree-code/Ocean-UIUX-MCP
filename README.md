@@ -19,12 +19,6 @@ npx -y ocean-uiux-mcp install      # registers in Claude Code, Codex, Cursor, VS
 npx -y ocean-uiux-mcp doctor
 ```
 
-Until it is published, register this checkout instead:
-
-```bash
-node packages/mcp/bin/cli.mjs install --runner local
-```
-
 Then ask for a component by name in any project, for example "add a kanban board and a tags input".
 Tools: `search_components`, `get_component`, `add_components`, `init_project`.
 
