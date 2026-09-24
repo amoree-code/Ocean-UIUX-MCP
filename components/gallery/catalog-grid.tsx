@@ -2,8 +2,9 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { CheckIcon, Columns3Icon, SearchIcon } from "lucide-react"
+import { CheckIcon, Columns3Icon, PlugZapIcon, SearchIcon, TerminalIcon } from "lucide-react"
 
+import { CopyCommandBlock, CopyCommandButton } from "@/components/gallery/copy-command"
 import { useGallery } from "@/components/gallery/gallery-provider"
 import { StyledModule, WhenVisible } from "@/components/gallery/styled-module"
 import { usePicks } from "@/components/gallery/use-picks"
@@ -21,6 +22,10 @@ export function CatalogGrid() {
   const [filter, setFilter] = React.useState<"all" | "picked" | "unpicked">("all")
   const [category, setCategory] = React.useState<string>("all")
   const [source, setSource] = React.useState<"all" | "official" | "community">("all")
+  // Read after mount only: the deployed origin varies (preview URL, custom domain, localhost),
+  // so the command must reflect wherever this page is actually being served from.
+  const [origin, setOrigin] = React.useState("")
+  React.useEffect(() => setOrigin(window.location.origin), [])
 
   const visible = catalog.filter((e) => {
     if (query && !e.title.toLowerCase().includes(query.toLowerCase())) return false
@@ -41,6 +46,24 @@ export function CatalogGrid() {
           from the header; open a card for every official variant, or compare it across all
           styles. Picked items go into your registry — saved to{" "}
           <code className="font-mono">picks.json</code>.
+        </p>
+      </div>
+
+      <div className="flex flex-col gap-2 rounded-xl border bg-card p-4">
+        <div className="flex items-center gap-2 text-sm font-medium">
+          <PlugZapIcon className="size-4 text-muted-foreground" />
+          Connect this registry to an AI client
+        </div>
+        <div className="grid gap-2 sm:grid-cols-2">
+          <CopyCommandBlock command="npx -y ocean-uiux-mcp install" />
+          <CopyCommandBlock command={`${origin || "https://ocean-uiux-mcp.vercel.app"}/api/mcp`} />
+        </div>
+        <p className="text-xs text-muted-foreground">
+          Left: installs the full local MCP server (search, install, RTL setup) into every AI
+          client on your machine. Right: a remote read-only endpoint — search and inspect
+          components by URL alone, no install. Every card below also has its own{" "}
+          <TerminalIcon className="inline size-3" /> button with the plain shadcn install command
+          for that one component.
         </p>
       </div>
 
@@ -140,6 +163,13 @@ export function CatalogGrid() {
                         </Badge>
                       )}
                       <div className="ms-auto flex items-center gap-1">
+                        {entry.ui && (
+                          <CopyCommandButton
+                            command={`npx shadcn@latest add ${origin || "https://ocean-uiux-mcp.vercel.app"}/r/${entry.ui}.json`}
+                            label={`Copy npx install command for ${entry.title}`}
+                            icon={<TerminalIcon />}
+                          />
+                        )}
                         {entry.ui && entry.source === "shadcn" && (
                           <Button asChild size="icon-xs" variant="ghost" aria-label={`Compare ${entry.title} across styles`}>
                             <Link href={`/compare/${entry.slug}`}>

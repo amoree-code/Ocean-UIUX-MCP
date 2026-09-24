@@ -16,7 +16,10 @@ import path from "node:path"
 const root = path.resolve(import.meta.dirname, "..")
 const outDir = path.resolve(root, process.env.REGISTRY_OUT ?? "public/r")
 const cacheDir = path.join(root, "registry/upstream")
-const base = (process.env.REGISTRY_BASE ?? outDir).replace(/\/$/, "")
+// On Vercel, default to the project's stable production domain (not the per-deployment
+// one) so registryDependencies point at real hosted URLs instead of this machine's path.
+const vercelBase = process.env.VERCEL_PROJECT_PRODUCTION_URL && `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}/r`
+const base = (process.env.REGISTRY_BASE ?? vercelBase ?? outDir).replace(/\/$/, "")
 const refresh = process.argv.includes("--refresh")
 // Our own purpose + keywords (English and Arabic) so MCP search finds items by intent.
 const descriptions = JSON.parse(fs.readFileSync(path.join(root, "registry/descriptions.json"), "utf8"))

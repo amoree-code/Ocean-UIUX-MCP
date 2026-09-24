@@ -37,3 +37,4 @@ next-env.d.ts
 
 # local registry build (absolute paths of this machine); the npm package bundles its own
 /public/r
+.vercel

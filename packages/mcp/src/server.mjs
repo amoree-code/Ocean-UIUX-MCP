@@ -101,14 +101,23 @@ function projectProblem(cwd) {
   return null
 }
 
-/** @param {ReturnType<import("./registry.mjs").createRegistry>} registry */
-export function createServer(registry, { runner } = {}) {
+/**
+ * @param {ReturnType<import("./registry.mjs").createRegistry>} registry
+ * @param {{ runner?: string[], only?: string[] }} [options] `only`: registered tool names — restrict
+ *   what a transport exposes (e.g. a remote HTTP deployment can't touch a caller's filesystem, so it
+ *   should only register the read-only tools, not add_components/init_project).
+ */
+export function createServer(registry, { runner, only } = {}) {
   let shadcn = runner ? Promise.resolve(runner) : null
   const shadcnCmd = () => (shadcn ??= detectShadcnRunner())
 
   const server = new McpServer({ name: "ocean-uiux-mcp", version: VERSION }, { instructions: INSTRUCTIONS })
+  const registerTool = (name, config, handler) => {
+    if (only && !only.includes(name)) return
+    server.registerTool(name, config, handler)
+  }
 
-  server.registerTool(
+  registerTool(
     "search_components",
     {
       title: "Search components",
@@ -129,7 +138,7 @@ export function createServer(registry, { runner } = {}) {
     }
   )
 
-  server.registerTool(
+  registerTool(
     "get_component",
     {
       title: "Get component",
@@ -163,7 +172,7 @@ export function createServer(registry, { runner } = {}) {
     }
   )
 
-  server.registerTool(
+  registerTool(
     "add_components",
     {
       title: "Add components to a project",
@@ -193,7 +202,7 @@ export function createServer(registry, { runner } = {}) {
     }
   )
 
-  server.registerTool(
+  registerTool(
     "init_project",
     {
       title: "Set up shadcn in a project",

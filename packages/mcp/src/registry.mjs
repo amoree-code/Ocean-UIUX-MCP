@@ -10,9 +10,12 @@
 import fs from "node:fs"
 import os from "node:os"
 import path from "node:path"
+import { fileURLToPath } from "node:url"
 
 export const PLACEHOLDER = "{{OCEAN_UIUX_REGISTRY}}"
-const PKG_DIR = path.resolve(import.meta.dirname, "..")
+// import.meta.dirname (not fileURLToPath(import.meta.url)) is undefined under Next.js's
+// route handler loader, even though import.meta.url itself resolves correctly.
+const PKG_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..")
 const BUNDLE_DIR = path.join(PKG_DIR, "registry")
 const PREVIEWS_DIR = path.join(PKG_DIR, "previews")
 const VERSION = JSON.parse(fs.readFileSync(path.join(PKG_DIR, "package.json"), "utf8")).version
