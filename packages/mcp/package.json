@@ -1,6 +1,6 @@
 {
   "name": "ocean-uiux-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for a shadcn/ui registry: 79 RTL-ready components (radix-nova) any AI client can search and install by name.",
   "keywords": ["mcp", "model-context-protocol", "shadcn", "shadcn-ui", "registry", "rtl", "arabic", "react", "nextjs", "radix"],
   "license": "MIT",
