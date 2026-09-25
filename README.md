@@ -2,7 +2,7 @@
 
 A personal shadcn/ui registry with a demo gallery, exposed to every AI client through MCP.
 
-- **114 components**: 88 official shadcn (radix-nova, RTL logical classes — including 27 full-page
+- **116 components**: 90 official shadcn (radix-nova, RTL logical classes — including 27 full-page
   blocks: `dashboard-01`, 5 login and 5 signup pages, and 16 sidebar variants, live at
   [`/dashboard`](https://ocean-uiux-mcp.vercel.app/dashboard) and friends) and
   26 vetted community components (`@kibo-ui`, `@diceui`, `@magicui`, `@cult-ui`, `@animate-ui`,
