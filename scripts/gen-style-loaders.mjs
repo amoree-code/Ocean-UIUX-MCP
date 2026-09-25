@@ -18,6 +18,10 @@ const styles = fs
 const patches = [
   // Base UI prop values leak into the Radix context-menu example.
   ["context-menu-example.tsx", [[/side="inline-end"/g, 'side="right"'], [/side="inline-start"/g, 'side="left"']]],
+  // Upstream's CommandDialog never wraps its children in <Command>, so CommandInput/List crash
+  // ("Cannot read properties of undefined (reading 'subscribe')") — cmdk's store comes from that
+  // provider. Every use of CommandDialog needs it, so it's fixed at the source, not per-caller.
+  ["ui/command.tsx", [[/( *)\{children\}\n( *)<\/DialogContent>/, "$1<Command>{children}</Command>\n$2</DialogContent>"]]],
   // The chart example reads the shadcn site's own search-params hook.
   [
     "chart-example.tsx",

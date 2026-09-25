@@ -1524,6 +1524,189 @@
       ]
     },
     {
+      "name": "login-01",
+      "type": "registry:block",
+      "title": "Login",
+      "description": "Simple centered login form: email, password, submit. sign in تسجيل دخول",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/button.json",
+        "{{OCEAN_UIUX_REGISTRY}}/card.json",
+        "{{OCEAN_UIUX_REGISTRY}}/input.json",
+        "{{OCEAN_UIUX_REGISTRY}}/label.json",
+        "{{OCEAN_UIUX_REGISTRY}}/field.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/login-01.json",
+        "examples": [
+          "login-01"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/login-01/page.tsx",
+          "type": "registry:page",
+          "target": "app/login-01/page.tsx"
+        },
+        {
+          "path": "components/blocks/login-01/login-form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "login-02",
+      "type": "registry:block",
+      "title": "Login (Cover Image)",
+      "description": "Two column login page with a full-height cover image. sign in split تسجيل دخول",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/button.json",
+        "{{OCEAN_UIUX_REGISTRY}}/input.json",
+        "{{OCEAN_UIUX_REGISTRY}}/label.json",
+        "{{OCEAN_UIUX_REGISTRY}}/field.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/login-02.json",
+        "examples": [
+          "login-02"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/login-02/page.tsx",
+          "type": "registry:page",
+          "target": "app/login-02/page.tsx"
+        },
+        {
+          "path": "components/blocks/login-02/login-form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "login-03",
+      "type": "registry:block",
+      "title": "Login (Muted)",
+      "description": "Login page on a muted background panel. sign in تسجيل دخول",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/button.json",
+        "{{OCEAN_UIUX_REGISTRY}}/card.json",
+        "{{OCEAN_UIUX_REGISTRY}}/input.json",
+        "{{OCEAN_UIUX_REGISTRY}}/label.json",
+        "{{OCEAN_UIUX_REGISTRY}}/field.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/login-03.json",
+        "examples": [
+          "login-03"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/login-03/page.tsx",
+          "type": "registry:page",
+          "target": "app/login-03/page.tsx"
+        },
+        {
+          "path": "components/blocks/login-03/login-form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "login-04",
+      "type": "registry:block",
+      "title": "Login (Form + Image)",
+      "description": "Login form beside a full-height image, form on the other side. sign in تسجيل دخول",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/button.json",
+        "{{OCEAN_UIUX_REGISTRY}}/card.json",
+        "{{OCEAN_UIUX_REGISTRY}}/input.json",
+        "{{OCEAN_UIUX_REGISTRY}}/label.json",
+        "{{OCEAN_UIUX_REGISTRY}}/field.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/login-04.json",
+        "examples": [
+          "login-04"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/login-04/page.tsx",
+          "type": "registry:page",
+          "target": "app/login-04/page.tsx"
+        },
+        {
+          "path": "components/blocks/login-04/login-form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "login-05",
+      "type": "registry:block",
+      "title": "Login (Email Only)",
+      "description": "Minimal email-only login/magic-link page. sign in passwordless تسجيل دخول",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/button.json",
+        "{{OCEAN_UIUX_REGISTRY}}/input.json",
+        "{{OCEAN_UIUX_REGISTRY}}/label.json",
+        "{{OCEAN_UIUX_REGISTRY}}/field.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/login-05.json",
+        "examples": [
+          "login-05"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/login-05/page.tsx",
+          "type": "registry:page",
+          "target": "app/login-05/page.tsx"
+        },
+        {
+          "path": "components/blocks/login-05/login-form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "marker",
       "type": "registry:ui",
       "title": "Marker",
@@ -2225,6 +2408,892 @@
         {
           "path": "components/ui/sidebar.tsx",
           "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-01",
+      "type": "registry:block",
+      "title": "Sidebar (Grouped Nav)",
+      "description": "Simple app sidebar with nav items grouped by section. navigation شريط جانبي",
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/sidebar.json",
+        "{{OCEAN_UIUX_REGISTRY}}/breadcrumb.json",
+        "{{OCEAN_UIUX_REGISTRY}}/separator.json",
+        "{{OCEAN_UIUX_REGISTRY}}/label.json",
+        "{{OCEAN_UIUX_REGISTRY}}/dropdown-menu.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/sidebar-01.json",
+        "examples": [
+          "sidebar-01"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/sidebar-01/page.tsx",
+          "type": "registry:page",
+          "target": "app/sidebar-01/page.tsx"
+        },
+        {
+          "path": "components/blocks/sidebar-01/app-sidebar.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-01/search-form.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-01/version-switcher.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-02",
+      "type": "registry:block",
+      "title": "Sidebar (Collapsible Sections)",
+      "description": "App sidebar with collapsible nav sections. navigation accordion شريط جانبي",
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/sidebar.json",
+        "{{OCEAN_UIUX_REGISTRY}}/breadcrumb.json",
+        "{{OCEAN_UIUX_REGISTRY}}/separator.json",
+        "{{OCEAN_UIUX_REGISTRY}}/label.json",
+        "{{OCEAN_UIUX_REGISTRY}}/dropdown-menu.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/sidebar-02.json",
+        "examples": [
+          "sidebar-02"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/sidebar-02/page.tsx",
+          "type": "registry:page",
+          "target": "app/sidebar-02/page.tsx"
+        },
+        {
+          "path": "components/blocks/sidebar-02/app-sidebar.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-02/search-form.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-02/version-switcher.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-03",
+      "type": "registry:block",
+      "title": "Sidebar (Submenus)",
+      "description": "App sidebar with nested submenus. navigation nested شريط جانبي",
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/sidebar.json",
+        "{{OCEAN_UIUX_REGISTRY}}/breadcrumb.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/sidebar-03.json",
+        "examples": [
+          "sidebar-03"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/sidebar-03/page.tsx",
+          "type": "registry:page",
+          "target": "app/sidebar-03/page.tsx"
+        },
+        {
+          "path": "components/blocks/sidebar-03/app-sidebar.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-04",
+      "type": "registry:block",
+      "title": "Sidebar (Floating)",
+      "description": "Floating app sidebar with submenus. navigation floating شريط جانبي",
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/sidebar.json",
+        "{{OCEAN_UIUX_REGISTRY}}/breadcrumb.json",
+        "{{OCEAN_UIUX_REGISTRY}}/separator.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/sidebar-04.json",
+        "examples": [
+          "sidebar-04"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/sidebar-04/page.tsx",
+          "type": "registry:page",
+          "target": "app/sidebar-04/page.tsx"
+        },
+        {
+          "path": "components/blocks/sidebar-04/app-sidebar.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-05",
+      "type": "registry:block",
+      "title": "Sidebar (Collapsible Submenus)",
+      "description": "App sidebar with collapsible submenu groups. navigation شريط جانبي",
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/sidebar.json",
+        "{{OCEAN_UIUX_REGISTRY}}/breadcrumb.json",
+        "{{OCEAN_UIUX_REGISTRY}}/separator.json",
+        "{{OCEAN_UIUX_REGISTRY}}/label.json",
+        "{{OCEAN_UIUX_REGISTRY}}/collapsible.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/sidebar-05.json",
+        "examples": [
+          "sidebar-05"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/sidebar-05/page.tsx",
+          "type": "registry:page",
+          "target": "app/sidebar-05/page.tsx"
+        },
+        {
+          "path": "components/blocks/sidebar-05/app-sidebar.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-05/search-form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-06",
+      "type": "registry:block",
+      "title": "Sidebar (Dropdown Submenus)",
+      "description": "App sidebar whose submenus open as dropdown menus. navigation dropdown شريط جانبي",
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/sidebar.json",
+        "{{OCEAN_UIUX_REGISTRY}}/breadcrumb.json",
+        "{{OCEAN_UIUX_REGISTRY}}/separator.json",
+        "{{OCEAN_UIUX_REGISTRY}}/card.json",
+        "{{OCEAN_UIUX_REGISTRY}}/dropdown-menu.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/sidebar-06.json",
+        "examples": [
+          "sidebar-06"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/sidebar-06/page.tsx",
+          "type": "registry:page",
+          "target": "app/sidebar-06/page.tsx"
+        },
+        {
+          "path": "components/blocks/sidebar-06/app-sidebar.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-06/nav-main.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-06/sidebar-opt-in-form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-07",
+      "type": "registry:block",
+      "title": "Sidebar (Icon Collapse)",
+      "description": "App sidebar that collapses down to just icons. navigation icon-only شريط جانبي",
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/sidebar.json",
+        "{{OCEAN_UIUX_REGISTRY}}/breadcrumb.json",
+        "{{OCEAN_UIUX_REGISTRY}}/separator.json",
+        "{{OCEAN_UIUX_REGISTRY}}/collapsible.json",
+        "{{OCEAN_UIUX_REGISTRY}}/dropdown-menu.json",
+        "{{OCEAN_UIUX_REGISTRY}}/avatar.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/sidebar-07.json",
+        "examples": [
+          "sidebar-07"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/sidebar-07/page.tsx",
+          "type": "registry:page",
+          "target": "app/sidebar-07/page.tsx"
+        },
+        {
+          "path": "components/blocks/sidebar-07/app-sidebar.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-07/nav-main.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-07/nav-projects.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-07/nav-user.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-07/team-switcher.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-08",
+      "type": "registry:block",
+      "title": "Sidebar (Inset + Secondary Nav)",
+      "description": "Inset app sidebar with a secondary nav rail. navigation inset شريط جانبي",
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/sidebar.json",
+        "{{OCEAN_UIUX_REGISTRY}}/breadcrumb.json",
+        "{{OCEAN_UIUX_REGISTRY}}/separator.json",
+        "{{OCEAN_UIUX_REGISTRY}}/collapsible.json",
+        "{{OCEAN_UIUX_REGISTRY}}/dropdown-menu.json",
+        "{{OCEAN_UIUX_REGISTRY}}/avatar.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/sidebar-08.json",
+        "examples": [
+          "sidebar-08"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/sidebar-08/page.tsx",
+          "type": "registry:page",
+          "target": "app/sidebar-08/page.tsx"
+        },
+        {
+          "path": "components/blocks/sidebar-08/app-sidebar.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-08/nav-main.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-08/nav-projects.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-08/nav-secondary.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-08/nav-user.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-09",
+      "type": "registry:block",
+      "title": "Sidebar (Nested Collapsible)",
+      "description": "App sidebar with collapsible nested groups. navigation nested شريط جانبي",
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/sidebar.json",
+        "{{OCEAN_UIUX_REGISTRY}}/breadcrumb.json",
+        "{{OCEAN_UIUX_REGISTRY}}/separator.json",
+        "{{OCEAN_UIUX_REGISTRY}}/collapsible.json",
+        "{{OCEAN_UIUX_REGISTRY}}/dropdown-menu.json",
+        "{{OCEAN_UIUX_REGISTRY}}/avatar.json",
+        "{{OCEAN_UIUX_REGISTRY}}/switch.json",
+        "{{OCEAN_UIUX_REGISTRY}}/label.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/sidebar-09.json",
+        "examples": [
+          "sidebar-09"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/sidebar-09/page.tsx",
+          "type": "registry:page",
+          "target": "app/sidebar-09/page.tsx"
+        },
+        {
+          "path": "components/blocks/sidebar-09/app-sidebar.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-09/nav-user.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-10",
+      "type": "registry:block",
+      "title": "Sidebar (Popover)",
+      "description": "App sidebar rendered inside a popover. navigation popover شريط جانبي",
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/sidebar.json",
+        "{{OCEAN_UIUX_REGISTRY}}/breadcrumb.json",
+        "{{OCEAN_UIUX_REGISTRY}}/separator.json",
+        "{{OCEAN_UIUX_REGISTRY}}/popover.json",
+        "{{OCEAN_UIUX_REGISTRY}}/collapsible.json",
+        "{{OCEAN_UIUX_REGISTRY}}/dropdown-menu.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/sidebar-10.json",
+        "examples": [
+          "sidebar-10"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/sidebar-10/page.tsx",
+          "type": "registry:page",
+          "target": "app/sidebar-10/page.tsx"
+        },
+        {
+          "path": "components/blocks/sidebar-10/app-sidebar.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-10/nav-actions.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-10/nav-favorites.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-10/nav-main.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-10/nav-secondary.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-10/nav-workspaces.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-10/team-switcher.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-11",
+      "type": "registry:block",
+      "title": "Sidebar (File Tree)",
+      "description": "App sidebar with a collapsible file-tree nav. navigation file tree شريط جانبي",
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/sidebar.json",
+        "{{OCEAN_UIUX_REGISTRY}}/breadcrumb.json",
+        "{{OCEAN_UIUX_REGISTRY}}/separator.json",
+        "{{OCEAN_UIUX_REGISTRY}}/collapsible.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/sidebar-11.json",
+        "examples": [
+          "sidebar-11"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/sidebar-11/page.tsx",
+          "type": "registry:page",
+          "target": "app/sidebar-11/page.tsx"
+        },
+        {
+          "path": "components/blocks/sidebar-11/app-sidebar.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-12",
+      "type": "registry:block",
+      "title": "Sidebar (Calendar)",
+      "description": "App sidebar with an embedded calendar. navigation calendar شريط جانبي",
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/sidebar.json",
+        "{{OCEAN_UIUX_REGISTRY}}/breadcrumb.json",
+        "{{OCEAN_UIUX_REGISTRY}}/separator.json",
+        "{{OCEAN_UIUX_REGISTRY}}/collapsible.json",
+        "{{OCEAN_UIUX_REGISTRY}}/calendar.json",
+        "{{OCEAN_UIUX_REGISTRY}}/dropdown-menu.json",
+        "{{OCEAN_UIUX_REGISTRY}}/avatar.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/sidebar-12.json",
+        "examples": [
+          "sidebar-12"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/sidebar-12/page.tsx",
+          "type": "registry:page",
+          "target": "app/sidebar-12/page.tsx"
+        },
+        {
+          "path": "components/blocks/sidebar-12/app-sidebar.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-12/calendars.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-12/date-picker.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-12/nav-user.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-13",
+      "type": "registry:block",
+      "title": "Sidebar (Dialog)",
+      "description": "App sidebar rendered inside a dialog (command-palette style). navigation dialog شريط جانبي",
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/sidebar.json",
+        "{{OCEAN_UIUX_REGISTRY}}/breadcrumb.json",
+        "{{OCEAN_UIUX_REGISTRY}}/button.json",
+        "{{OCEAN_UIUX_REGISTRY}}/dialog.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/sidebar-13.json",
+        "examples": [
+          "sidebar-13"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/sidebar-13/page.tsx",
+          "type": "registry:page",
+          "target": "app/sidebar-13/page.tsx"
+        },
+        {
+          "path": "components/blocks/sidebar-13/settings-dialog.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-14",
+      "type": "registry:block",
+      "title": "Sidebar (Right)",
+      "description": "App sidebar docked on the right edge. navigation right شريط جانبي",
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/sidebar.json",
+        "{{OCEAN_UIUX_REGISTRY}}/breadcrumb.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/sidebar-14.json",
+        "examples": [
+          "sidebar-14"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/sidebar-14/page.tsx",
+          "type": "registry:page",
+          "target": "app/sidebar-14/page.tsx"
+        },
+        {
+          "path": "components/blocks/sidebar-14/app-sidebar.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-15",
+      "type": "registry:block",
+      "title": "Sidebar (Left + Right)",
+      "description": "Two app sidebars, one on each edge. navigation dual شريط جانبي",
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/sidebar.json",
+        "{{OCEAN_UIUX_REGISTRY}}/breadcrumb.json",
+        "{{OCEAN_UIUX_REGISTRY}}/separator.json",
+        "{{OCEAN_UIUX_REGISTRY}}/popover.json",
+        "{{OCEAN_UIUX_REGISTRY}}/collapsible.json",
+        "{{OCEAN_UIUX_REGISTRY}}/dropdown-menu.json",
+        "{{OCEAN_UIUX_REGISTRY}}/calendar.json",
+        "{{OCEAN_UIUX_REGISTRY}}/avatar.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/sidebar-15.json",
+        "examples": [
+          "sidebar-15"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/sidebar-15/page.tsx",
+          "type": "registry:page",
+          "target": "app/sidebar-15/page.tsx"
+        },
+        {
+          "path": "components/blocks/sidebar-15/calendars.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-15/date-picker.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-15/nav-favorites.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-15/nav-main.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-15/nav-secondary.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-15/nav-user.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-15/nav-workspaces.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-15/sidebar-left.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-15/sidebar-right.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-15/team-switcher.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-16",
+      "type": "registry:block",
+      "title": "Sidebar (Sticky Header)",
+      "description": "App sidebar paired with a sticky site header. navigation sticky header شريط جانبي",
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/sidebar.json",
+        "{{OCEAN_UIUX_REGISTRY}}/breadcrumb.json",
+        "{{OCEAN_UIUX_REGISTRY}}/separator.json",
+        "{{OCEAN_UIUX_REGISTRY}}/collapsible.json",
+        "{{OCEAN_UIUX_REGISTRY}}/dropdown-menu.json",
+        "{{OCEAN_UIUX_REGISTRY}}/avatar.json",
+        "{{OCEAN_UIUX_REGISTRY}}/button.json",
+        "{{OCEAN_UIUX_REGISTRY}}/label.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/sidebar-16.json",
+        "examples": [
+          "sidebar-16"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/sidebar-16/page.tsx",
+          "type": "registry:page",
+          "target": "app/sidebar-16/page.tsx"
+        },
+        {
+          "path": "components/blocks/sidebar-16/app-sidebar.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-16/nav-main.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-16/nav-projects.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-16/nav-secondary.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-16/nav-user.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-16/search-form.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/blocks/sidebar-16/site-header.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "signup-01",
+      "type": "registry:block",
+      "title": "Signup",
+      "description": "Simple centered signup form. register إنشاء حساب",
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/button.json",
+        "{{OCEAN_UIUX_REGISTRY}}/card.json",
+        "{{OCEAN_UIUX_REGISTRY}}/input.json",
+        "{{OCEAN_UIUX_REGISTRY}}/label.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/signup-01.json",
+        "examples": [
+          "signup-01"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/signup-01/page.tsx",
+          "type": "registry:page",
+          "target": "app/signup-01/page.tsx"
+        },
+        {
+          "path": "components/blocks/signup-01/signup-form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "signup-02",
+      "type": "registry:block",
+      "title": "Signup (Cover Image)",
+      "description": "Two column signup page with a full-height cover image. register split إنشاء حساب",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/button.json",
+        "{{OCEAN_UIUX_REGISTRY}}/input.json",
+        "{{OCEAN_UIUX_REGISTRY}}/label.json",
+        "{{OCEAN_UIUX_REGISTRY}}/field.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/signup-02.json",
+        "examples": [
+          "signup-02"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/signup-02/page.tsx",
+          "type": "registry:page",
+          "target": "app/signup-02/page.tsx"
+        },
+        {
+          "path": "components/blocks/signup-02/signup-form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "signup-03",
+      "type": "registry:block",
+      "title": "Signup (Muted)",
+      "description": "Signup page on a muted background panel. register إنشاء حساب",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/button.json",
+        "{{OCEAN_UIUX_REGISTRY}}/card.json",
+        "{{OCEAN_UIUX_REGISTRY}}/input.json",
+        "{{OCEAN_UIUX_REGISTRY}}/label.json",
+        "{{OCEAN_UIUX_REGISTRY}}/field.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/signup-03.json",
+        "examples": [
+          "signup-03"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/signup-03/page.tsx",
+          "type": "registry:page",
+          "target": "app/signup-03/page.tsx"
+        },
+        {
+          "path": "components/blocks/signup-03/signup-form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "signup-04",
+      "type": "registry:block",
+      "title": "Signup (Form + Image)",
+      "description": "Signup form beside a full-height image. register إنشاء حساب",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/button.json",
+        "{{OCEAN_UIUX_REGISTRY}}/card.json",
+        "{{OCEAN_UIUX_REGISTRY}}/input.json",
+        "{{OCEAN_UIUX_REGISTRY}}/label.json",
+        "{{OCEAN_UIUX_REGISTRY}}/field.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/signup-04.json",
+        "examples": [
+          "signup-04"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/signup-04/page.tsx",
+          "type": "registry:page",
+          "target": "app/signup-04/page.tsx"
+        },
+        {
+          "path": "components/blocks/signup-04/signup-form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "signup-05",
+      "type": "registry:block",
+      "title": "Signup (Social)",
+      "description": "Signup form with social provider buttons (Google/GitHub-style). register oauth إنشاء حساب",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "{{OCEAN_UIUX_REGISTRY}}/button.json",
+        "{{OCEAN_UIUX_REGISTRY}}/input.json",
+        "{{OCEAN_UIUX_REGISTRY}}/label.json"
+      ],
+      "categories": [
+        "Blocks"
+      ],
+      "meta": {
+        "source": "shadcn",
+        "upstream": "https://ui.shadcn.com/r/styles/radix-nova/signup-05.json",
+        "examples": [
+          "signup-05"
+        ]
+      },
+      "files": [
+        {
+          "path": "app/signup-05/page.tsx",
+          "type": "registry:page",
+          "target": "app/signup-05/page.tsx"
+        },
+        {
+          "path": "components/blocks/signup-05/signup-form.tsx",
+          "type": "registry:component"
         }
       ]
     },

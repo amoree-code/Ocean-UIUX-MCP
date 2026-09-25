@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sidebar-06",
+  "title": "Sidebar 06",
+  "description": "A sidebar with submenus as dropdowns.",
+  "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "separator",
+    "card",
+    "dropdown-menu"
+  ],
+  "files": [
+    {
+      "path": "registry/radix-nova/blocks/sidebar-06/page.tsx",
+      "type": "registry:page",
+      "target": "app/dashboard/page.tsx"
+    },
+    {
+      "path": "registry/radix-nova/blocks/sidebar-06/components/app-sidebar.tsx",
+      "type": "registry:component"
+    },
+    {
+      "path": "registry/radix-nova/blocks/sidebar-06/components/nav-main.tsx",
+      "type": "registry:component"
+    },
+    {
+      "path": "registry/radix-nova/blocks/sidebar-06/components/sidebar-opt-in-form.tsx",
+      "type": "registry:component"
+    }
+  ],
+  "categories": [
+    "sidebar",
+    "dashboard"
+  ],
+  "type": "registry:block"
+}

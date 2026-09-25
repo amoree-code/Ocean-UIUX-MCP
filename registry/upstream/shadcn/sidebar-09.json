@@ -1,0 +1,36 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sidebar-09",
+  "title": "Sidebar 09",
+  "description": "Collapsible nested sidebars.",
+  "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "separator",
+    "collapsible",
+    "dropdown-menu",
+    "avatar",
+    "switch",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "registry/radix-nova/blocks/sidebar-09/page.tsx",
+      "type": "registry:page",
+      "target": "app/dashboard/page.tsx"
+    },
+    {
+      "path": "registry/radix-nova/blocks/sidebar-09/components/app-sidebar.tsx",
+      "type": "registry:component"
+    },
+    {
+      "path": "registry/radix-nova/blocks/sidebar-09/components/nav-user.tsx",
+      "type": "registry:component"
+    }
+  ],
+  "categories": [
+    "sidebar",
+    "dashboard"
+  ],
+  "type": "registry:block"
+}

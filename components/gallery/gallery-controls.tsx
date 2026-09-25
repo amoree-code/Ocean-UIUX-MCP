@@ -28,6 +28,7 @@ const swatch: Record<Accent, string> = {
   violet: "oklch(0.541 0.281 293.009)",
   orange: "oklch(0.646 0.222 41.116)",
   rose: "oklch(0.586 0.253 17.585)",
+  linear: "oklch(0.712 0.151 249.883)",
 }
 
 export function GalleryControls() {

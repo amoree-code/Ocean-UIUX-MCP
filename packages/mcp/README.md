@@ -4,12 +4,12 @@ An MCP server for a curated [shadcn/ui](https://ui.shadcn.com) registry. Name a 
 AI client (Claude Code, Codex, Cursor, VS Code, Windsurf, Claude Desktop) and it gets searched, explained
 and installed into your project with the shadcn CLI.
 
-- **88 components.** 62 official shadcn components in the `radix-nova` style — including the full
-  `dashboard-01` block (sidebar, charts, draggable data table) — plus 26 vetted community components
-  (Kibo UI, Dice UI, Magic UI, Cult UI, Animate UI, Aceternity): kanban, gantt, tree, stepper, timeline,
-  tags-input, file-upload, dropzone, color-picker, rating, sortable, number-ticker, marquee, dock,
-  expandable card, timer, typing text, highlight text, flip words, wobble card, animated tooltip
-  and more.
+- **114 components.** 88 official shadcn components in the `radix-nova` style — including 27
+  full-page blocks (`dashboard-01`, 5 login pages, 5 signup pages, 16 sidebar variants) — plus 26
+  vetted community components (Kibo UI, Dice UI, Magic UI, Cult UI, Animate UI, Aceternity): kanban,
+  gantt, tree, stepper, timeline, tags-input, file-upload, dropzone, color-picker, rating, sortable,
+  number-ticker, marquee, dock, expandable card, timer, typing text, highlight text, flip words,
+  wobble card, animated tooltip and more.
 - **RTL-ready.** Components use logical classes (`ms-`, `pe-`, `start-`), so they flip for Arabic
   and Kurdish. `init_project` turns RTL on.
 - **Self-contained.** The registry ships inside the package, with every dependency resolved in it.
@@ -57,6 +57,13 @@ Ask in plain words, in any project:
 | `get_component` | npm and registry dependencies, files, a usage example, the docs link, optional source |
 | `add_components` | `shadcn add` for one or more components and all their dependencies |
 | `init_project` | `shadcn init` with Radix, nova and RTL, or creates a new Next.js app |
+| `search_design_inspiration` | best-effort web search for live sites matching a style descriptor |
+| `clone_style_from_url` | clones a live site's real CSS variables/colors into a shadcn `--primary`/`--background`/... theme (light + dark) |
+
+`clone_style_from_url` opens the site in headless Chromium (downloads on first use, ~150MB
+one-time) and reads its actual CSS custom properties, or samples computed colors/radius/font
+when the site has none. It returns a portable JSON theme plus a ready CSS block; pass this
+gallery's own repo root as `cwd` to wire it straight into the live accent picker.
 
 ## RTL apps
 

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "login-04",
+  "title": "Login 04",
+  "description": "A login page with form and image.",
+  "dependencies": [
+    "cn"
+  ],
+  "registryDependencies": [
+    "button",
+    "card",
+    "input",
+    "label",
+    "field"
+  ],
+  "files": [
+    {
+      "path": "registry/radix-nova/blocks/login-04/page.tsx",
+      "type": "registry:page",
+      "target": "app/login/page.tsx"
+    },
+    {
+      "path": "registry/radix-nova/blocks/login-04/components/login-form.tsx",
+      "type": "registry:component"
+    }
+  ],
+  "categories": [
+    "authentication",
+    "login"
+  ],
+  "type": "registry:block"
+}

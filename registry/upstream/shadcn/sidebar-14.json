@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sidebar-14",
+  "title": "Sidebar 14",
+  "description": "A sidebar on the right.",
+  "registryDependencies": [
+    "sidebar",
+    "breadcrumb"
+  ],
+  "files": [
+    {
+      "path": "registry/radix-nova/blocks/sidebar-14/page.tsx",
+      "type": "registry:page",
+      "target": "app/dashboard/page.tsx"
+    },
+    {
+      "path": "registry/radix-nova/blocks/sidebar-14/components/app-sidebar.tsx",
+      "type": "registry:component"
+    }
+  ],
+  "categories": [
+    "sidebar",
+    "dashboard"
+  ],
+  "type": "registry:block"
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "login-03",
+  "title": "Login 03",
+  "description": "A login page with a muted background color.",
+  "dependencies": [
+    "cn"
+  ],
+  "registryDependencies": [
+    "button",
+    "card",
+    "input",
+    "label",
+    "field"
+  ],
+  "files": [
+    {
+      "path": "registry/radix-nova/blocks/login-03/page.tsx",
+      "type": "registry:page",
+      "target": "app/login/page.tsx"
+    },
+    {
+      "path": "registry/radix-nova/blocks/login-03/components/login-form.tsx",
+      "type": "registry:component"
+    }
+  ],
+  "categories": [
+    "authentication",
+    "login"
+  ],
+  "type": "registry:block"
+}

@@ -53,9 +53,12 @@ async function fetchUpstream(source, name) {
 }
 
 // Where the upstream file lives in this repo.
-function localPath(file, itemName) {
-  if (file.target) return file.target
+function localPath(file, itemName, route) {
   const name = path.basename(file.path)
+  // Upstream's own page target is generic (e.g. every login-NN block targets app/login/page.tsx),
+  // which collides once more than one variant is vendored — each block gets its own route instead.
+  if (file.type === "registry:page" && route) return path.join("app", route.replace(/^\//, ""), name)
+  if (file.target) return file.target
   if (file.type === "registry:lib") return `lib/${name}`
   if (file.type === "registry:hook") return `hooks/${name}`
   // A block's own sub-components aren't reusable primitives, so they don't belong in
@@ -95,10 +98,13 @@ async function build(source, name) {
   const job = (async () => {
     const up = await fetchUpstream(source, name)
     const files = (up.files ?? []).map((f) => {
-      const p = localPath(f, name)
+      const p = localPath(f, name, extra.route)
       const abs = path.join(root, p)
       if (!fs.existsSync(abs)) throw new Error(`${source}/${name}: expected local file ${p}`)
-      return { path: p, type: f.type, ...(f.target ? { target: f.target } : {}), content: fs.readFileSync(abs, "utf8") }
+      // A route override replaces upstream's (possibly colliding) install target too — otherwise
+      // `shadcn add` would install every login-NN variant to the same app/login/page.tsx.
+      const target = f.type === "registry:page" && extra.route ? p : f.target
+      return { path: p, type: f.type, ...(target ? { target } : {}), content: fs.readFileSync(abs, "utf8") }
     })
     const deps = (up.registryDependencies ?? []).map((d) => parseDep(d, source))
     // Dependencies that another registry would supply are rebuilt from our copies too.

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sidebar-12",
+  "title": "Sidebar 12",
+  "description": "A sidebar with a calendar.",
+  "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "separator",
+    "collapsible",
+    "calendar",
+    "dropdown-menu",
+    "avatar"
+  ],
+  "files": [
+    {
+      "path": "registry/radix-nova/blocks/sidebar-12/page.tsx",
+      "type": "registry:page",
+      "target": "app/dashboard/page.tsx"
+    },
+    {
+      "path": "registry/radix-nova/blocks/sidebar-12/components/app-sidebar.tsx",
+      "type": "registry:component"
+    },
+    {
+      "path": "registry/radix-nova/blocks/sidebar-12/components/calendars.tsx",
+      "type": "registry:component"
+    },
+    {
+      "path": "registry/radix-nova/blocks/sidebar-12/components/date-picker.tsx",
+      "type": "registry:component"
+    },
+    {
+      "path": "registry/radix-nova/blocks/sidebar-12/components/nav-user.tsx",
+      "type": "registry:component"
+    }
+  ],
+  "categories": [
+    "sidebar",
+    "dashboard"
+  ],
+  "type": "registry:block"
+}

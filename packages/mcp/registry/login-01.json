@@ -1,0 +1,40 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "login-01",
+  "type": "registry:block",
+  "title": "Login",
+  "description": "Simple centered login form: email, password, submit. sign in تسجيل دخول",
+  "dependencies": [
+    "cn"
+  ],
+  "registryDependencies": [
+    "{{OCEAN_UIUX_REGISTRY}}/button.json",
+    "{{OCEAN_UIUX_REGISTRY}}/card.json",
+    "{{OCEAN_UIUX_REGISTRY}}/input.json",
+    "{{OCEAN_UIUX_REGISTRY}}/label.json",
+    "{{OCEAN_UIUX_REGISTRY}}/field.json"
+  ],
+  "categories": [
+    "Blocks"
+  ],
+  "files": [
+    {
+      "path": "app/login-01/page.tsx",
+      "type": "registry:page",
+      "target": "app/login-01/page.tsx",
+      "content": "import { LoginForm } from \"@/components/blocks/login-01/login-form\"\n\nexport default function Page() {\n  return (\n    <div className=\"flex min-h-svh w-full items-center justify-center p-6 md:p-10\">\n      <div className=\"w-full max-w-sm\">\n        <LoginForm />\n      </div>\n    </div>\n  )\n}\n"
+    },
+    {
+      "path": "components/blocks/login-01/login-form.tsx",
+      "type": "registry:component",
+      "content": "import { cn } from \"cn\"\n\nimport { Button } from \"@/components/ui/button\"\nimport {\n  Card,\n  CardContent,\n  CardDescription,\n  CardHeader,\n  CardTitle,\n} from \"@/components/ui/card\"\nimport {\n  Field,\n  FieldDescription,\n  FieldGroup,\n  FieldLabel,\n} from \"@/components/ui/field\"\nimport { Input } from \"@/components/ui/input\"\n\nexport function LoginForm({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div className={cn(\"flex flex-col gap-6\", className)} {...props}>\n      <Card>\n        <CardHeader>\n          <CardTitle>Login to your account</CardTitle>\n          <CardDescription>\n            Enter your email below to login to your account\n          </CardDescription>\n        </CardHeader>\n        <CardContent>\n          <form>\n            <FieldGroup>\n              <Field>\n                <FieldLabel htmlFor=\"email\">Email</FieldLabel>\n                <Input\n                  id=\"email\"\n                  type=\"email\"\n                  placeholder=\"m@example.com\"\n                  required\n                />\n              </Field>\n              <Field>\n                <div className=\"flex items-center\">\n                  <FieldLabel htmlFor=\"password\">Password</FieldLabel>\n                  <a\n                    href=\"#\"\n                    className=\"ms-auto inline-block text-sm underline-offset-4 hover:underline\"\n                  >\n                    Forgot your password?\n                  </a>\n                </div>\n                <Input id=\"password\" type=\"password\" required />\n              </Field>\n              <Field>\n                <Button type=\"submit\">Login</Button>\n                <Button variant=\"outline\" type=\"button\">\n                  Login with Google\n                </Button>\n                <FieldDescription className=\"text-center\">\n                  Don&apos;t have an account? <a href=\"#\">Sign up</a>\n                </FieldDescription>\n              </Field>\n            </FieldGroup>\n          </form>\n        </CardContent>\n      </Card>\n    </div>\n  )\n}\n"
+    }
+  ],
+  "meta": {
+    "source": "shadcn",
+    "upstream": "https://ui.shadcn.com/r/styles/radix-nova/login-01.json",
+    "examples": [
+      "login-01"
+    ]
+  }
+}

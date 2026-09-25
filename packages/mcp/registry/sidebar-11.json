@@ -1,0 +1,36 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sidebar-11",
+  "type": "registry:block",
+  "title": "Sidebar (File Tree)",
+  "description": "App sidebar with a collapsible file-tree nav. navigation file tree شريط جانبي",
+  "registryDependencies": [
+    "{{OCEAN_UIUX_REGISTRY}}/sidebar.json",
+    "{{OCEAN_UIUX_REGISTRY}}/breadcrumb.json",
+    "{{OCEAN_UIUX_REGISTRY}}/separator.json",
+    "{{OCEAN_UIUX_REGISTRY}}/collapsible.json"
+  ],
+  "categories": [
+    "Blocks"
+  ],
+  "files": [
+    {
+      "path": "app/sidebar-11/page.tsx",
+      "type": "registry:page",
+      "target": "app/sidebar-11/page.tsx",
+      "content": "import { AppSidebar } from \"@/components/blocks/sidebar-11/app-sidebar\"\nimport {\n  Breadcrumb,\n  BreadcrumbItem,\n  BreadcrumbLink,\n  BreadcrumbList,\n  BreadcrumbPage,\n  BreadcrumbSeparator,\n} from \"@/components/ui/breadcrumb\"\nimport { Separator } from \"@/components/ui/separator\"\nimport {\n  SidebarInset,\n  SidebarProvider,\n  SidebarTrigger,\n} from \"@/components/ui/sidebar\"\n\nexport default function Page() {\n  return (\n    <SidebarProvider>\n      <AppSidebar />\n      <SidebarInset>\n        <header className=\"flex h-16 shrink-0 items-center gap-2 border-b px-4\">\n          <SidebarTrigger className=\"-ms-1\" />\n          <Separator\n            orientation=\"vertical\"\n            className=\"me-2 data-vertical:h-4 data-vertical:self-auto\"\n          />\n          <Breadcrumb>\n            <BreadcrumbList>\n              <BreadcrumbItem className=\"hidden md:block\">\n                <BreadcrumbLink href=\"#\">components</BreadcrumbLink>\n              </BreadcrumbItem>\n              <BreadcrumbSeparator className=\"hidden md:block\" />\n              <BreadcrumbItem className=\"hidden md:block\">\n                <BreadcrumbLink href=\"#\">ui</BreadcrumbLink>\n              </BreadcrumbItem>\n              <BreadcrumbSeparator className=\"hidden md:block\" />\n              <BreadcrumbItem>\n                <BreadcrumbPage>button.tsx</BreadcrumbPage>\n              </BreadcrumbItem>\n            </BreadcrumbList>\n          </Breadcrumb>\n        </header>\n        <div className=\"flex flex-1 flex-col gap-4 p-4\">\n          <div className=\"grid auto-rows-min gap-4 md:grid-cols-3\">\n            <div className=\"aspect-video rounded-xl bg-muted/50\" />\n            <div className=\"aspect-video rounded-xl bg-muted/50\" />\n            <div className=\"aspect-video rounded-xl bg-muted/50\" />\n          </div>\n          <div className=\"min-h-screen flex-1 rounded-xl bg-muted/50 md:min-h-min\" />\n        </div>\n      </SidebarInset>\n    </SidebarProvider>\n  )\n}\n"
+    },
+    {
+      "path": "components/blocks/sidebar-11/app-sidebar.tsx",
+      "type": "registry:component",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\n\nimport {\n  Collapsible,\n  CollapsibleContent,\n  CollapsibleTrigger,\n} from \"@/components/ui/collapsible\"\nimport {\n  Sidebar,\n  SidebarContent,\n  SidebarGroup,\n  SidebarGroupContent,\n  SidebarGroupLabel,\n  SidebarMenu,\n  SidebarMenuBadge,\n  SidebarMenuButton,\n  SidebarMenuItem,\n  SidebarMenuSub,\n  SidebarRail,\n} from \"@/components/ui/sidebar\"\nimport { FileIcon, ChevronRightIcon, FolderIcon } from \"lucide-react\"\n\n// This is sample data.\nconst data = {\n  changes: [\n    {\n      file: \"README.md\",\n      state: \"M\",\n    },\n    {\n      file: \"api/hello/route.ts\",\n      state: \"U\",\n    },\n    {\n      file: \"app/layout.tsx\",\n      state: \"M\",\n    },\n  ],\n  tree: [\n    [\n      \"app\",\n      [\n        \"api\",\n        [\"hello\", [\"route.ts\"]],\n        \"page.tsx\",\n        \"layout.tsx\",\n        [\"blog\", [\"page.tsx\"]],\n      ],\n    ],\n    [\n      \"components\",\n      [\"ui\", \"button.tsx\", \"card.tsx\"],\n      \"header.tsx\",\n      \"footer.tsx\",\n    ],\n    [\"lib\", [\"util.ts\"]],\n    [\"public\", \"favicon.ico\", \"vercel.svg\"],\n    \".eslintrc.json\",\n    \".gitignore\",\n    \"next.config.js\",\n    \"tailwind.config.js\",\n    \"package.json\",\n    \"README.md\",\n  ],\n}\n\nexport function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {\n  return (\n    <Sidebar {...props}>\n      <SidebarContent>\n        <SidebarGroup>\n          <SidebarGroupLabel>Changes</SidebarGroupLabel>\n          <SidebarGroupContent>\n            <SidebarMenu>\n              {data.changes.map((item, index) => (\n                <SidebarMenuItem key={index}>\n                  <SidebarMenuButton>\n                    <FileIcon\n                    />\n                    {item.file}\n                  </SidebarMenuButton>\n                  <SidebarMenuBadge>{item.state}</SidebarMenuBadge>\n                </SidebarMenuItem>\n              ))}\n            </SidebarMenu>\n          </SidebarGroupContent>\n        </SidebarGroup>\n        <SidebarGroup>\n          <SidebarGroupLabel>Files</SidebarGroupLabel>\n          <SidebarGroupContent>\n            <SidebarMenu>\n              {data.tree.map((item, index) => (\n                <Tree key={index} item={item} />\n              ))}\n            </SidebarMenu>\n          </SidebarGroupContent>\n        </SidebarGroup>\n      </SidebarContent>\n      <SidebarRail />\n    </Sidebar>\n  )\n}\n\ntype TreeItem = string | TreeItem[]\n\nfunction Tree({ item }: { item: TreeItem }) {\n  const [name, ...items] = Array.isArray(item) ? item : [item]\n\n  if (!items.length) {\n    return (\n      <SidebarMenuButton\n        isActive={name === \"button.tsx\"}\n        className=\"data-[active=true]:bg-transparent\"\n      >\n        <FileIcon\n        />\n        {name}\n      </SidebarMenuButton>\n    )\n  }\n\n  return (\n    <SidebarMenuItem>\n      <Collapsible\n        className=\"group/collapsible [&[data-state=open]>button>svg:first-child]:rotate-90\"\n        defaultOpen={name === \"components\" || name === \"ui\"}\n      >\n        <CollapsibleTrigger asChild>\n          <SidebarMenuButton>\n            <ChevronRightIcon className=\"transition-transform\" />\n            <FolderIcon\n            />\n            {name}\n          </SidebarMenuButton>\n        </CollapsibleTrigger>\n        <CollapsibleContent>\n          <SidebarMenuSub>\n            {items.map((subItem, index) => (\n              <Tree key={index} item={subItem} />\n            ))}\n          </SidebarMenuSub>\n        </CollapsibleContent>\n      </Collapsible>\n    </SidebarMenuItem>\n  )\n}\n"
+    }
+  ],
+  "meta": {
+    "source": "shadcn",
+    "upstream": "https://ui.shadcn.com/r/styles/radix-nova/sidebar-11.json",
+    "examples": [
+      "sidebar-11"
+    ]
+  }
+}

@@ -2,7 +2,6 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 
 import { GalleryHeader } from "@/components/gallery/gallery-header"
-import { PickBar } from "@/components/gallery/pick-bar"
 import { StyleCompare } from "@/components/gallery/style-compare"
 import { catalog, findEntry } from "@/lib/catalog"
 
@@ -24,9 +23,6 @@ export default async function ComparePage({ params }: { params: Promise<{ slug: 
         </Link>
         <span className="text-muted-foreground">/ styles</span>
       </GalleryHeader>
-      <div className="mx-auto flex max-w-7xl justify-end px-4 pt-4">
-        <PickBar slug={slug} />
-      </div>
       <StyleCompare slug={slug} />
     </>
   )

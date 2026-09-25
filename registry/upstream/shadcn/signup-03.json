@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "signup-03",
+  "title": "Signup 03",
+  "description": "A signup page with a muted background color.",
+  "dependencies": [
+    "cn"
+  ],
+  "registryDependencies": [
+    "button",
+    "card",
+    "input",
+    "label",
+    "field"
+  ],
+  "files": [
+    {
+      "path": "registry/radix-nova/blocks/signup-03/page.tsx",
+      "type": "registry:page",
+      "target": "app/signup/page.tsx"
+    },
+    {
+      "path": "registry/radix-nova/blocks/signup-03/components/signup-form.tsx",
+      "type": "registry:component"
+    }
+  ],
+  "categories": [
+    "authentication",
+    "signup"
+  ],
+  "type": "registry:block"
+}

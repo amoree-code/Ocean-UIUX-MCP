@@ -6,7 +6,7 @@ import { DirectionProvider } from "@/components/ui/direction"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { styles, type Style } from "@/lib/style-loaders"
 
-export const accents = ["neutral", "blue", "green", "violet", "orange", "rose"] as const
+export const accents = ["neutral", "blue", "green", "violet", "orange", "rose", "linear"] as const
 export const radii = ["0", "0.3", "0.5", "0.625", "0.75", "1"] as const
 
 export type Accent = (typeof accents)[number]
