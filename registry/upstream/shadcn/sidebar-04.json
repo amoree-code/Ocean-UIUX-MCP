@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sidebar-04",
+  "title": "Sidebar 04",
+  "description": "A floating sidebar with submenus.",
+  "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "separator"
+  ],
+  "files": [
+    {
+      "path": "registry/radix-nova/blocks/sidebar-04/page.tsx",
+      "type": "registry:page",
+      "target": "app/dashboard/page.tsx"
+    },
+    {
+      "path": "registry/radix-nova/blocks/sidebar-04/components/app-sidebar.tsx",
+      "type": "registry:component"
+    }
+  ],
+  "categories": [
+    "sidebar",
+    "dashboard"
+  ],
+  "type": "registry:block"
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sidebar-15",
+  "title": "Sidebar 15",
+  "description": "A left and right sidebar.",
+  "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "separator",
+    "popover",
+    "collapsible",
+    "dropdown-menu",
+    "calendar",
+    "avatar"
+  ],
+  "files": [
+    {
+      "path": "registry/radix-nova/blocks/sidebar-15/page.tsx",
+      "type": "registry:page",
+      "target": "app/dashboard/page.tsx"
+    },
+    {
+      "path": "registry/radix-nova/blocks/sidebar-15/components/calendars.tsx",
+      "type": "registry:component"
+    },
+    {
+      "path": "registry/radix-nova/blocks/sidebar-15/components/date-picker.tsx",
+      "type": "registry:component"
+    },
+    {
+      "path": "registry/radix-nova/blocks/sidebar-15/components/nav-favorites.tsx",
+      "type": "registry:component"
+    },
+    {
+      "path": "registry/radix-nova/blocks/sidebar-15/components/nav-main.tsx",
+      "type": "registry:component"
+    },
+    {
+      "path": "registry/radix-nova/blocks/sidebar-15/components/nav-secondary.tsx",
+      "type": "registry:component"
+    },
+    {
+      "path": "registry/radix-nova/blocks/sidebar-15/components/nav-user.tsx",
+      "type": "registry:component"
+    },
+    {
+      "path": "registry/radix-nova/blocks/sidebar-15/components/nav-workspaces.tsx",
+      "type": "registry:component"
+    },
+    {
+      "path": "registry/radix-nova/blocks/sidebar-15/components/sidebar-left.tsx",
+      "type": "registry:component"
+    },
+    {
+      "path": "registry/radix-nova/blocks/sidebar-15/components/sidebar-right.tsx",
+      "type": "registry:component"
+    },
+    {
+      "path": "registry/radix-nova/blocks/sidebar-15/components/team-switcher.tsx",
+      "type": "registry:component"
+    }
+  ],
+  "categories": [
+    "sidebar",
+    "dashboard"
+  ],
+  "type": "registry:block"
+}

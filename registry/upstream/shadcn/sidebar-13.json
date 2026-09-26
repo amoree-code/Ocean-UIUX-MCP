@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sidebar-13",
+  "title": "Sidebar 13",
+  "description": "A sidebar in a dialog.",
+  "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "button",
+    "dialog"
+  ],
+  "files": [
+    {
+      "path": "registry/radix-nova/blocks/sidebar-13/page.tsx",
+      "type": "registry:page",
+      "target": "app/dashboard/page.tsx"
+    },
+    {
+      "path": "registry/radix-nova/blocks/sidebar-13/components/settings-dialog.tsx",
+      "type": "registry:component"
+    }
+  ],
+  "categories": [
+    "sidebar",
+    "dashboard"
+  ],
+  "type": "registry:block"
+}

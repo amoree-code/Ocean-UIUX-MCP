@@ -237,5 +237,77 @@ export function createServer(registry, { runner, only } = {}) {
     }
   )
 
+  registerTool(
+    "search_design_inspiration",
+    {
+      title: "Search design inspiration",
+      description:
+        "Best-effort web search for live sites matching a style descriptor (e.g. 'cyber sigilism dark dashboard'). " +
+        "Returns candidate URLs to pass to clone_style_from_url — no API key, so treat results as a starting point, not a curated list.",
+      inputSchema: {
+        query: z.string().describe("style descriptor, e.g. 'brutalist saas landing page'"),
+        limit: z.number().int().min(1).max(20).optional(),
+      },
+      annotations: { readOnlyHint: true },
+    },
+    async ({ query, limit = 8 }) => {
+      const { searchDesignInspiration } = await import("./clone.mjs")
+      try {
+        const hits = await searchDesignInspiration(query, limit)
+        return text(hits.length ? hits : `No results for "${query}". Try a plainer descriptor, or pass a URL directly to clone_style_from_url.`)
+      } catch (e) {
+        return fail(`Search failed: ${e.message}`)
+      }
+    }
+  )
+
+  registerTool(
+    "clone_style_from_url",
+    {
+      title: "Clone a live site's style into a shadcn theme",
+      description:
+        "Opens url in headless Chromium, reads its real CSS variables (or samples computed colors/radius/font when it has " +
+        "none) for both light and dark, and maps them to shadcn's --background/--primary/--radius/... variable set. " +
+        "Returns a portable JSON theme plus a ready-to-paste CSS block. Chromium downloads on first use (~150MB, one time). " +
+        "If cwd is this Ocean UI/UX gallery repo, also wires the theme into the live accent picker directly (apply defaults to true there).",
+      inputSchema: {
+        url: z.string().url().describe("the live site to clone, e.g. https://linear.app"),
+        name: z.string().optional().describe("display name for the theme; defaults to the site's hostname"),
+        cwd: z.string().optional().describe("absolute project root — needed to auto-apply into this gallery repo"),
+        apply: z.boolean().optional().describe("write the theme into cwd instead of only returning it"),
+      },
+    },
+    async ({ url, name, cwd, apply }) => {
+      const { extractStyle, themeCssBlock, applyToGalleryRepo } = await import("./clone.mjs")
+      let theme
+      try {
+        theme = await extractStyle(url, { name })
+      } catch (e) {
+        return fail(`Could not clone ${url}: ${e.message}`)
+      }
+      const cssBlock = themeCssBlock(theme)
+      let applied = null
+      if (apply !== false && cwd) {
+        if (!path.isAbsolute(cwd)) return fail(`cwd must be an absolute path, got "${cwd}"`)
+        try {
+          applied = applyToGalleryRepo(cwd, theme)
+        } catch (e) {
+          return fail(`Cloned "${theme.name}" but failed to apply it into ${cwd}: ${e.message}`)
+        }
+      }
+      return text({
+        ...theme,
+        cssBlock,
+        ...(applied
+          ? { applied: `Wired into ${cwd} as data-accent="${theme.slug}" — pick it in the gallery's accent selector.` }
+          : {
+              howToApply: applied === null && cwd
+                ? `${cwd} isn't the Ocean UI/UX gallery repo — paste cssBlock into its globals.css under :root/.dark, or a [data-theme="${theme.slug}"] selector, yourself.`
+                : `Pass cwd (this gallery's root) to wire it in automatically, or paste cssBlock into your own globals.css.`,
+            }),
+      })
+    }
+  )
+
   return server
 }

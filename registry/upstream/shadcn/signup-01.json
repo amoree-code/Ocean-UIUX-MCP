@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "signup-01",
+  "title": "Signup 01",
+  "description": "A simple signup form.",
+  "registryDependencies": [
+    "button",
+    "card",
+    "input",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "registry/radix-nova/blocks/signup-01/page.tsx",
+      "type": "registry:page",
+      "target": "app/signup/page.tsx"
+    },
+    {
+      "path": "registry/radix-nova/blocks/signup-01/components/signup-form.tsx",
+      "type": "registry:component"
+    }
+  ],
+  "categories": [
+    "authentication",
+    "signup"
+  ],
+  "type": "registry:block"
+}

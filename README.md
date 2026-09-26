@@ -2,12 +2,14 @@
 
 A personal shadcn/ui registry with a demo gallery, exposed to every AI client through MCP.
 
-- **88 components**: 62 official shadcn (radix-nova, RTL logical classes — including the full
-  `dashboard-01` block, live at [`/dashboard`](https://ocean-uiux-mcp.vercel.app/dashboard)) and
+- **116 components**: 90 official shadcn (radix-nova, RTL logical classes — including 27 full-page
+  blocks: `dashboard-01`, 5 login and 5 signup pages, and 16 sidebar variants, live at
+  [`/dashboard`](https://ocean-uiux-mcp.vercel.app/dashboard) and friends) and
   26 vetted community components (`@kibo-ui`, `@diceui`, `@magicui`, `@cult-ui`, `@animate-ui`,
   `@aceternity`).
-- **Gallery**: live previews by category, all 8 official styles side by side, RTL/LTR, dark mode,
-  accent and radius controls.
+- **Gallery**: docs-style browser — sidebar nav with search grouped by category, click a component
+  or block for its live preview, all 8 official styles side by side, RTL/LTR, dark mode, accent
+  and radius controls.
 - **Registry**: self-contained. Every dependency resolves inside it, so it needs no hosting.
 - **MCP server**: `packages/mcp` (npm `ocean-uiux-mcp`). Name a component in any AI client and it gets installed.
 
@@ -22,7 +24,13 @@ npx -y ocean-uiux-mcp doctor
 ```
 
 Then ask for a component by name in any project, for example "add a kanban board and a tags input".
-Tools: `search_components`, `get_component`, `add_components`, `init_project`.
+Tools: `search_components`, `get_component`, `add_components`, `init_project`,
+`search_design_inspiration`, `clone_style_from_url`.
+
+`clone_style_from_url` clones a live site's real design tokens (colors, radius, font) into a
+shadcn theme (light + dark), via headless Chromium. Point it at this repo as `cwd` and the
+cloned site becomes a new accent in the live gallery, right alongside blue/green/violet/etc —
+same components, same styles, just its palette.
 
 ## Develop
 

@@ -33,15 +33,22 @@ async function call(name, args) {
   return { error: Boolean(r.isError), body, json: () => JSON.parse(body) }
 }
 
-test("exposes the four tools and usage instructions", async () => {
+test("exposes the six tools and usage instructions", async () => {
   const { tools } = await client.listTools()
-  assert.deepEqual(tools.map((t) => t.name).sort(), ["add_components", "get_component", "init_project", "search_components"])
+  assert.deepEqual(tools.map((t) => t.name).sort(), [
+    "add_components",
+    "clone_style_from_url",
+    "get_component",
+    "init_project",
+    "search_components",
+    "search_design_inspiration",
+  ])
   assert.match(client.getInstructions(), /search_components/)
 })
 
 test("empty search lists every component but hides dependency-only items", async () => {
   const all = (await call("search_components", {})).json()
-  assert.equal(all.length, 88)
+  assert.equal(all.length, 114)
   assert.ok(!all.some((i) => i.name === "use-as-ref"))
 })
 

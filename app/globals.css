@@ -151,6 +151,34 @@ html[dir="rtl"] {
 }
 
 /* Gallery accent presets — override only the brand tokens, keep neutrals. */
+[data-accent="linear"] {
+  --primary: oklch(0.712 0.151 249.883);
+  --primary-foreground: oklch(0.986 0.003 286.351);
+  --ring: oklch(0.75 0.151 249.883);
+  --sidebar-primary: oklch(0.712 0.151 249.883);
+  --chart-1: oklch(0.88 0.151 249.883);
+  --chart-2: oklch(0.75 0.151 249.883);
+  --chart-3: oklch(0.712 0.151 249.883);
+  --chart-4: oklch(0.632 0.151 249.883);
+  --chart-5: oklch(0.552 0.151 249.883);
+  --background: oklch(0.139 0.003 246.256);
+  --foreground: oklch(0.978 0.001 197.139);
+  --card: oklch(0.172 0.003 247.98);
+}
+.dark[data-accent="linear"] {
+  --primary: oklch(0.592 0.151 249.883);
+  --primary-foreground: oklch(0.852 0.003 286.351);
+  --ring: oklch(0.630 0.151 249.883);
+  --sidebar-primary: oklch(0.592 0.151 249.883);
+  --chart-1: oklch(0.760 0.151 249.883);
+  --chart-2: oklch(0.630 0.151 249.883);
+  --chart-3: oklch(0.592 0.151 249.883);
+  --chart-4: oklch(0.512 0.151 249.883);
+  --chart-5: oklch(0.672 0.151 249.883);
+  --background: oklch(0.259 0.003 246.256);
+  --foreground: oklch(0.853 0.001 197.139);
+  --card: oklch(0.292 0.003 247.98);
+}
 [data-accent="blue"] {
   --primary: oklch(0.546 0.245 262.881);
   --primary-foreground: oklch(0.97 0.014 254.604);

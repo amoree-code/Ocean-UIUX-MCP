@@ -1,0 +1,31 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "login-05",
+  "title": "Login 05",
+  "description": "A simple email-only login page.",
+  "dependencies": [
+    "cn"
+  ],
+  "registryDependencies": [
+    "button",
+    "input",
+    "label",
+    "field"
+  ],
+  "files": [
+    {
+      "path": "registry/radix-nova/blocks/login-05/page.tsx",
+      "type": "registry:page",
+      "target": "app/login/page.tsx"
+    },
+    {
+      "path": "registry/radix-nova/blocks/login-05/components/login-form.tsx",
+      "type": "registry:component"
+    }
+  ],
+  "categories": [
+    "authentication",
+    "login"
+  ],
+  "type": "registry:block"
+}
