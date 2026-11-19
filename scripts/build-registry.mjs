@@ -34,6 +34,12 @@ const upstream = {
   "@aceternity": (n) => `https://ui.aceternity.com/registry/${n}.json`,
 }
 
+// Upstream ships these as a Next.js App Router `registry:page` file, which has nowhere
+// valid to land in a non-Next.js project (Vite, CRA, TanStack Router, ...) — shadcn's
+// CLI silently drops it. Ship them as a plain component instead; the consumer wires
+// their own route/page around it.
+const PAGE_TO_COMPONENT = new Set(["dashboard-01"])
+
 // Parse lib/catalog.ts without a TS toolchain: every entry is a single-line object literal.
 const catalog = [...fs.readFileSync(path.join(root, "lib/catalog.ts"), "utf8").matchAll(/^\s*\{ slug: .*\},?$/gm)].map(
   ([line]) => Object.fromEntries([...line.matchAll(/(\w+): ("[^"]*"|null)/g)].map(([, k, v]) => [k, JSON.parse(v)]))
@@ -98,13 +104,16 @@ async function build(source, name) {
   const job = (async () => {
     const up = await fetchUpstream(source, name)
     const files = (up.files ?? []).map((f) => {
-      const p = localPath(f, name, extra.route)
+      const type = PAGE_TO_COMPONENT.has(name) && f.type === "registry:page" ? "registry:component" : f.type
+      const p = localPath({ ...f, type }, name, extra.route)
       const abs = path.join(root, p)
       if (!fs.existsSync(abs)) throw new Error(`${source}/${name}: expected local file ${p}`)
       // A route override replaces upstream's (possibly colliding) install target too — otherwise
       // `shadcn add` would install every login-NN variant to the same app/login/page.tsx.
-      const target = f.type === "registry:page" && extra.route ? p : f.target
-      return { path: p, type: f.type, ...(target ? { target } : {}), content: fs.readFileSync(abs, "utf8") }
+      // Items in PAGE_TO_COMPONENT drop upstream's app/-rooted target entirely: they're no
+      // longer a page, so they install alongside their sibling components instead.
+      const target = type === "registry:page" && extra.route ? p : type === f.type ? f.target : undefined
+      return { path: p, type, ...(target ? { target } : {}), content: fs.readFileSync(abs, "utf8") }
     })
     const deps = (up.registryDependencies ?? []).map((d) => parseDep(d, source))
     // Dependencies that another registry would supply are rebuilt from our copies too.
